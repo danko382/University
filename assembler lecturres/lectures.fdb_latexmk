@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1663377980 "/home/daniil/Общедоступные/assembler lecturres/lectures.tex" "/home/daniil/Общедоступные/assembler lecturres/lectures.pdf" "lectures" 1663377981
+["pdflatex"] 1663381196 "/home/daniil/Общедоступные/University/assembler lecturres/lectures.tex" "/home/daniil/Общедоступные/University/assembler lecturres/lectures.pdf" "lectures" 1663381197
   "/etc/texmf/web2c/texmf.cnf" 1646907485 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/daniil/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1652932903 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/home/daniil/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1649955203 3308 eee81981029f67083258db36df06e523 ""
@@ -7,8 +7,8 @@
   "/home/daniil/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1647512710 3220 0e417eaf233b160335902e97259a6c77 ""
   "/home/daniil/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1647513137 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/daniil/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1647513581 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
-  "/home/daniil/Общедоступные/assembler lecturres/lectures.aux" 1663377981 77 0397bf7caf9ada42c734e5f8ad0d244e ""
-  "/home/daniil/Общедоступные/assembler lecturres/lectures.tex" 1663368907 322 4d12d3a93b9906c71cf6de97b3bf397c ""
+  "/home/daniil/Общедоступные/University/assembler lecturres/lectures.aux" 1663381197 77 0397bf7caf9ada42c734e5f8ad0d244e ""
+  "/home/daniil/Общедоступные/University/assembler lecturres/lectures.tex" 1663381196 344 df84a55aa0146e4d2c9cd1470e74e38f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -75,11 +75,11 @@
   "images/2_9.png" 1663368323 33674 7fedda59e984779b1fc12ca3e75b1d72 ""
   "lecture_1.tex" 1663377980 8049 f6ee1e4339222d2af7d4172bdea3e4b7 ""
   "lecture_2.tex" 1663370327 8502 88fc86fb1b55f0f8479a48d7e9e6211e ""
-  "lectures.aux" 1663377981 77 0397bf7caf9ada42c734e5f8ad0d244e "pdflatex"
-  "lectures.tex" 1663368907 322 4d12d3a93b9906c71cf6de97b3bf397c ""
+  "lectures.aux" 1663381197 77 0397bf7caf9ada42c734e5f8ad0d244e "pdflatex"
+  "lectures.tex" 1663381196 344 df84a55aa0146e4d2c9cd1470e74e38f ""
   (generated)
-  "/home/daniil/Общедоступные/assembler lecturres/lectures.pdf"
   "lectures.pdf"
-  "lectures.aux"
-  "/home/daniil/Общедоступные/assembler lecturres/lectures.log"
+  "/home/daniil/Общедоступные/University/assembler lecturres/lectures.pdf"
   "lectures.log"
+  "lectures.aux"
+  "/home/daniil/Общедоступные/University/assembler lecturres/lectures.log"

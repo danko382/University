@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.3)  17 SEP 2022 05:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.3)  17 SEP 2022 06:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/daniil/Общедоступные/assembler lecturres/lectures.tex"
-(/home/daniil/Общедоступные/assembler lecturres/lectures.tex
+**"/home/daniil/Общедоступные/University/assembler lecturres/lectures.tex"
+(/home/daniil/Общедоступные/University/assembler lecturres/lectures.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -284,7 +284,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count177
 \l__pdf_internal_box=\box45
-) (/home/daniil/Общедоступные/assembler lecturres/lectures.aux)
+) (/home/daniil/Общедоступные/University/assembler lecturres/lectures.aux)
 \openout1 = `lectures.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -321,7 +321,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (/home/daniil/Общедоступные/assembler lecturres/lecture_1.tex
+)) (/home/daniil/Общедоступные/University/assembler lecturres/lecture_1.tex
 Overfull \hbox (7.23015pt too wide) in paragraph at lines 9--12
 []\T2A/cmr/bx/n/10 ��������� ���-����-�� \T2A/cmr/m/n/10 ��-����-��-��-�� ��� ���-��-���-�� ��-��� ���-�����,
  []
@@ -333,7 +333,7 @@ Package pdftex.def Info: images/1_1.png  used on input line 30.
 (pdftex.def)             Requested size: 284.52756pt x 254.15244pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/daniil/Общедоступные/assembler lecturres/images/1_1.png>] [3]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/daniil/Общедоступные/University/assembler lecturres/images/1_1.png>] [3]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -353,7 +353,7 @@ File: images/1_3.png Graphic file (type png)
 <use images/1_3.png>
 Package pdftex.def Info: images/1_3.png  used on input line 154.
 (pdftex.def)             Requested size: 199.16928pt x 62.26552pt.
-) [5 </home/daniil/Общедоступные/assembler lecturres/images/1_2.png> </home/daniil/Общедоступные/assembler lecturres/images/1_3.png>] (/home/daniil/Общедоступные/assembler lecturres/lecture_2.tex [6]
+) [5 </home/daniil/Общедоступные/University/assembler lecturres/images/1_2.png> </home/daniil/Общедоступные/University/assembler lecturres/images/1_3.png>] (/home/daniil/Общедоступные/University/assembler lecturres/lecture_2.tex [6]
 Overfull \hbox (7.69165pt too wide) in paragraph at lines 54--57
 \T2A/cmr/m/n/10 � ��-��-����-�� �� 0 �� 255(����), �� 0 �� 65535(���-��) � �� 0 �� 4294967295(����-
  []
@@ -363,7 +363,7 @@ File: images/2_1.png Graphic file (type png)
 <use images/2_1.png>
 Package pdftex.def Info: images/2_1.png  used on input line 102.
 (pdftex.def)             Requested size: 284.52756pt x 142.64594pt.
-[7] [8 </home/daniil/Общедоступные/assembler lecturres/images/2_1.png>]
+[7] [8 </home/daniil/Общедоступные/University/assembler lecturres/images/2_1.png>]
 <images/2_2.png, id=47, 689.57625pt x 437.38406pt>
 File: images/2_2.png Graphic file (type png)
 <use images/2_2.png>
@@ -374,7 +374,7 @@ File: images/2_3.png Graphic file (type png)
 <use images/2_3.png>
 Package pdftex.def Info: images/2_3.png  used on input line 174.
 (pdftex.def)             Requested size: 341.43306pt x 254.46492pt.
- [9 </home/daniil/Общедоступные/assembler lecturres/images/2_2.png>]
+ [9 </home/daniil/Общедоступные/University/assembler lecturres/images/2_2.png>]
 <images/2_4.png, id=53, 462.97969pt x 304.13625pt>
 File: images/2_4.png Graphic file (type png)
 <use images/2_4.png>
@@ -385,7 +385,7 @@ File: images/2_5.png Graphic file (type png)
 <use images/2_5.png>
 Package pdftex.def Info: images/2_5.png  used on input line 188.
 (pdftex.def)             Requested size: 227.62204pt x 115.16655pt.
- [10 </home/daniil/Общедоступные/assembler lecturres/images/2_3.png> </home/daniil/Общедоступные/assembler lecturres/images/2_4.png>]
+ [10 </home/daniil/Общедоступные/University/assembler lecturres/images/2_3.png> </home/daniil/Общедоступные/University/assembler lecturres/images/2_4.png>]
 <images/2_6.png, id=60, 670.00313pt x 96.36pt>
 File: images/2_6.png Graphic file (type png)
 <use images/2_6.png>
@@ -416,7 +416,7 @@ File: images/2_9.png Graphic file (type png)
 <use images/2_9.png>
 Package pdftex.def Info: images/2_9.png  used on input line 221.
 (pdftex.def)             Requested size: 227.62204pt x 60.58728pt.
-[11 </home/daniil/Общедоступные/assembler lecturres/images/2_5.png> </home/daniil/Общедоступные/assembler lecturres/images/2_6.png> </home/daniil/Общедоступные/assembler lecturres/images/2_7.png> </home/daniil/Общедоступные/assembler lecturres/images/2_8.png>]
+[11 </home/daniil/Общедоступные/University/assembler lecturres/images/2_5.png> </home/daniil/Общедоступные/University/assembler lecturres/images/2_6.png> </home/daniil/Общедоступные/University/assembler lecturres/images/2_7.png> </home/daniil/Общедоступные/University/assembler lecturres/images/2_8.png>]
 <images/2_10.png, id=71, 462.22687pt x 44.41594pt>
 File: images/2_10.png Graphic file (type png)
 <use images/2_10.png>
@@ -427,17 +427,17 @@ File: images/2_11.png Graphic file (type png)
 <use images/2_11.png>
 Package pdftex.def Info: images/2_11.png  used on input line 236.
 (pdftex.def)             Requested size: 284.52756pt x 12.37077pt.
-) [12 </home/daniil/Общедоступные/assembler lecturres/images/2_9.png> </home/daniil/Общедоступные/assembler lecturres/images/2_10.png> </home/daniil/Общедоступные/assembler lecturres/images/2_11.png>] (/home/daniil/Общедоступные/assembler lecturres/lectures.aux) ) 
+) [12 </home/daniil/Общедоступные/University/assembler lecturres/images/2_9.png> </home/daniil/Общедоступные/University/assembler lecturres/images/2_10.png> </home/daniil/Общедоступные/University/assembler lecturres/images/2_11.png>] (/home/daniil/Общедоступные/University/assembler lecturres/lectures.aux) ) 
 Here is how much of TeX's memory you used:
  3271 strings out of 481239
- 45551 string characters out of 5920378
+ 45694 string characters out of 5920378
  278068 words of memory out of 5000000
  18503 multiletter control sequences out of 15000+600000
  538896 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,5n,31p,288b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,5n,31p,299b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "/home/daniil/Общедоступные/assembler lecturres/lectures.pdf" (12 pages, 794423 bytes).
+Output written on "/home/daniil/Общедоступные/University/assembler lecturres/lectures.pdf" (12 pages, 794525 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
