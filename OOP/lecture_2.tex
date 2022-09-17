@@ -1,0 +1,154 @@
+\textbf{Принципы ООП:}\smallskip
+
+1) Абстрагирование.
+
+2) Инкапсуляция (регулировка доступа к характеристикам и поведению объекта)
+\bigskip
+
+\textbf{1.} Проблема метода заключается в возможности злоумышленного
+изменения характеристик.
+\begin{verbatim}
+struct cat
+{
+    string poroda; 
+    color cEye;  
+    string name;  
+    int weight;
+};    
+\end{verbatim} 
+
+\textbf{2. Преимущество по сравнению с первым вариантом в
+защищённости характеристик.}
+
+\begin{verbatim}
+class cat
+{
+private:    // личная часть класса
+    string poroda;
+    int cEye;
+    string name;
+    int weight;
+
+    void changeWeight() //защищённый доступ к изменению характеристики
+    {
+        .....
+    }
+
+public: // общедоступная часть класса
+    cat(string p, int ceye, string n, int w) // конструктор класса
+    {
+        poroda = p;
+        cEye = ceye;
+        name = n;
+        weight = w;
+    }    
+    string getP() //геттер
+    {
+        return poroda;
+    }
+    int getEye()
+    {
+        return cEye;
+    }
+    string getName()
+    {
+        return name;
+    }
+    void setName(string n) //сеттер
+    {
+        name = n;
+    }
+    int getWeight()
+    {
+        return weight;
+    }
+    void Eat()
+    {
+        changeWeight();
+    }
+};
+\end{verbatim}    
+
+\textbf{Если действие} может привести к разрушению объекта, то, как правило,
+доступ к нему ограничивают (размещают в private) + характеристики (все)
+обычно не хранятся в общем доступе.\bigskip
+
+\textbf{Пользователь = вредитель}, поэтому максимально защищайтесь и
+ограничивайте доступ.\bigskip
+
+\textbf{?protected?}\bigskip
+
+\textbf{?published?}\bigskip
+
+\textbf{Иерархия бывает двух видов:}\smallskip
+
+1) part of (это часть того).
+
+2)is as (это разновидность того)\bigskip
+
+\textbf{part of} экономит на написании кода, так как выделяет общий набор
+характеристик и действий, которые объекты могут соверщать.
+
+\begin{center}
+    \includegraphics[width=100mm]{1_3.png}
+\end{center}    
+
+\textbf{4.}
+
+\begin{verbatim}
+(is as)
+class Ep
+{
+private:
+    string marka;
+    int power;
+    int voltage;
+public:
+    Ep(){}
+    void on(){}
+    void off(){}  
+    void print(){}  
+};
+/* удобно возможностью разом соверщать какие"=то действия +
+экономия кода + возможность создания классов наследования
+(в данном случае классов электроприборов, например, класс телевизора)
+*/
+class TV : public Ep
+{
+private:
+    int diag;
+    string matrix;
+public:
+    TV() : Ep(){} //конструктор класса
+    void print(){}    
+};
+\end{verbatim}    
+
+\textbf{Если сделать следующим образом}
+
+\begin{verbatim}
+E.print();
+t.print();
+f.print();
+E=t;
+E.print();
+\end{verbatim}
+то выведится метод print для E, а не для t\bigskip
+
+\textbf{Если на Ep указан virtual (виртуальный класс)}, то при
+
+\begin{verbatim}
+Ep* ee;
+ee = &t;
+ee->print();
+\end{verbatim}
+то используется метод print для t, если оставить    
+
+\begin{verbatim}
+    E.print();
+    t.print();
+    f.print();
+    E=t;
+    E.print();
+\end{verbatim}
+то результат останется прежним.
