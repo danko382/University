@@ -3,3 +3,8 @@ lectures.fdb_latexmk
 lectures.fls
 lectures.log
 lectures.synctex.gz
+tickets.aux
+tickets.fdb_latexmk
+tickets.fls
+tickets.log
+tickets.synctex.gz

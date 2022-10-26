@@ -1,0 +1,114 @@
+\textbf{1. Теорема о длине кривой:} \smallskip
+
+Если функция $\overline{\gamma}$ имеет на отрезке $[a, b]$
+непрерывную производную $\overline{\gamma}' = (\gamma^{'}_1,
+\gamma^{'}_2)$, то кривая $L = L_{\overline{\gamma}}$ спрямляема
+и её длина $S$ выражается равенством
+
+\[S = \int^b_a |\overline{\gamma}'(t)|dt.\]
+
+Доказательство: \smallskip
+
+Для любого разбиения $a = t_0 < t_1 < \dots < t_n = b$ отрезка
+$[a, b]$ имеем
+
+\[\sum^n_{i = 1}\left|\overline{\gamma}(t_i) -
+\overline{\gamma}(t_{i - 1})\right| = \sum^n_{i = 1} \left|
+\int^{t_i}_{t_{i - 1}} \overline{\gamma}'(t) dt \right| \leq
+\sum^n_{i = 1} \int^{t_i}_{t_{i - 1}} |\overline{\gamma}'(t)|dt =
+\int^b_a |\overline{\gamma}'(t)|dt.\]
+
+Переходя к верхней грани по всевозможным разбиениям отрезка,
+получим неравенство
+
+\[S \leq \int^b_a |\overline{\gamma}'(t)|dt.\]
+
+Докажем справедливость неравентсва противоположного. Пусть
+$\epsilon > 0$. В силу равномерной непрерывности функции
+$\overline{\gamma}' \quad \exists \delta > 0 \quad (|s - t| <
+\delta \Rightarrow |\overline{\gamma}'(s) - \overline{\gamma}'(t)|
+< \epsilon).$ Возьмём разбиение отрезка с диамотром меньшим $\delta$.
+Тогда $\forall t \in [t_{i - 1}, t_i]$ имеем
+
+\[|\overline{\gamma}'(t)| = |(\overline{\gamma}'(t) -
+\overline{\gamma}'(t_i)) + \overline{\gamma}'(t_i)| \leq
+|\overline{\gamma}'(t) - \overline{\gamma}'(t_i)| + |
+\overline{\gamma}'(t_i)| \leq |\overline{\gamma}'(t_i)| + \epsilon.\]
+
+Далее получим
+
+\[\int^{t_i}_{t_{i - 1}} |\overline{\gamma}'(t)|dt - \epsilon
+\Delta t_i \leq |\overline{\gamma}'(t_i)|\Delta t_i =
+|\int^{t_i}_{t_{i - 1}} (\overline{\gamma}' (t) +
+\overline{\gamma}'(t_i) - \overline{\gamma}'(t))dt| \leq\]
+
+\[\leq |\int^{t_i}_{t_{i - 1}} \overline{\gamma}'(t) dt| + |
+\int^{t_i}_{t_{i - 1}}(\overline{\gamma}')(t_i) - \overline{\gamma}'(t)
+dt| \leq |\overline{\gamma}(t_i) - \overline{\gamma}(t_{i - 1})|
++ \epsilon \Delta t_i\]
+
+и 
+
+\[\int^b_a |\overline{\gamma}'(t)|dt = \sum^n_{i = 1} \int^{t_i}_{t_{i - 1}}
+|\overline{\gamma}' (t)|dt \leq \sum^n_{i = 1} |\overline{\gamma}(t_i)
+- \overline{\gamma}(t_{i - 1})| + 2 \epsilon (b - a) \leq S + 2\epsilon
+(b - a)\]
+
+Тогда в силу произвольности $\epsilon > 0$ имеем неравенство 
+
+\[\int^b_a |\overline{\gamma}'(t)|dt \leq S.\]
+
+\textbf{2"=3. Определение криволинейных интегралов первого и второго
+рода по параметризованной гладкой прямой:} \smallskip
+
+Пусть $L = L_{\overline{\gamma}}$~--- гладкая кривая, а функции
+$f(x, y), \quad P(x, y), \quad Q(x, y)$ определены на $L$. Пусть
+$a = t_0 < t_1 < \dots < t_n = b$~--- разбиение отрезка $[a, b], \quad
+M_k = (x_k, y_k) = (\gamma_1(t_k), \gamma_2 (t_k)), \quad k = 0,
+\dots, n,$ и $l_k$~--- дуга $M_{k - 1} M_k$ кривой $L, \quad k = 1,
+\dots, n.$ \smallskip
+
+На каждой дуге $M_{k - 1} M_k$ выберем произвольную точку $N_k
+(\xi_k, \eta_k)$, соответсвующую некоторому значению
+$\tau_k \in [t_{k - 1}, t_k]$ параметра $t$.\smallskip
+
+Обозначим длину дуги $M_{k - 1} M_k$ через
+
+\[\Delta s_k = \int^{t_k}_{t_{k - 1}} |\overline{\gamma}'(t)|dt =
+\int^{t_k}_{t_{k - 1}} \sqrt{(\gamma_1'(t))^2 + (\gamma_2'(t))^2}dt\]
+
+и диаметром разбиения кривой $L$ назовём число $\Delta =
+\max_{1 \leq k \leq n} \Delta s_k.$ \smallskip
+
+Определи интегральные суммы
+
+\[\sigma_1 = \sum^n_{k = 1} f(\xi_k, \eta_k) \Delta s_k.\]
+
+\[\sigma_2 = \sum^n_{k = 1} P(\xi_k, \eta_k) \Delta x_k.\]
+
+\[\sigma_3 = \sum^n_{k = 1} Q(\xi_k, \eta_k) \Delta y_k,\]
+
+где $\Delta x_k = x_k - x_{k - 1}, \quad \Delta y_k = y_k - y_{k - 1}.$
+\smallskip
+
+\textbf{Определение криволинейного интеграла первого рода:} \smallskip
+
+Назовём число $I_m$ пределом интегральных сумм $\sigma_m
+\quad(m = 1, 2, 3)$ при стремлении диаметра $\Delta$ к нулю,
+если
+
+\begin{center}
+    $\forall \epsilon > 0 \quad \exists \delta > 0 \quad
+    (\Delta < \delta \Rightarrow |\sigma - I_m| < \epsilon)$ (независимо
+    от выбора точек $N_k$).
+\end{center}
+
+Число $I_1$ называют криволинейным интегралом первого рода от функции
+$f$ по кривой $L$ и обозначают символом
+
+\[\int_L f(x, y)ds.\]
+
+Число $I_2$ называют криволинейным интегралом второго рода от функции
+$P$ по кривой $L$ (в направлении от $A$ до $B$) и обозначают символом
+
+\[\int_L P(x, y)dx.\]

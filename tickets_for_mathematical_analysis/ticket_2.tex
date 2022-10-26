@@ -1,0 +1,95 @@
+\textbf{”слови€ существовани€ криволинейных интегралов:} \smallskip
+
+≈сли крива€ $L = L_{\overline{\gamma}}$ €вл€етс€ гладкой и функции 
+$f, P, Q$ непрерывны вдоль этой кривой, то все три криволинейные 
+интегралы существуют и могут быть вычислены по формулам
+
+\[\int_L f(x, y)dx = \int ^b_a f(\gamma_1(t), \gamma_2(t))
+\sqrt{(\gamma_1'(t))^2 + (\gamma_2'(t))^2}dt, \quad \quad (1)\]
+
+\[\int_L P(x, y)dx = \int^b_a P(\gamma_1(t), \gamma_2(t))
+\gamma_1'(t) dt, \quad
+\quad (2)\]
+
+\[\int_L Q(x, y)dy = \int^b_a Q(\gamma_1(t), \gamma_2(t))
+\gamma_2' (t) dt \quad \quad (3)\]
+
+ƒоказательство: \smallskip
+
+ѕрежде всего отметим, что определенные интегралы, сто€щие
+в правых част€х формул, существуют, так как их подынтегральные
+функции непрерывны на отрезке $[a, b]$/ \smallskip
+
+ƒокажем первое равенство. ќбозначим
+
+\[I_1 = \int^b_a f(\gamma_1(t), \gamma_2 (t)) \sqrt{(\gamma_1'
+(t))^2 + (\gamma_2'(t))^2}dt\]
+
+и оценим разность
+
+\[\sigma_1 - I_1 = \sum^n_{k = 1} f(\xi_k, \eta_k) \Delta l_k -
+\int^b_a f(\gamma_1(t), \gamma_2(t)) \sqrt{(\gamma_1'(t))^2 +
+(\gamma_2'(t))^2}dt =\]
+
+\[= \sum^n_{k = 1} \int^{t_k}_{t_{k - 1}} (f(\gamma_1 (\tau_k),
+\gamma_2 (\tau_k)) - f(\gamma_1 (t), \gamma_2 (t)))
+\sqrt{(\gamma_1'(t))^2 + (\gamma_2'(t))^2}dt\]
+
+“ак как функции $\gamma_1'(t)$ и $\gamma_2' (t)$ непрерывны
+на $[a, b]$ и одновременно не обращаютс€ в нуль, то
+
+\begin{center}
+    $m = \min_{a \leq t \leq b} \sqrt{(\gamma_1'(t))^2 +
+    (\gamma_2' (t))^2} > 0$ и $\Delta s_k \geq m
+    \int^{t_k}_{t_{k - 1}} dt = m \Delta t_k.$
+\end{center}
+
+—ледовательно
+
+\[\Delta t_k \leq \frac{1}{m} \Delta s_k\]
+
+и при стримлении к нулю диаметра разбиени€ $\Delta$ кривой
+$L$ стемитс€ к нулю и наибольша€ из разностей $\Delta t_k =
+t_k - t_{k - 1}$. \smallskip
+
+ѕоскольку функци€ $f(\gamma_1 (t), \gamma_2 (t))$ равномерно непрерывна
+на отрезке $[a, b]$, то $\forall  \epsilon > 0 \quad 
+\exists \delta > 0 \quad : \quad \Delta < \delta \Rightarrow$
+
+\[|f(\gamma_1(\tau_k), \gamma_2 (\tau_k)) - 
+f(\gamma_1 (t), \gamma_2 (t))| < \frac{\epsilon}{S},\]
+
+где $S$~--- длина кривой $L$. \smallskip
+
+“огда
+
+\[|\sigma_1 - I_1| \leq \frac{\epsilon}{S} \sum^n_{k = 1}
+\int^{t_k}_{t_{k - 1}} \sqrt{(\gamma_1' (t)) + (\gamma_2' (t))^2}dt =
+\frac{\epsilon}{S} \sum^n_{k = 1} \Delta s_k = \epsilon.\]
+
+“аким образом мы доказали, что интегральные суммы $\sigma_1$ стем€тс€ к
+числу $I_1$ при $\Delta \to 0$, то есть мы доказали первое 
+равенство. \smallskip
+
+ƒл€ доказательства второго равенства оценим разность
+
+\[\sigma_2 - I_2 = \sum^n_{k = 1} \int^{t_k}_{t_{k - 1}}
+\left(P(\gamma_1(\tau_k), \gamma_2 (\tau_k)) - P(
+\gamma_1(t), \gamma_2(t))\right)\gamma_1'(t)dt.\]
+
+$\forall \epsilon > 0\quad \exists \delta > 0 \quad : \quad
+\Delta < \delta \Rightarrow$
+
+\[P(\gamma_1(\tau_k), \gamma_2 (\tau_k)) - P (\gamma_1 (t),
+\gamma_2(t))| < \frac{\epsilon}{M(b - a)},\]
+
+где $M = \max_{a \leq t \leq b} |\gamma_1'(t)|.$ “огда
+
+\[|\sigma_2 - I_2| \leq \frac{\epsilon}{M (b -  a)}
+\sum^n_{k = 1} \int^{t_k}_{t_{k - 1}} |\gamma_1'(t)|dt \leq
+\frac{\epsilon}{M(b - a)} M \sum^n_{k = 1} \Delta t_k = \epsilon.\]
+
+Ёто означает, что интегральные суммы $\sigma_2 \to I_2$ при
+$\Delta \to 0$, то есть мы доказали второе равенство. \smallskip
+
+“ретье равенство доказываетс€ аналогично.
