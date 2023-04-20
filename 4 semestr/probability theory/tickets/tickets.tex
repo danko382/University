@@ -1,0 +1,451 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage{amssymb}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage[unicode]{hyperref}
+
+\begin{document}
+
+    \tableofcontents
+
+    \newpage
+
+    \section{Мнимум 1}
+
+        \subsection{Глава 1}
+
+            \subsubsection{Билет 1}
+
+                \textbf{Определение случайного события:}
+                    \smallskip
+
+                    Пусть $\Omega$~--- множество элементарных
+                    исходов эксперимента. Случайным событием
+                    называется любое подмножество множества
+                    $\Omega$.
+                    \bigskip
+
+                \textbf{Определение достоверного события:}
+                    \smallskip
+
+                    Достоверным событием называется событие
+                    $\Omega$ которому благоприятствует
+                    каждое событие эксперимента.
+                    \bigskip
+
+                \textbf{Определение невозможного события:}
+                    \smallskip
+                    
+                    Невозможным событием называется пустое
+                    множество которому не благоприятствует ни
+                    один исход эксперимента.
+                    \bigskip
+
+                \textbf{Определение противоположного события:}
+                    \smallskip
+                    
+                    Событием, противоположным событию 
+                    $A$ называется $\overline{A}$, которое
+                    состоит из исходов, не благоприятствующих $A$.
+                    \bigskip
+
+            \subsubsection{Билет 2}
+            
+                \textbf{Определение $\sigma$"=алгебры событий:}
+                    \smallskip
+
+                    Сигма алгебра~--- это непустой класс
+                    множества замкнутый относительно счётного
+                    количества сумм и отрицаний и:
+
+                    \begin{enumerate}
+                        \item{если $A \in \mathfrak{F}$, то
+                        $\overline{A} \in \mathfrak{F}$;}
+                        \item{$\Omega \in \mathfrak{F}$;}
+                        \item{если $\{A\}_{i = 1}^{\infty} \in$,
+                        то $\bigcap_{i = 1}^{\infty} A_i \in 
+                        \mathfrak{F}$.}
+                    \end{enumerate}
+                    \bigskip
+
+            \subsubsection{Билет 3}
+                
+                \textbf{Определение конечной аддитивной
+                вероятностной меры:}
+                    \smallskip
+
+                    Пусть $\mathfrak{A}$~--- алгебра множеств
+                    из $\Omega$.
+
+                    Конечной аддитивной вероятностой мерой
+                    $Q(A)$ называется функция множества $Q:
+                    A \rightarrow [0;1]$ такая, что 
+                    
+                    \[
+                        \forall A \in \mathfrak{A}, \;\; Q(A)
+                        \geq 0,
+                    \]
+
+                    \[
+                        Q(\Omega) = 1, \;\; \forall A, B \in
+                        \mathfrak{A}, \;\; A \cap B = \varnothing
+                        \;\; Q(A \cup B) = Q(A) + Q(B)
+                    \]
+
+                    или
+
+                    \[
+                        Q(\bigsqcup_{i = 1}^{\infty} A_i) =
+                        \sum_{i = 1}^{\infty} Q(A_i)    
+                    \]
+                    \bigskip
+
+                \textbf{Определение счётно аддитивной
+                вероятностной меры:}
+                    \smallskip
+                    
+                    Счётно аддитивной вероятностной мерой $P(A)$
+                    называется функция множества $P :
+                    \mathfrak{A} \rightarrow [0;1]$ такая, что 
+
+                    \[
+                        \forall A \in \mathfrak{A} \;\; P(A) 
+                        \geq 0, \;\; P(\Omega) = 1,
+                    \]
+
+                    \[
+                        \forall \{A_i\}_{i = 1}^{\infty} \in
+                        \mathfrak{A} \;\; \forall i \neq j \;\;
+                        A_i \cap A_j = \varnothing \;\;
+                        P(\bigsqcup_{i = 1}^{\infty} A_i) =
+                        \sum_{i = 1}^{\infty} P(A_i)    
+                    \]
+                    \bigskip
+
+            \subsubsection{Билет 4:}
+            
+                \textbf{Свойства вероятности:}
+                    \smallskip
+
+                    \begin{enumerate}
+                        \item{$P(\overline(A)) = 1 - P(A)$}
+                        \item{Если $A \subseteq B$, то 
+                        $ P(A) \leq P(B)$ и $P(B \setminus A) = 
+                        P(B) - P(A)$}
+                        \item{
+                            \textbf{Теория сложения вероятностей:}
+                                \smallskip
+                                
+                                Пусть $A$ и $B$ некоторые события,
+                                $A, B \in \mathfrak{F}$. Тогда 
+
+                                \[
+                                    P(A \cup B) = P(A) + P(B) -
+                                    P(A \cap B)
+                                \]
+                        }
+                        \item{
+                            \textbf{Непрерывность вероятностной
+                            меры:}
+                                \smallskip
+
+                                Пусть $\{A\}_{i = 1}^{\infty}$~---
+                                монотонный класс событий, то есть
+
+                                1) $A_i \subset A_{i + 1}$ или
+                                2) $A_i \supset A_{i + 1}$. Тогда
+
+                                \[
+                                    P(\lim_{n \to \infty} (A_n)) =
+                                    \lim_{n \to \infty} (A_n)
+                                \]
+                        }
+                    \end{enumerate}
+                    \bigskip
+
+            \subsubsection{Билет 5}
+            
+                \textbf{Определение классической вероятности:}
+                    \smallskip
+
+                    $P(A) = \frac{k}{n}$, где k~--- количество
+                    благоприятных $A$ исходов, n~--- количество
+                    всех возможных исходов эксперимента.
+                    \bigskip
+
+            \subsubsection{Билет 6}
+                
+                \textbf{Определение условной вероятности:}
+                    \smallskip
+
+                    Пусть $(\Omega, \mathfrak{F}, P)$~--- 
+                    вероятностное пространство и $A, B \in
+                    \mathfrak{F}, \;\; P(B) > 0$. Условной
+                    вероятностью события $A$ при условии, что
+                    наступило событие $B$ называется число:
+
+                    \[
+                        P(A|B) = \frac{P(A \cap B)}{P(B)}    
+                    \]
+                    \bigskip
+
+                Пусть $\{A_i\}_{i = 1}^{\infty}$~--- полная
+                группа несовменстных событий.
+                
+                Назовём события $A_i$ гипотезами, а $P(A_i)$
+                назовём априорные вероятности гипотез.
+                \bigskip
+
+                \textbf{Теорема (формула полной вероятности):}
+                    \smallskip
+
+                    Пусть $(\Omega, \mathfrak{F}, P)$~--- 
+                    вероятностное пространство и
+                    $\{A_i\}_i^{\infty} \in \mathfrak{F}$~---
+                    полная группа попарно несовметных событий;
+                    $P(A_i) \geq 0$, пусть $A \in \mathfrak{F}$~---
+                    неполное событие и $P(A|A_i) \geq 0$. Тогда
+
+                    \[
+                        P(A) = \sum_{i = 1}^{\infty} P(A_i) *
+                        P(A|A_i)    
+                    \]
+                    \bigskip
+
+                \textbf{Теорема (формула Байеса):}
+                    \smallskip
+                    
+                    Пусть $\{A_i\}_{i = 1}^{\infty}$~--- полная
+                    группа попарно несовместимых событий, и 
+                    пусть для некоторого $P(A) > 0$. Тогда
+
+                    \[
+                        \forall i = \overline{1, \infty} \;\;
+                        P(A_i|A) = \frac{P(A_i) * P(A|A_i)}{P(A)},  
+                    \]
+                    \bigskip
+
+            \subsubsection{Билет 7}
+
+                \textbf{Определение независимости событий:}
+                    \smallskip
+
+                    Случайные события $A$ и $B$ называются 
+                    независимыми, если 
+
+                    \[
+                        P(A \cap B) = P(A) * P(B)  
+                    \]
+                    \bigskip
+
+            \subsubsection{Билет 8}
+            
+                \textbf{Определение (критерий независимости
+                событий):}
+                    \smallskip
+
+                    Пусть $A$ и $B$ такие, что $P(B) > 0$.
+                    Тогда случайные события $A$ и $B$ независимы
+                    $\Leftrightarrow  P(A|B) = P(A)$
+                    \bigskip
+
+                \textbf{Теорема (о независимости противоположных
+                событий):}
+                    \smallskip
+                    
+                    Пусть $A$ и $B$~--- независимы. Тогда события
+                    $A$ и $\overline{B}$; $\overline{A}$ и $B$;
+                    $\overline{A}$ и $\overline{B}$~--- попарно
+                    независимы.
+                    \bigskip
+        
+        \subsection{Глава 2}
+
+            \subsubsection{Билет 1}
+
+                \textbf{Определение верхней меры Лебега:}
+                    \smallskip
+
+                    Верхней мерой Лебега называется
+
+                    \[
+                        \mu^{*}(A) = \inf_{\{P_k\}} \sum_m (P_k)  
+                    \]
+                    \bigskip
+
+                \textbf{Определение нижней меры Лебега:}
+                    \smallskip
+
+                    Нижней мерой Лебега называется
+
+                    \[
+                        \mu_{*}(A) = 1 - \mu^{*}(E \setminus A)
+                    \]
+                    \bigskip
+
+                \textbf{Определение измеримого по Лебегу 
+                множества и меры Лебега:}
+                    \smallskip
+                    
+                    Говорят, что множество $A$ измеримо по Лебегу,
+                    если:
+
+                    \[
+                        \mu^{*}(A) = \mu_{*}(A) = \mu (A)
+                    \]
+
+                    Величина $\mu(A)$~--- мера Лебега множества
+                    $A$.
+                    \bigskip
+                 
+            \subsubsection{Билет 2}
+            
+                \textbf{Определение измеримой функции:}
+                    \smallskip
+
+                    Пусть $X$ и $Y$~--- некоторые множества
+                    и пусть $S_x$ и $S_y$~--- классы подмножества.
+                    $f: X \rightarrow Y$~--- некоторая функция.
+                    \smallskip
+
+                    Функция $f: X \rightarrow Y$ называется 
+                    $(S_x, S_y)$~--- измеримой, если:
+
+                    \[
+                        \forall B \in S_y \;\;\;\; \exists f^{-1}:
+                        S_y \rightarrow S_x
+                    \]
+                    \bigskip
+
+                \textbf{Определение измеримой абстрактной
+                функции:}
+                    \smallskip
+                    
+                    Абстрактная функция $f(x): X \rightarrow Y$
+                    называется $(S_x, S_y)$~--- измеримой, если:
+
+                    \[
+                        \forall A \in S_y \;\;\;\; f^{-1}(A) \in
+                        S_x
+                    \]  
+                    \bigskip
+
+                \textbf{Определение измеримой действительной
+                функции:}
+                    \smallskip
+                    
+                    Действительная функция $f(x)$ с областью 
+                    определения $X \subset R$ называется 
+                    $\mu$"=измеримой или $S_{\mu}$"=измеримой,
+                    если для любого борелевского множества $b \in
+                    \beta(R) \;\;\;\; f^{-1}(b) \in S_{\mu}$.
+                    \bigskip
+
+            \subsubsection{Билет 3}
+            
+                \textbf{Определение (критерий измеримости 
+                действительных функций):}
+                    \smallskip
+
+                    Действительная функция $f(x)$ измерима
+                    $\Leftrightarrow$
+
+                    \begin{center}
+
+                        $
+                            \forall C \in R \;\;\;\; f^{-1}(b) = 
+                            f^{-1}(-\infty, C)
+                        $~--- измерима
+
+                        или 
+
+                        $\{x : f(x) < C\}$
+
+                    \end{center}
+                    \bigskip
+
+            \subsubsection{Билет 4}
+            
+                \textbf{Определение случайной величины:}
+                    \smallskip
+
+                    Пусть $(\Omega, \mathfrak{F}, P)$~---
+                    вероятностное пространство. Случайной 
+                    величиной называется вещественно значная
+                    функция $\xi$ такая, что
+
+                    \[
+                        \xi : \Omega \rightarrow R \;\;\;\;
+                        \forall x \in R \;\;\;\; {w: \xi(w) < x}
+                        \in \mathfrak{F}
+                    \]
+                    \bigskip
+
+            \subsubsection{Билет 5}
+            
+                \textbf{Определение функции распределения:}
+                    \smallskip
+
+                    Функцией распределения вероятностей 
+                    случайной величины $\xi$ называется функция 
+                    $F_{\xi}(x) = P{w : \xi (w) < x}$
+                    \bigskip
+
+                \textbf{Свойства функции распределения:}
+                    \smallskip
+                    
+                    \begin{enumerate}
+                        \item{$0 \leq F_{\xi}(x) \leq 1 \;\;\;\;
+                        \forall x \in R$;}
+                        \item{$F_{\xi}(x)$~--- неубывающая,
+                        непрерывная слева функция;}
+                        \item{$\lim_{x \to +\infty} F_{\xi} (x) = 1$
+                        
+                        $\lim_{x \to -\infty} F_{\xi} (x) = 0$;}
+                        \item{$P\{a \leq \xi < b\} = F_{\xi}(b) -
+                        F_{\xi}(a)$;}
+                        \item{$P\{\xi = x_0\} = F_{\xi}(x_0 + 0)
+                        - F_{\xi}(x_0)$.}
+                    \end{enumerate}
+                    \bigskip
+
+            \subsubsection{Билет 6}
+            
+                \textbf{Определение функции плотности
+                распределения:}
+                    \smallskip
+
+                    Функцией плотности распределения вероятностей
+                    случайной величины $\xi$ называется функция
+                    $f_{\xi}(x)$ такая, что:
+
+                    \begin{enumerate}
+                        \item{$\forall x \in R \;\;\;\; f_{\xi}
+                        (x) \geq 0$;}
+                        \item{$F_{\xi}^{'}(x) = f_{\xi}(x)$;}
+                        \item{$\int_{-\infty}^{\infty} f_{\xi}(x)
+                        dx = 1$;}
+                        \item{$P\{a \leq \xi \leq b\} = \int_b^{a}
+                        f_{\xi}(x) dx$.}
+                    \end{enumerate}
+                    \bigskip
+
+            \subsubsection{Билет 7}
+                
+                \textbf{Определение случайных независимых
+                велечин:}
+                    \smallskip
+
+                    Случайные велечины $\xi$ и $\mu$ называются
+                    независимыми, если:
+
+                    \[
+                        \forall x, y \in R \;\;\;\; P\{w : \xi(w)
+                        < x; \mu (w) < y\} = P\{w: \xi (w) < x\} *
+                        P\{w : \mu (w) < y\}
+                    \]
+
+
+\end{document}

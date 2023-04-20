@@ -5,3 +5,10 @@ main.log
 main.synctex.gz
 mains.out
 main.toc
+tickets.aux
+tickets.fdb_latexmk
+tickets.fls
+tickets.log
+tickets.synctex.gz
+tickets.out
+tickets.toc
