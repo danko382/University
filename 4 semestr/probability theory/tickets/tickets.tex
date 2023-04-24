@@ -61,12 +61,13 @@
                     количества сумм и отрицаний и:
 
                     \begin{enumerate}
-                        \item{если $A \in \mathfrak{F}$, то
-                        $\overline{A} \in \mathfrak{F}$;}
-                        \item{$\Omega \in \mathfrak{F}$;}
-                        \item{если $\{A\}_{i = 1}^{\infty} \in$,
-                        то $\bigcap_{i = 1}^{\infty} A_i \in 
-                        \mathfrak{F}$.}
+                        \item{если $A \in \mathcal{F}$, то
+                        $\overline{A} \in \mathcal{F}$;}
+                        \item{$\Omega \in \mathcal{F}$;}
+                        \item{если $\{A\}_{i = 1}^{\infty} \in
+                        \mathcal{F}$, то
+                        $\bigcap_{i = 1}^{\infty} A_i \in 
+                        \mathcal{F}$.}
                     \end{enumerate}
                     \bigskip
 
@@ -76,7 +77,7 @@
                 вероятностной меры:}
                     \smallskip
 
-                    Пусть $\mathfrak{A}$~--- алгебра множеств
+                    Пусть $\mathcal{A}$~--- алгебра множеств
                     из $\Omega$.
 
                     Конечной аддитивной вероятностой мерой
@@ -84,13 +85,13 @@
                     A \rightarrow [0;1]$ такая, что 
                     
                     \[
-                        \forall A \in \mathfrak{A}, \;\; Q(A)
+                        \forall A \in \mathcal{A}, \;\; Q(A)
                         \geq 0,
                     \]
 
                     \[
                         Q(\Omega) = 1, \;\; \forall A, B \in
-                        \mathfrak{A}, \;\; A \cap B = \varnothing
+                        \mathcal{A}, \;\; A \cap B = \varnothing
                         \;\; Q(A \cup B) = Q(A) + Q(B)
                     \]
 
@@ -108,16 +109,16 @@
                     
                     Счётно аддитивной вероятностной мерой $P(A)$
                     называется функция множества $P :
-                    \mathfrak{A} \rightarrow [0;1]$ такая, что 
+                    \mathcal{A} \rightarrow [0;1]$ такая, что 
 
                     \[
-                        \forall A \in \mathfrak{A} \;\; P(A) 
+                        \forall A \in \mathcal{A} \;\; P(A) 
                         \geq 0, \;\; P(\Omega) = 1,
                     \]
 
                     \[
                         \forall \{A_i\}_{i = 1}^{\infty} \in
-                        \mathfrak{A} \;\; \forall i \neq j \;\;
+                        \mathcal{A} \;\; \forall i \neq j \;\;
                         A_i \cap A_j = \varnothing \;\;
                         P(\bigsqcup_{i = 1}^{\infty} A_i) =
                         \sum_{i = 1}^{\infty} P(A_i)    
@@ -139,7 +140,7 @@
                                 \smallskip
                                 
                                 Пусть $A$ и $B$ некоторые события,
-                                $A, B \in \mathfrak{F}$. Тогда 
+                                $A, B \in \mathcal{F}$. Тогда 
 
                                 \[
                                     P(A \cup B) = P(A) + P(B) -
@@ -180,9 +181,9 @@
                 \textbf{Определение условной вероятности:}
                     \smallskip
 
-                    Пусть $(\Omega, \mathfrak{F}, P)$~--- 
+                    Пусть $(\Omega, \mathcal{F}, P)$~--- 
                     вероятностное пространство и $A, B \in
-                    \mathfrak{F}, \;\; P(B) > 0$. Условной
+                    \mathcal{F}, \;\; P(B) > 0$. Условной
                     вероятностью события $A$ при условии, что
                     наступило событие $B$ называется число:
 
@@ -201,11 +202,11 @@
                 \textbf{Теорема (формула полной вероятности):}
                     \smallskip
 
-                    Пусть $(\Omega, \mathfrak{F}, P)$~--- 
+                    Пусть $(\Omega, \mathcal{F}, P)$~--- 
                     вероятностное пространство и
-                    $\{A_i\}_i^{\infty} \in \mathfrak{F}$~---
+                    $\{A_i\}_i^{\infty} \in \mathcal{F}$~---
                     полная группа попарно несовметных событий;
-                    $P(A_i) \geq 0$, пусть $A \in \mathfrak{F}$~---
+                    $P(A_i) \geq 0$, пусть $A \in \mathcal{F}$~---
                     неполное событие и $P(A|A_i) \geq 0$. Тогда
 
                     \[
@@ -371,7 +372,7 @@
                 \textbf{Определение случайной величины:}
                     \smallskip
 
-                    Пусть $(\Omega, \mathfrak{F}, P)$~---
+                    Пусть $(\Omega, \mathcal{F}, P)$~---
                     вероятностное пространство. Случайной 
                     величиной называется вещественно значная
                     функция $\xi$ такая, что
@@ -379,7 +380,7 @@
                     \[
                         \xi : \Omega \rightarrow R \;\;\;\;
                         \forall x \in R \;\;\;\; {w: \xi(w) < x}
-                        \in \mathfrak{F}
+                        \in \mathcal{F}
                     \]
                     \bigskip
 
@@ -441,7 +442,7 @@
                     Случайные велечины $\xi$ и $\mu$ называются
                     независимыми, если:
 
-                    \[
+                    \[ 
                         \forall x, y \in R \;\;\;\; P\{w : \xi(w)
                         < x; \mu (w) < y\} = P\{w: \xi (w) < x\} *
                         P\{w : \mu (w) < y\}
