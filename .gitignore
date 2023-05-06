@@ -3,8 +3,9 @@ main.fdb_latexmk
 main.fls
 main.log
 main.synctex.gz
-mains.out
+main.out
 main.toc
+main.out
 tickets.aux
 tickets.fdb_latexmk
 tickets.fls
@@ -12,3 +13,4 @@ tickets.log
 tickets.synctex.gz
 tickets.out
 tickets.toc
+homogeneous_linear_equations_with_constant_coefficients.aux
