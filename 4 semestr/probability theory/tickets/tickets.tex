@@ -5,6 +5,7 @@
 \usepackage[russian]{babel}
 \usepackage{graphicx}
 \usepackage[unicode]{hyperref}
+\graphicspath{{images/}}
 
 \begin{document}
 
@@ -451,5 +452,175 @@
                         P\{w : \mu (w) < y\}
                     \]
 
+    \section{Минимум 2}
 
+        \subsection{Билет 1}
+                
+            \textbf{Определение случайной величины:}
+                \smallskip
+
+                Пусть $(\Omega, \mathcal{F}, P)$~---
+                вероятностное пространство. Случайной 
+                величиной называется вещественно значная
+                функция $\xi$ такая, что
+
+                \[
+                    \xi : \Omega \rightarrow R \;\;\;\;
+                    \forall x \in R \;\;\;\; \{w: \xi(w) < x\}
+                    \in \mathcal{F}
+                \]
+                \bigskip
+
+        \subsection{Билет 2}
+        
+            \textbf{Определение функции распределения:}
+                \smallskip
+
+                Функцией распределения вероятностей 
+                случайной величины $\xi$ называется функция 
+                $F_{\xi}(x) = P\{w : \xi (w) < x\}$
+                \bigskip
+
+            \textbf{Свойства функции распределения:}
+                \smallskip
+                
+                \begin{enumerate}
+                    \item{$0 \leq F_{\xi}(x) \leq 1 \;\;\;\;
+                    \forall x \in R$;}
+                    \item{$F_{\xi}(x)$~--- неубывающая,
+                    непрерывная слева функция;}
+                    \item{$\lim_{x \to +\infty} F_{\xi} (x) = 1$
+                    
+                    $\lim_{x \to -\infty} F_{\xi} (x) = 0$;}
+                    \item{$P\{a \leq \xi < b\} = F_{\xi}(b) -
+                    F_{\xi}(a)$;}
+                    \item{$P\{\xi = x_0\} = F_{\xi}(x_0 + 0)
+                    - F_{\xi}(x_0)$.}
+                \end{enumerate}
+                \bigskip  
+                
+        \subsection{Билет 3}
+        
+            \textbf{Доказательство непрерывности слева функции 
+            распределения}
+                \smallskip
+
+                Требуется показать, что для возрастающей последовательности
+                $\{x_n\}$, такой что $\lim_{n \to \infty} x_n = x$,
+                последовательность $\{F(x_n)\}$ при $n \to \infty$ стремится
+                к $F(x)$ или $\lim_{n \to \infty} F(x_n) = F(x)$.
+                \smallskip
+
+                Рассмотрим последовательность событий $A_n = \{w : \xi(w) <
+                x_n\}$
+
+                \includegraphics[width=60mm]{"1.png"}
+
+                Для неё верно:
+
+                \[
+                    \forall n \;\;\; A_n \subset  A_{n + 1} \;\;\; (x_n < x_{n + 1})  
+                \]
+
+                \[
+                    \bigcup_{n = 1}^{\infty} A_n = A = \{w : \xi(w) < x_n\}  
+                \]
+
+                То есть последовательность $\{A_n\}$ удовлетворяет свойству
+                непрерывности вероятностной меры $P(\bigcup_{n = 1}^{\infty} A_n) =
+                \lim_{n \to \infty} P(A)$.
+
+                Тогда можем записать
+
+                \[
+                    \lim_{n \to \infty} F(x_n) = \lim_{n \to \infty}
+                    P\{\xi \in (-\infty, x_n)\} = \lim_{n \to \infty}
+                    P\{\xi \in (-\infty, x)\} = F(x).
+                \]
+
+                Таким образом,
+
+                \[
+                    \lim_{n \to \infty} F(x_n) = F(x).
+                \]
+                \bigskip
+
+        \subsection{Билет 4}      
+        
+            \textbf{Доказательство неубывания функции распределения:}
+                \smallskip
+
+                По определению требуется показать, что:
+
+                \[
+                    \forall x_1 < x_2 \;\;\; F(x_1) \leq F(x_2)  
+                \]
+
+                Пусть 
+
+                \[
+                    (-\infty, x_2) = (-\infty, x_1) \cup [x_1, x_2]  
+                \]
+
+                Тогда
+
+                \[
+                    F(x_2) = P\{\xi \in (-\infty, x_2)\} =
+                    P\{\xi \in (-\infty, x_1)
+                    \cup \xi \in [x_1, x_2)\} = P\{\xi \in (-\infty, x_1)\} +
+                    P\{\xi \in [x_1, x_2]\}  
+                \]
+
+                Учитывая, что $P\{\xi \in (-\infty, x_1)\} \geq 0$ и 
+                $P\{\xi \in [x_1, x_2]\} \geq 0$, получим
+
+                \[
+                    P\{\xi \in (-\infty, x_1)\} + P\{\xi \in [x_1, x_2]\} \geq
+                    P\{\xi \in (-\infty, x_1)\} = F(x_1)
+                \]
+
+                То есть
+                
+                \[
+                    \forall x_1 < x_2 \;\;\; F(x_1) \leq F(x_2)  
+                \]
+                \bigskip
+
+        \subsection{Билет 5}
+    
+            \textbf{Определение функции плотности
+            распределения:}
+                \smallskip
+
+                Функцией плотности распределения вероятностей
+                случайной величины $\xi$ называется функция
+                $f_{\xi}(x)$ такая, что:
+
+                \begin{enumerate}
+                    \item{$\forall x \in R \;\;\;\; f_{\xi}
+                    (x) \geq 0$;}
+                    \item{$F_{\xi}^{'}(x) = f_{\xi}(x)$;}
+                    \item{$\int_{-\infty}^{\infty} f_{\xi}(x)
+                    dx = 1$;}
+                    \item{$P\{a \leq \xi \leq b\} = \int_b^{a}
+                    f_{\xi}(x) dx$.}
+                \end{enumerate}
+                \bigskip        
+
+        \subsection{Билет 6}
+        
+            \textbf{Определение случайных независимых
+            велечин:}
+                \smallskip
+
+                Случайные велечины $\xi$ и $\mu$ называются
+                независимыми, если:
+
+                \[ 
+                    \forall x, y \in R \;\;\;\; P\{w : \xi(w)
+                    < x; \mu (w) < y\} = P\{w: \xi (w) < x\} *
+                    P\{w : \mu (w) < y\}
+                \]
+                \bigskip
+                
 \end{document}
