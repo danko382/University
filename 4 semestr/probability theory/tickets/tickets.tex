@@ -600,7 +600,7 @@
                 \begin{enumerate}
                     \item{$\forall x \in R \;\;\;\; f_{\xi}
                     (x) \geq 0$;}
-                    \item{$F_{\xi}^{'}(x) = f_{\xi}(x)$ почти всегда;}
+                    \item{$F_{\xi}^{'}(x) = f_{\xi}(x)$ почти всюду;}
                     \item{$\int_{-\infty}^{\infty} f_{\xi}(x)
                     dx = 1$;}
                     \item{$P\{a \leq \xi < b\} = \int_b^{a}
@@ -680,13 +680,13 @@
                     }
                     \item{Если $\xi \geq 0 \;\;\; (P\{\xi \geq 0\} = 1)$, то
                     $M\xi \geq 0$;}
-                    \item{Неравенство Коши"=Банюковского:
+                    \item{Неравенство Коши"=Буняковского:
                     
                     \[
                         M|\xi\eta| \leq M|\xi|M|\eta|;  
                     \]
                     }
-                    \item{Неравенство Чебушёва:
+                    \item{Неравенство Чебышёва:
                     
                     Пусть $\xi$~--- некоторая неотрицательная величина,
                     а $g(x)$, неубывающая на множестве значений $\xi$, 
@@ -701,11 +701,14 @@
 
             \textbf{Определение дисперсии случайной величины:}
                 \smallskip
+
+                Пусть $\xi$~--- случайная величина и $|M\xi| < +\infty$.
+                \bigskip
                 
                 Дисперсией случайной величины $\xi$ называется число 
 
                 \[
-                D\xi = M(\xi - M\xi^{2})
+                D\xi = M(\xi - M\xi)^2
                 \]
 
             \textbf{Свойства дисперсии:}
@@ -978,22 +981,22 @@
                 \]
                 \bigskip
 
-            \textbf{Математическим ожиданием случайной величины $\xi_0 \sim N(0, 1)$:}
+            \textbf{Математическим ожиданием стандарной нормальной
+            случайной величины $\xi_0 \sim N(0, 1)$:}
                 \smallskip     
             
                 \[
                     M\xi_0 = \int^{+\infty}_{-\infty} x e^{-\frac{x^2}{2}} dx =
                     \int^0_{-\infty} x e^{-\frac{x^2}{2}} dx +
-                    \int^{+\infty}_{0} x e^{-\frac{x^2}{2}} dx
+                    \int^{+\infty}_{0} x e^{-\frac{x^2}{2}} dx = 0
                 \]
                 \bigskip
 
-            \textbf{Математическим ожиданием случайной величины $\xi \sim N(a,
-            \sigma^2)$:}
+            \textbf{Математическим ожиданием случайной величины $\xi_0^2$:}
                 \smallskip     
 
                 \[
-                    M\xi_0 = \int^{+\infty}_{-\infty} x e^{-\frac{x^2}{2}} dx = 1
+                    M\xi_0^2 = \int^{+\infty}_{-\infty} x e^{-\frac{x^2}{2}} dx = 1
                 \]
                 \bigskip
 
@@ -1024,8 +1027,8 @@
                 \begin{equation*}
                     f(x)=
                     \begin{cases}
-                        1/(b - a), \;\;\;\; x \notin [a, b];\\
-                        0, \;\;\;\; x \in [a, b]\\
+                        0, \;\;\;\; x \notin [a, b];\\
+                        1/(b - a), \;\;\;\; x \in [a, b]\\
                     \end{cases}
                 \end{equation*}
 
