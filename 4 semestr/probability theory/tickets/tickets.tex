@@ -4,6 +4,7 @@
 \usepackage{amssymb}
 \usepackage[russian]{babel}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage[unicode]{hyperref}
 \graphicspath{{images/}}
 
@@ -855,15 +856,25 @@
             \textbf{Схема Бернулли:}
                 \smallskip
                 
-                \begin{center}
-                    \begin{tabular}{|c|c|c|}
-                        \hline 
-                        $\xi$ & 0 & 1\\ 
-                        \hline
-                        P & p & q\\
-                        \hline
-                    \end{tabular}
-                \end{center}
+                Эксперимент, удовлетворяющий следующим условиям,
+                называетяс схемой испытаний Бернулли:
+
+                \begin{enumerate}
+                    \item{Случайная величина $\xi$~--- количество успехов
+                    в $n$ независимых одинаковых испытаниях;}
+                    \item{                     
+                    Одинаковые: $P\{\epsilon_i = 1\} = p(i) \simeq p$
+                    (практически не зависящие от номера испытания);}
+                    \item{Случайные величины $\epsilon_i = \epsilon \sim Bern(p)$
+                    независимы:
+                    
+                    \[
+                        p\{\epsilon_i = 1\cap \epsilon_j = 1\} =
+                        p\{\epsilon_i = 1\} p \{\epsilon_j = 1\} \;\;\; 
+                        \forall i \neq j.  
+                    \]
+                    }
+                \end{enumerate}
 
         \subsection{Билет 11}
             
@@ -937,6 +948,155 @@
                 \[
                     \forall x \in R \;\;\; F(x) = \int^x_{-\infty} f(t) dt.  
                 \]
+                \bigskip
 
+        \subsection{Билет 13}
+                
+            \textbf{Нормальное распределение $\xi \sim N(a, \sigma^2)$.}
+                \bigskip
+
+            \textbf{Функция плотности случайной величины $\xi \sim N(a,
+            \sigma^2)$:}
+                \smallskip
+
+                \[
+                    f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}}
+                    exp(-\frac{(x - a)^2}{2 \sigma^2})  
+                \]
+
+                \begin{center}
+                    \includegraphics[width=60mm]{"2.png"}
+                \end{center}
+                \bigskip
+
+            \textbf{Функция плотности случайной величины $\xi_0 \sim N(0, 1)$:}
+                \smallskip   
+
+                \[
+                    f(x) = \frac{1}{\sqrt{2 \pi}}
+                    exp(-\frac{x^2}{2})  
+                \]
+                \bigskip
+
+            \textbf{Математическим ожиданием случайной величины $\xi_0 \sim N(0, 1)$:}
+                \smallskip     
+            
+                \[
+                    M\xi_0 = \int^{+\infty}_{-\infty} x e^{-\frac{x^2}{2}} dx =
+                    \int^0_{-\infty} x e^{-\frac{x^2}{2}} dx +
+                    \int^{+\infty}_{0} x e^{-\frac{x^2}{2}} dx
+                \]
+                \bigskip
+
+            \textbf{Математическим ожиданием случайной величины $\xi \sim N(a,
+            \sigma^2)$:}
+                \smallskip     
+
+                \[
+                    M\xi_0 = \int^{+\infty}_{-\infty} x e^{-\frac{x^2}{2}} dx = 1
+                \]
+                \bigskip
+
+            \textbf{Дисперсия случайной величины $\xi_0 \sim N(0, 1)$:}  
+                \smallskip
+
+                \[
+                    D\xi_0 = M\xi^2_0 - (M\xi_0)^2 = 1 - 0 = 1.  
+                \]
+
+            \textbf{Дисперсия случайной величины $\xi \sim N(a,
+            \sigma^2)$:}  
+                \smallskip
+
+                \[
+                    D\xi = D(\sigma\xi_0 + a) = \sigma^2.  
+                \]  
+                \bigskip
+                
+        \subsection{Билет 14}
+        
+            \textbf{Равномерное распределение $\xi \sim R[a, b]$.}
+                \bigskip
+
+            \textbf{Функция плотности случайной величины $\xi$:}
+                \smallskip
+                
+                \begin{equation*}
+                    f(x)=
+                    \begin{cases}
+                        1/(b - a), \;\;\;\; x \notin [a, b];\\
+                        0, \;\;\;\; x \in [a, b]\\
+                    \end{cases}
+                \end{equation*}
+
+                \begin{center}
+                    \includegraphics[width=60mm]{"3.png"}
+                \end{center}
+                \bigskip
+
+            \textbf{Математичяеское ожидание случайной величины $\xi$:}
+                \smallskip
+                
+                \[
+                    M\xi = \int^a_b x \frac{1}{b - a}dx = \frac{b^2 - a^2}{2(b - a)}=
+                    \frac{b + a}{2}.  
+                \]
+                \bigskip
+
+            \textbf{Математическое ожидание случаной величины $\xi^2$:}
+                \smallskip
+
+                \[
+                    M\xi^2 = \int^a_b x^2 \frac{1}{b - a}dx = 
+                    \frac{b^3 - a^3}{3(b - a)} = \frac{b^2 + ab + a^2}{3}.  
+                \]
+                \bigskip
+
+            \textbf{Дисперсия случайной величины $\xi$:}
+                \smallskip
+                
+                \[
+                    D\xi = M\xi^2 - (M\xi)^2 = \frac{(b + a)^2}{4} -
+                    \frac{b^2 + ab + a^2}{3} = \frac{(b - a)^2}{12}.  
+                \]
+                \bigskip
+
+        \subsection{Билет 15}
+
+            \textbf{Определение случайных независимых
+            велечин:}
+                \smallskip
+
+                Случайные велечины $\xi$ и $\mu$ называются
+                независимыми, если:
+
+                \[ 
+                    \forall x, y \in R \;\;\;\; P\{w : \xi(w)
+                    < x; \mu (w) < y\} = P\{w: \xi (w) < x\} *
+                    P\{w : \mu (w) < y\}
+                \]
+                \bigskip
+
+            \textbf{Критерий независимости дискретной случаной величины:}
+                \smallskip
+                
+                Дискретные случайные величины $\xi$ и $\eta$ независимы, тогда
+                и только тогда, когда:
+
+                \[
+                    \forall i \neq j \;\;\; p_{ij} = p_i p_j  
+                \]
+                \bigskip
+
+            \textbf{Критерий независимости абсолютно непрерывной случаной величины:}
+                \smallskip
+                
+                Абсолютно непрерывные дискретные случайные величины $\xi$ и
+                $\eta$ независимы, тогда и только тогда, когда:
+
+                \[
+                    f_{\xi \eta}(x, y) = f_{\xi} (x) f_{\eta} (y). 
+                \]    
+            
             
 \end{document}
