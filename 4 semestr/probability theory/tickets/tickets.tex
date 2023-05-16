@@ -622,5 +622,321 @@
                     P\{w : \mu (w) < y\}
                 \]
                 \bigskip
+
+        \subsection{Билет 7}
+
+            Пусть $(\Omega, \mathcal{F}, P)$~--- вероятностное пространство
+            и пусть $\xi$~--- случайная величина на нём.
+
+            \[
+                \xi = \xi(w) \;\;\; P = P(w)
+            \]
+            \bigskip
+
+            \textbf{Определение математического ожидания:}
+                \smallskip
+
+                Математическим ожиданием случайной величины $\xi$ называется
                 
+                \[
+                    M\xi = \int_{\Omega} \xi(w) d P(w)  
+                \]
+                
+                Пусть для $\xi$ построена функция распределения $F_{\xi}(x) =
+                P\{\xi < x\}$.
+
+                Тогда
+
+                \[
+                    M\xi = \int^{\infty}_{-\infty}  x d F_{\xi} (x)  
+                \]
+
+                Для дискретной случайной величины математическое ожидание 
+                находится по формуле:
+
+                \[
+                    M\xi = \sum^{\infty}_{i = 1} x_i p_i  
+                \]
+
+                Для абсолютно непрерывной величины:
+
+                \[
+                    M\xi = \int^{\infty}_{-\infty} x f_{\xi} (x) dx  
+                \]
+
+            \textbf{Свойствай математического ожидания:}
+                \smallskip    
+
+                \begin{enumerate}
+                    \item{$Mc = c$, $c$~--- const;}
+                    \item{$Mc\xi = cM\xi$;}
+                    \item{$M(\xi \pm \eta) = M\xi \pm M\eta$;}
+                    \item{Если $\xi$ и $\eta$ независимы, то 
+                    
+                    \[
+                        M\xi\eta = M\xi M\eta;   
+                    \]
+                    }
+                    \item{Если $\xi \geq 0 \;\;\; (P\{\xi \geq 0\} = 1)$, то
+                    $M\xi \geq 0$;}
+                    \item{Неравенство Коши"=Банюковского:
+                    
+                    \[
+                        M|\xi\eta| \leq M|\xi|M|\eta|;  
+                    \]
+                    }
+                    \item{Неравенство Чебушёва:
+                    
+                    Пусть $\xi$~--- некоторая неотрицательная величина,
+                    а $g(x)$, неубывающая на множестве значений $\xi$, 
+                    непрерывная функиция. Тогда
+                    
+                    \[
+                        \forall \epsilon > 0 \;\;\; P\{\xi \geq \epsilon\} \leq
+                        \frac{Mg(\xi)}{g(\epsilon)};
+                    \]
+                    }
+                \end{enumerate}
+
+            \textbf{Определение дисперсии случайной величины:}
+                \smallskip
+                
+                Дисперсией случайной величины $\xi$ называется число 
+
+                \[
+                D\xi = M(\xi - M\xi^{2})
+                \]
+
+            \textbf{Свойства дисперсии:}
+                \smallskip
+
+                \begin{enumerate}
+                    \item{$D\xi \geq 0$;}
+                    \item{$Dc = 0$;}
+                    \item{$Dc\xi = c^2 D\xi$;}
+                    \item{Если случайные величины $\xi$ и $\eta$ независимы, то
+                    
+                    \[
+                        D(\xi \pm \eta) = D\xi \pm D\eta;
+                    \]
+                    }
+                    \item{$D\xi = M\xi^{2} - (M\xi)^2$;}
+                    \item{Для произвольных случайных величин $\xi$ и $\eta$ с
+                    $M|\xi| < + \infty$ и $M|\eta| < + \infty$ верно
+                    
+                    \[
+                        D(\xi \pm \eta) = D\xi \pm D\eta \pm cov(\xi, \eta),    
+                    \]
+
+                    где $cov(\xi, \eta) = M(\xi - M\xi)(\eta - M\eta)$~--- ковариация.
+                    }
+                \end{enumerate}
+
+        \subsection{Билет 8}        
+
+            \textbf{Определение дискретной случайной величины:}
+                \smallskip
+
+                Дискретной случайной величиной называется случайная величина,
+                множество значений которой конечно или счётно, то есть
+
+                \[
+                    \xi \in \{x_1, x_2, \dots\}  
+                \]
+
+        \subsection{Билет 9}
+
+            \textbf{Распределение Бернулли $(\xi \sim Bern(p))$.}
+                \bigskip
+        
+            \textbf{Используемые обозначения:}
+                \smallskip
+
+                \begin{enumerate}
+                    \item{A~--- "успех";}
+                    \item{$\overline{A}$~--- "неуспех";}
+                    \item{$\xi = 1$, если A, в противном случае $\xi = 0$;}
+                    \item{p~--- вероятность наступления A;}
+                    \item{q~--- вероятность наступления $\overline{A}$.}
+                \end{enumerate}
+                \bigskip
+
+            \textbf{Закон распределения:}
+                \smallskip
+                
+                \[
+                    P\{\xi = k\} = p^k q^{n - k},  
+                \]
+                где k = 0,1.
+                \bigskip
+
+            \textbf{Математическое ожидание случайной величины $\xi$:}
+                \smallskip
+                
+                \[
+                    M\xi = 0 * q + 1 * p = p  
+                \]
+                \bigskip
+
+            \textbf{Математическое ожидание случайной величины $\xi^2$:}
+                \smallskip
+                
+                \[
+                    M\xi^2 = 0 * q + 1 * p = p  
+                \]
+                \bigskip
+
+            \textbf{Дисперсия:}
+                \smallskip 
+            
+                \[
+                    D\xi = M\xi^2 - (M\xi)^2 = p - p^2 = p (1 - p) = pq.  
+                \]
+
+        \subsection{Билет 10}
+
+            \textbf{Биномиальное распределение $(\xi \sim Bin(n; p))$.}
+                \bigskip
+
+            \textbf{Используемые обозначения:}
+                    \smallskip
+
+                    \begin{enumerate}
+                        \item{A~--- "успех";}
+                        \item{$\overline{A}$~--- "неуспех";}
+                        \item{$\xi = 1$, если A, в противном случае $\xi = 0$;}
+                        \item{p~--- вероятность наступления A;}
+                        \item{q~--- вероятность наступления $\overline{A}$.}
+                    \end{enumerate}
+                    \bigskip
+
+            \textbf{Закон распределения:}
+                \smallskip
+                
+                \[
+                    P\{\xi = k\} = C^k_n p^k q^{n - k},
+                \]
+
+                где $k = 0, 1, \dots, n$.
+                \bigskip
+
+            \textbf{Представление случайной величины $\xi$:}
+                \smallskip
+
+                Случайная велична $\xi$ может быть представлена 
+                в виде суммы случайных величин $\epsilon_i \sim Bern(p)$, каждая из
+                которых выражает результа $i$"=го испытания.
+
+                \[
+                    \xi = \epsilon_1 + \epsilon_2 + \dots + \epsilon_n.
+                \]
+                \bigskip
+
+            \textbf{Математическое ожидание случайной величины $\xi$:}
+                \smallskip
+
+                \[
+                    M\xi = M(\epsilon_1 + \epsilon_2 + \dots + \epsilon_n) =
+                    M(\epsilon_1) + M(\epsilon_2) + \dots + M(\epsilon_n) =
+                    p + p + \dots + p = np.
+                \]
+                \bigskip
+
+            \textbf{Дисперсия случайной величины $\xi$:}
+                \smallskip
+
+                \[
+                    D\xi = D(\epsilon_1 + \epsilon_2 + \dots + \epsilon_n) =
+                    D(\epsilon_1) + D(\epsilon_2) + \dots + D(\epsilon_n) =
+                    pq + pq + \dots + pq = npq.
+                \]
+                \bigskip
+
+            \textbf{Схема Бернулли:}
+                \smallskip
+                
+                \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                        \hline 
+                        $\xi$ & 0 & 1\\ 
+                        \hline
+                        P & p & q\\
+                        \hline
+                    \end{tabular}
+                \end{center}
+
+        \subsection{Билет 11}
+            
+            Докажем, что $P\{\xi = k\} = C^k_n p ^k q^{n - k}$.
+            \bigskip
+
+            Пусть $\Omega = \{\overline{w} = (\epsilon_1, \epsilon_2, \dots, 
+            \epsilon_n)\}$, где $\epsilon_i \sim Bern(p); \;\;\; \epsilon_i \in
+            {0, 1}$, то есть $\overline{w}$~--- последовательность 
+            $n$ нулей или единиц~--- результатов испытаний Бернулли.
+            \bigskip
+
+            Событие $\{\xi \ k\} = \{\overline{w} = (\epsilon_1, \epsilon_2, \dots, 
+            \epsilon_n) : \epsilon_1 + \epsilon_2 + \dots + \epsilon_n = k\}$ состоит
+            из $\overline{w}$~--- векторов, состоящих из k~--- единиц и (n - k)~---
+            нулей.
+            \bigskip
+
+            Пусть $\overline{w^{*}} = (1, 1, \dots, 1, 0, 0, \dots, 0)$~---
+            фиксированный исход, в котором количество единиц = k, а нулей = n - k.
+            \smallskip
+
+            Найдём верояность этого исхода.
+            \smallskip
+
+            \[
+                p^{*} = P\{\epsilon_1 = 1; \dots ; \epsilon_k = 1; \epsilon_{k + 1} =
+                0; \dots ; \epsilon_n = 0\} = 
+            \]
+            \[
+                = P\{\epsilon_1 = 1\} * \dots * 
+                P\{\epsilon_k = 1\} * P\{\epsilon_{k + 1} = 0\} * \dots * 
+                P\{\epsilon_n = 0\} = p^k q^{n - k}
+            \]
+            \smallskip
+
+            Здесь воспользовались незвисимостью испытаний и тем, что 
+            испытания предполагаются одинаковыми, то есть $p(n) = p$ вероятность
+            "успеха" не зависит от номера шага.
+            \bigskip
+
+            Заметим, что в остальных $\overline{w} \in A$ также k единиц и (n - k)
+            нулей, а значит у каждого $\overline{w} \in A$ вероятность 
+            $p^k q^{n - k}$.
+            \bigskip
+
+            Определим количество исходов в A. Оно будет равно количеству способов
+            выбрать k"=й мест из n для того, чтобы поставить на них 1. Остальные
+            позиции среди n мест заполняются нулями.
+            \smallskip
+
+            Отсюда делаем вывод, что количество равно $C^k_n$.
+            \smallskip
+
+            Следовательно,
+
+            \[
+                P\{\xi = k\} = P\{\overline{w}: \epsilon_1 + \epsilon_2 + \dots +
+                \epsilon_n = k\} = \sum_{\overline{w} \in A} P\{\overline{w}\} =
+                C^k_n p^k q^{n - k}.
+            \]
+            
+        \subsection{Билет 12}
+
+            \textbf{Определение абсолютно непрерывной случайной величины:}
+                \smallskip
+
+                Случайная величина $\xi$ называется абсолютно непрерывной,
+                если существует такая неотрицательная функция $f(x)$, что
+
+                \[
+                    \forall x \in R \;\;\; F(x) = \int^x_{-\infty} f(t) dt.  
+                \]
+
+            
 \end{document}
