@@ -61,3 +61,47 @@
                 где $y(x_0) = y_0, \dots, y^{(n-1)}(x_0) = y^{(n - 1)}_0$~---
                 начальные условия и $x_0, y_0, \dots, y^{(n - 1)}_0$~--- заданные
                 числа.
+
+        \subsubsection{Линейно зависимые и линейно независимые функции}
+        
+            \textbf{Определение линейно зависимых функций}
+                \smallskip
+
+                Функции $\varphi_1(x), \varphi_2(x), \dots, \varphi_m(x)$ называются
+                линейно зависимыми на отрезке $[a, b]$, если найдутся константы
+                $\alpha_1, \alpha_2, \dots, \alpha_m$~--- числа, не все равные нулю,
+                такие, что линейная комбинация:
+
+                \[
+                    \alpha_1\varphi(x) + \dots + \alpha_m\varphi(m) \equiv 0  
+                \]
+
+            \textbf{Определение линейно независимых функций}
+                \smallskip
+                
+                Функции $\varphi_1(x), \dots, \varphi_m(x)$ называются 
+                линейно независимыми на отрезке $[a, b]$, если 
+
+                \[
+                    \alpha_1\varphi_1(x) + \dots + \alpha_m\varphi_m(x) \equiv 0
+                    \Leftrightarrow \alpha_1 = \dots = \alpha_m = 0  
+                \]
+
+        \subsubsection{Определитель Вронского функций $\varphi_1(x),\varphi_2(x),
+        \dots, \varphi_m(x)$}
+            
+            \textbf{Определение определителя Вронского функций
+            $\varphi_1(x),\varphi_2(x), \dots, \varphi_m(x)$}
+                \smallskip
+
+                Определителем Вронского функций $\varphi_1(x),\varphi_2(x),
+                \dots, \varphi_m(x)$ называется:
+
+                \[
+                \begin{vmatrix}
+                    \varphi_1(x)\ \varphi_2(x)\ \dots\ \varphi_m(x)\\
+                    \varphi^{'}_1(x)\ \varphi^{'}_2(x)\ \dots\ \varphi^{'}_m(x)\\
+                    \dots \\
+                    \varphi^{(n - 1)}_1(x)\ \varphi^{(n - 1)}_2(x)\ \dots\ \varphi^{(n - 1)}_m(x)\\
+                \end{vmatrix}
+                \]
