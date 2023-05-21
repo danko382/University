@@ -37,8 +37,8 @@
         \subsubsection{Задача Коши для дифференциального уравнения n"=го порядка}
         
             \[
-                (1) \;\;\; y^{(n) + a_1(x)y^{(n - 1)} + \dots +
-                a_n(x)y = f(x)}  
+                (1) \;\;\; y^{(n)} + a_1(x)y^{(n - 1)} + \dots +
+                a_n(x)y = f(x)  
             \]
             \bigskip
 
@@ -98,11 +98,12 @@
                 \dots, \varphi_m(x)$ называется:
 
                 \[
+                W(x) =
                 \begin{vmatrix}
-                    \varphi_1(x)\ \varphi_2(x)\ \dots\ \varphi_m(x)\\
-                    \varphi^{'}_1(x)\ \varphi^{'}_2(x)\ \dots\ \varphi^{'}_m(x)\\
+                    \varphi_1(x) & \varphi_2(x) & \dots & \varphi_m(x)\\
+                    \varphi^{'}_1(x) & \varphi^{'}_2(x) & \dots & \varphi^{'}_m(x)\\
                     \dots \\
-                    \varphi^{(n - 1)}_1(x)\ \varphi^{(n - 1)}_2(x)\ \dots\ \varphi^{(n - 1)}_m(x)\\
+                    \varphi^{(n - 1)}_1(x) & \varphi^{(n - 1)}_2(x) & \dots &\varphi^{(n - 1)}_m(x)\\
                 \end{vmatrix}
                 \]
 
@@ -146,7 +147,7 @@
                     a_0y^{(n)} + a_1 y^{(n - 1)} + \dots + a_n y = f(x),  
                 \]
 
-                где $a_0, \dots, a_n$~--- заданные числа.
+                где $a_0, \dots, a_n$~--- заданные числа, $f(x)$~--- заданная функция одного переменного.
                 \bigskip
 
         \subsubsection{Необходимое условие линейной зависимости}
