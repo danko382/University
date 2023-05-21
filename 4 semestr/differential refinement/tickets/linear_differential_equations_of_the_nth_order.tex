@@ -439,5 +439,32 @@
             \includegraphics[width=140mm]{"1.png"}
 
             \includegraphics[width=140mm]{"2.png"}
+
+        \subsection{Формула Остроградского"=Луивилля}
+            
+            Пусть $y_1(x), \dots, y_n(x)$~--- решение однородного линейного
+            уравнения: $y^{(n)} + a_1(x)y^{(n - 1)} + \dots +
+            a_n(x)y = 0 \;\;\; a \leq x \leq b$.
+
+            Рассмотрим определитель Вронского:
+
+            \[
+                \mathbf{W}(x) = 
+                \begin{vmatrix}
+                    y_1(x) \ \dots \ y_n(x)\\
+                    \ \dots\ \\
+                    y_1^{(n - 1)}(x) \ \dots \ y_n^{(n - 1)}(x)\\
+                \end{vmatrix}
+                =
+                \sum (\pm) y^{(k1)}_{j_1}(x)y^{(k2)}_{j_2}(x) \dots y^{(kn)}_{j_n}(x)
+            \]
+
+            \textbf{Сама формула}
+
+            Пусть $x_0$ произвольная точка из $[a, b]$. Тогда:
+
+            \[
+                \mathbf{W}(x) = \mathbf{W}(x_0)e^{-\int^x_{x_0}a_1(t)dt}
+            \]
         
             
