@@ -367,3 +367,77 @@
                         \Rightarrow \;\;\; c_k(x) = \int \frac{\mathbf{W}_k(x)}
                         {\mathbf{W}(x)} dx
                 \]
+
+        \subsection{Обоснование метода вариации}
+        
+            Рассмотрим частный случай $n = 2$:
+
+            \[
+                (1) \;\;\; y^{''} + a_1(x)y^{'} + a_2(x)y = f(x)
+            \]
+            \[
+                (2) \;\;\; y^{''} + a_1(x)y^{'} + a_2(x)y = 0
+            \]
+            \[
+                \varphi_1(x), \varphi_2(x)
+            \]~--- ФСР (2)
+
+            \[
+                y_0 = c_1 \varphi_1(x) + c_2 \varphi_2(x)
+            \]
+            \[
+                y_h = c_1(x)\varphi_1(x) + c_2(x)\varphi_2(x)
+            \]
+
+            \begin{equation*}
+                (5)
+                \begin{cases}
+                    c_1^{'}(x)\varphi_1(x) + c_2^{'}(x)\varphi_2(x) = 0\\
+                    c_1^{'}(x)\varphi_1^{'}(x) + c_2^{'}(x)\varphi^{'}_2(x) = f(x)\\
+                \end{cases}
+            \end{equation*}
+
+            \[
+                c_1(x) = \int \frac{\mathbf{W_1}(x)}{\mathbf{W}(x)}dx \;\;\;
+                c_2(x) = \int \frac{\mathbf{W_2}(x)}{\mathbf{W}(x)}dx  
+            \]
+
+            Подставляем $c_1(x)$ и $c_2(x)$ в (4) $\Rightarrow$
+
+            Покажем, что полученное $y_h$ является решением (1):
+
+            \[
+                y^{'}_h = c_1^{'}(x)\varphi_1(x) + c_1(x)\varphi_1^{'}(x) +
+                c_2^{'}(x)\varphi_2(x) + c_2(x)\varphi_2^{'}(x) = c_1(x)\varphi_1^{'}(x)
+                +  c_2(x)\varphi^{'}_2(x)  
+            \]
+            \[
+                y_h^{''} = c^{'}_1(x)\varphi^{'}_1(x) + c_1\varphi^{''}_1(x)
+                + c^{'}_2(x)\varphi^{'}_2(x) + c_2(x)\varphi^{''}_2(x) =
+                f(x) + c_1(x)\varphi^{''}_1(x) + c_2(x)\varphi^{''}_2(x) = y_h^{''} 
+                \Rightarrow 
+            \]
+            \[
+                f(x) + c_1(x)\varphi^{''}_1(x) + c_2(x)\varphi^{''}_2(x) +
+                a_1(x)(c_1(x)\varphi^{'}_1(x) + c_2(x)\varphi^{'}_2(x)) +
+                a_2(x)(c_1(x)\varphi_1(x) + c_2(x)\varphi_2(x)) =
+            \]
+            \[
+                = f(x) + c_1(x)(\varphi^{''}_1(x) + a_1(x)\varphi_1^{'}(x) +
+                a_2(x)\varphi_1(x)) + a_2(x)(\varphi^{''}_2(x) + a_1(x)\varphi^{''}_1(x) +
+                a_2(x)\varphi_2(x)) = f(x)  
+            \]
+
+            То есть
+
+            \[
+                l(y_h) \equiv f(x)  
+            \]
+
+        \subsection{Пример: $y^{''} + w^2y = f(x)$}
+
+            \includegraphics[width=140mm]{"1.png"}
+
+            \includegraphics[width=140mm]{"2.png"}
+        
+            
