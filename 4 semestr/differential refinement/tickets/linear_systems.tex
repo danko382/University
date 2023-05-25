@@ -107,7 +107,7 @@
                 $a_{ij}(x)$~--- заданные непрерывные функции,
                 $y_{i}$~--- неизвестные функции.
 
-        \subsection{Решение системы}
+        \subsubsection{Решение системы}
         
             \textbf{Определение решения нормальной линейной системы}
             \smallskip
@@ -135,7 +135,7 @@
                 \Phi^{'}(x) = A(x)\Phi(x) + F(x)
             \]
 
-        \subsection{Задача Коши для системы}
+        \subsubsection{Задача Коши для системы}
 
             \begin{equation*}
                 (1)
@@ -183,7 +183,7 @@
                     y^0_n\\
                 \end{pmatrix}$
 
-        \subsection{Линейно зависимые и линейно независимые вектор"=функции}
+        \subsubsection{Линейно зависимые и линейно независимые вектор"=функции}
         
             \textbf{Определение линейно зависимых вектор"=функций}
             \smallskip
@@ -206,7 +206,7 @@
                 $\alpha_1\Phi_1(x) + \alpha_n\Phi_n(x) = 0 \;\;\;
                 \Leftrightarrow \;\;\; \forall \alpha_i = 0 \;\;\; i = \overline{1, n}$
 
-        \subsection{Определитель Вронского вектор"=функций}
+        \subsubsection{Определитель Вронского вектор"=функций}
         
             \textbf{Определение определителя Вронского вектор"=функций}
             \smallskip
@@ -218,7 +218,7 @@
                     W = |\Phi_1(x) \Phi_2(x) \dots \Phi_n(x)|  
                 \]
 
-        \subsection{Фундаментальная система решений линейной системы}
+        \subsubsection{Фундаментальная система решений линейной системы}
         
             \textbf{Определение фундаментальной системы решений нормальной
             линейной системы}
@@ -231,7 +231,7 @@
             фундаментальной системой решений.
 
 
-        \subsection{Фундаментальная матрица решений однородной системы}
+        \subsubsection{Фундаментальная матрица решений однородной системы}
         
             \textbf{Определение фундаментальной матрицы решений нормальной
             однородной системы}
@@ -242,7 +242,7 @@
 
                 $$Y_1(x), \dots, Y_n(x)$$~--- ФСР однородной системы.
 
-        \subsection{Линейные системы с постоянными коэффициентами}
+        \subsubsection{Линейные системы с постоянными коэффициентами}
         
             \textbf{Определение однородной линейной системы с постоянными 
             коэффициентами}
@@ -270,4 +270,181 @@
                     y_n(x)\\
                 \end{pmatrix}
                 $
-            
+
+        \subsubsection{Собственные значения и собственные векторы матрицы}
+        
+            Пусть
+
+            $
+                A(x) = 
+                \begin{pmatrix}
+                    a_{11}(x)\ \dots \ a_{1n}(x)\\
+                    \dots\\
+                    a_{n1}(x)\ \dots \ a_{nn}(x)\\
+                \end{pmatrix}
+            $~--- числовая матрица.
+            \bigskip
+
+            Число $\lambda$ называется собственным значением матрицы $A$, если
+            существует вектор 
+
+            \[
+                V = 
+                \begin{pmatrix}
+                    v_1\\
+                    \dots\\
+                    v_n\\
+                \end{pmatrix}
+                \neq 0 \;\;\; : \;\;\; AV = \lambda V
+            \]
+
+            А сам вектор $V$~--- называтся собственным вектором матрицы $A$,
+            соответствующим собственному значению $\lambda$.
+
+        \subsubsection{Матричная экспонента}
+        
+            \[
+                (1) \;\;\; E + A + \frac{1}{2!}A^2 + \dots + \frac{1}{n!}A^n + \dots  
+            \]
+
+            \textbf{Определение матричной экспоненты}
+            \smallskip
+
+                Сумма ряда (1) обозначается
+
+                \[
+                    e^{A} = \sum^{\infty}_{k = 0} \frac{1}{k!} A^k
+                \]
+
+                и называется матричной экспонентой.
+
+    \subsection{Извинения}
+    
+        Я не успеваю всё качественно проверить и напечатать, хочу спать, приношу
+        извинения за неудобства.
+
+    \subsection{Теоремы, алгоритмы, примеры}
+    
+        \subsubsection{Свойства решений однородной системы}
+
+            \begin{center}
+                \includegraphics[width=120mm]{"28.png"}
+            \end{center}
+
+        \subsubsection{Необходимое условие линейной зависимости вектор"=функций}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"27.png"}
+            \end{center}
+
+        \subsubsection{Условие линейной независимости решений однородной системы}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"26.png"}
+
+                \includegraphics[width=120mm]{"25.png"}
+            \end{center}
+
+        \subsubsection{Существование ФСР}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"23.png"}
+
+                \includegraphics[width=120mm]{"24.png"}
+            \end{center}
+
+        \subsubsection{Вид общего решения однородной системы}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"21.png"}
+            \end{center}
+
+        \subsubsection{Вид общего решение неоднородной системы}   
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"22.png"}
+            \end{center}
+
+        \subsubsection{Свойства фундаментальных матриц}    
+
+            \begin{center}
+                \includegraphics[width=120mm]{"19.png"}
+            \end{center}
+
+        \subsubsection{Метод вариации нахождения частного решения}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"17.png"}
+
+                \includegraphics[width=120mm]{"18.png"}
+            \end{center}
+
+        \subsubsection{Формула Коши}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"20.png"}
+            \end{center}
+
+        \subsubsection{Нахождение собственных значений и собственных векторов матрицы}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"16.png"}
+            \end{center}
+
+        \subsubsection{Метод Эйлера (случай простых собственных значений)(включая лемму)}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"14.png"}
+                    
+                \includegraphics[width=80mm]{"15.png"}
+            \end{center}
+
+        \subsubsection{Пример $Y^{'} = AY$}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"12.png"}
+
+                \includegraphics[width=120mm]{"13.png"}
+            \end{center}
+
+        \subsubsection{Лемма $|a_{ij}^{(m)}| \leq n^{m - 1} d^m$}
+        
+            \begin{center}
+                \includegraphics[width=140mm]{"3.png"}
+            \end{center}
+
+        \subsubsection{Существование $e^A$} 
+
+            \[
+                (1) \;\;\; E + A + \frac{1}{2!}A^2 + \dots + \frac{1}{n!}A^n + \dots  
+            \]
+        
+            \begin{center}
+                \includegraphics[width=140mm]{"4.png"}
+
+                \includegraphics[width=140mm]{"5.png"}
+            \end{center}
+
+        \subsubsection{$e^{Ax}$~--- фундаментальная матрица системы $Y^{'} = AY$.}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"6.png"}
+
+                \includegraphics[width=120mm]{"7.png"}
+            \end{center}
+
+        \subsubsection{Формула Коши для линейных систем с постоянными коэффициентами}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"8.png"}
+            \end{center}
+
+        \subsubsection{Пример: нахождение $e^A$}
+        
+            \begin{center}
+                \includegraphics[width=120mm]{"9.png"}
+
+                \includegraphics[width=120mm]{"10.png"}
+
+                \includegraphics[width=120mm]{"11.png"}
+            \end{center}
