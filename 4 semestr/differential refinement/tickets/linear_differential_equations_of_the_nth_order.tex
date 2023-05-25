@@ -466,5 +466,101 @@
             \[
                 \mathbf{W}(x) = \mathbf{W}(x_0)e^{-\int^x_{x_0}a_1(t)dt}
             \]
+
+        \subsection{Метод Эйлера (случай простых корней)}
+    
+            \[
+                (1) \;\;\; a_0y^{(n)} + a_1y^{(n - 1)} + \dots + a_ny = 0,
+            \]
         
-            
+            где $a_0, \dots, a_n$~--- заданные числа.
+            \bigskip
+
+            \textbf{Метод Эйлера решения однородного линейного уравнения с 
+            постоянными коэффициентами (случай простых корней)}
+            \smallskip
+
+                \begin{enumerate}
+                    \item{Ищем частное решение уравнения (1) в виде
+                    \[
+                        y(x) = e^{\lambda x},    
+                    \]
+
+                    $\lambda$~--- число.
+                    }
+                    \item{Вычисляем формулы
+                    
+                    \[
+                        y^{'}(x) = \lambda e^{\lambda x}  
+                    \]
+                    \[
+                        y^{''}(x) = \lambda^2 e^{\lambda x}  
+                    \]
+                    \[
+                        \dots  
+                    \]
+                    \[
+                        y^{(n)}(x) = \lambda^n e^{\lambda x}  
+                    \]
+                    }
+                    \item{Подставляем эти формулы в (1):
+                    
+                    \[
+                        a_0\lambda^ne^{\lambda x} + a_1\lambda^{n - 1}e^{\lambda x} +
+                        \dots + a_ne^{\lambda x} \equiv 0    
+                    \]
+                    \[
+                        e^{\lambda x}(a_0 \lambda^n + \dots + a_n) \equiv 0 
+                    \]
+                    }
+                    \item{так как $e^{\lambda x} \neq 0$, то
+                    
+                    \[
+                        y = e^{\lambda x}~---  
+                    \]
+
+                    является решением уравнения (1) $\Leftrightarrow \;\;\; \lambda$
+                    является корнем алгебраического уравнения:
+
+                    \[
+                        (2) \;\;\; a_0 \lambda^n + \dots + a_n = 0  
+                    \]
+                    }
+                    \item{(2) имеет n простых корней $\lambda_1, \dots, 
+                    \lambda_n \Rightarrow$ функции $y_1 = e^{\lambda_1 x}, 
+                    y_2 = e^{\lambda_2 x}, \dots, y_n = e^{\lambda_n x}$~---
+                    решение (1).
+                    }
+                    \item{Поажем, что ${e^{\lambda_k x}}^n_{k = 1}$~--- ФСР (1)
+                    
+                    Рассмотрим определитель Вронского $\mathbf{W}$
+
+                    \[
+                        \mathbf{W}(x) =
+                        \begin{vmatrix}
+                            e^{\lambda_1 x} \ \dots \ e^{\lambda_n x}\\
+                            \lambda_1 e^{\lambda_1 x} \ \dots \ \lambda_n e^{\lambda_n x}\\
+                            \ \dots \ \\
+                            \lambda_1^{(n - 1)} e^{\lambda_1 x} \ \dots \ \lambda_n^{(n - 1)} e^{\lambda_n x}\\
+                        \end{vmatrix}  
+                        =
+                        e^{\lambda_1 x} e^{\lambda_2 x} \dots e^{\lambda_n x} 
+                        \begin{vmatrix}
+                            1 \ \dots \ 1\\
+                            \lambda_1 \ \dots \ \lambda_n\\
+                            \ \dots \ \\
+                            \lambda_1^{(n - 1)}\ \dots \ \lambda_n^{(n - 1)}\\
+                        \end{vmatrix} =
+                    \]
+                    \[
+                        = e^{\lambda_1 x} e^{\lambda_2 x} \dots e^{\lambda_n x} \prod 
+                        (\lambda_j - \lambda_k) \neq 0 \Rightarrow 
+                    \]
+                    ${e^{\lambda_k x}}^n_{k = 1}$~--- ФСР уравнения (1) $\Rightarrow$
+                    общее решение (1) имеет вид:
+
+                    \[
+                        y = c_1e^{\lambda_1 x} + \dots + c_ne^{\lambda_n x}
+                    \]
+                    }
+                \end{enumerate}   
