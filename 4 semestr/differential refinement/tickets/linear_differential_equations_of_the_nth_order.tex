@@ -10,12 +10,10 @@
                 \smallskip
 
                 Однородное дифференциальное уравнение n"=го порядка имеет вид:
-
                 \[
                     a_0(x)y^{(n)}(x) + a_1(x)y^{(n - 1)}(x) + \dots + 
                     a_n(x)y = 0,  
                 \]
-
                 где $a_0(x), \dots, a_n(x)$~--- заданные непрерывные
                 функции.
                 \bigskip
@@ -25,30 +23,28 @@
                 \smallskip
 
                 Неоднородное дифференциальное уравнение n"=го порядка имеет вид:
-
                 \[
                     a_0(x)y^{(n)}(x) + a_1(x)y^{(n - 1)}(x) + \dots + 
                     a_n(x)y = f(x),  
                 \]
-
                 где $a_0(x), \dots, a_n(x), f(x)$~--- заданные непрерывные
                 функции.
 
         \subsubsection{Задача Коши для дифференциального уравнения n"=го порядка}
         
-            \[
-                (1) \;\;\; y^{(n) + a_1(x)y^{(n - 1)} + \dots +
-                a_n(x)y = f(x)}  
-            \]
+            \begin{equation}
+                y^{(n)} + a_1(x)y^{(n - 1)} + \dots +
+                a_n(x)y = f(x)
+                \label{eqn:linear_inhomogeneous_of_nth_order}
+            \end{equation}
             \bigskip
 
             \textbf{Определение задачи Коши для дифференциального уравнения n"=го
             порядка}
                 \smallskip
 
-                Задача Коши для линейного уравнения (1) имеет вид:
-
-                \begin{equation*}
+                Задача Коши для линейного уравнения (\ref{eqn:linear_inhomogeneous_of_nth_order}) имеет вид:
+                $$
                     \begin{cases}
                         y^{(n)} + a_1(x)y^{(n - 1)}(x) + \dots + a_n(x)y = f(x)\\
                         y(x_0) = y_0\\
@@ -56,8 +52,7 @@
                         \dots\\
                         y^{(n-1)}(x_0) = y^{(n - 1)}_0\\
                     \end{cases}
-                \end{equation*}
-
+                $$
                 где $y(x_0) = y_0, \dots, y^{(n-1)}(x_0) = y^{(n - 1)}_0$~---
                 начальные условия и $x_0, y_0, \dots, y^{(n - 1)}_0$~--- заданные
                 числа.
@@ -71,7 +66,6 @@
                 линейно зависимыми на отрезке $[a, b]$, если найдутся константы
                 $\alpha_1, \alpha_2, \dots, \alpha_m$~--- числа, не все равные нулю,
                 такие, что линейная комбинация:
-
                 \[
                     \alpha_1\varphi(x) + \dots + \alpha_m\varphi(m) \equiv 0  
                 \]
@@ -81,7 +75,6 @@
                 
                 Функции $\varphi_1(x), \dots, \varphi_m(x)$ называются 
                 линейно независимыми на отрезке $[a, b]$, если 
-
                 \[
                     \alpha_1\varphi_1(x) + \dots + \alpha_m\varphi_m(x) \equiv 0
                     \Leftrightarrow \alpha_1 = \dots = \alpha_m = 0  
@@ -96,27 +89,25 @@
 
                 Определителем Вронского функций $\varphi_1(x),\varphi_2(x),
                 \dots, \varphi_m(x)$ называется:
-
                 \[
                 \begin{vmatrix}
-                    \varphi_1(x)\ \varphi_2(x)\ \dots\ \varphi_m(x)\\
-                    \varphi^{'}_1(x)\ \varphi^{'}_2(x)\ \dots\ \varphi^{'}_m(x)\\
-                    \dots \\
-                    \varphi^{(n - 1)}_1(x)\ \varphi^{(n - 1)}_2(x)\ \dots\ \varphi^{(n - 1)}_m(x)\\
+                    \varphi_1(x) & \varphi_2(x) & \dots & \varphi_m(x)\\
+                    \varphi^{'}_1(x) & \varphi^{'}_2(x) & \dots & \varphi^{'}_m(x)\\
+                    \hdotsfor{4} \\
+                    \varphi^{(n - 1)}_1(x) & \varphi^{(n - 1)}_2(x) & \dots & \varphi^{(n - 1)}_m(x)\\
                 \end{vmatrix}
                 \]
 
         \subsubsection{Фундаментальная система решения}
         
-            \textbf{Опредеение фундаментальной системы решений однородного
+            \textbf{Определение фундаментальной системы решений однородного
             линейного уравнения}
                 \smallskip
 
                 Фундаментальной системой решений однородного линейного уравнения
-                $l(y) = 0$ называется:
-
-                $\varphi_1(x), \dots, \varphi_n(x)$~--- линейно независимые и их
-                количество совпадает с порядком уравнения.
+                n"~го порядка $l(y) = 0$ называются функции
+                $\varphi_1(x), \dots, \varphi_n(x)$,
+                являющиеся линейно независимыми решениями уравнения.
                 
         \subsubsection{Линейные дифференциальные уравнения с постоянными
         коэффициентами}
@@ -127,11 +118,9 @@
 
                 Линейное однородное уравнение с постоянными коэффициентами
                 имеет вид:
-
                 \[
                     a_0y^{(n)} + a_1 y^{(n - 1)} + \dots + a_n y = 0,  
                 \]
-
                 где $a_0, \dots, a_n$~--- заданные числа.
                 \bigskip
 
@@ -141,7 +130,6 @@
                 
                 Линейное неоднородноре уравнение с постоянными коэффициентами
                 имеет вид:
-
                 \[
                     a_0y^{(n)} + a_1 y^{(n - 1)} + \dots + a_n y = f(x),  
                 \]
@@ -157,21 +145,20 @@
                 Если функции $\varphi_1(x), \dots, \varphi_n(x)$~---
                 линейно зависимы на $[a, b]$. Тогда их определитель
                 вронского тождественно равен нулю.
-
                 \[
                     \mathbf{W} \equiv 0  
                 \]
 
-                Доказательство (нужно или нет?:))
+                Доказательство: нужно знать для зачёта.
 
         \subsubsection{Условие линейной независимости решений}
         
-            Рассмотрим линейное уравнение:
-
-            \[
-                (1) \;\;\; y^{(n)} + a_1(x) y^{(n - 1)} + \dots +
+            Рассмотрим однородное линейное уравнение:
+            \begin{equation}
+                y^{(n)} + a_1(x) y^{(n - 1)} + \dots +
                 a_m(x)y = 0; \;\;\; a \leq x \leq b
-            \]
+                \label{eqn:linear_homogeneous_of_nth_order} 
+            \end{equation}
             \bigskip
 
             \textbf{Теорема (условие линейной независимости решений линейного 
@@ -179,13 +166,12 @@
                 \smallskip
 
                 Пусть $\varphi_1(x), \dots, \varphi_n(x)$~--- линейно независимые
-                решения уравнения (1). Тогда
-
+                решения уравнения (\ref{eqn:linear_homogeneous_of_nth_order}). Тогда
                 \[
                     \forall x \in [a, b] \;\;\; \mathbf{W} \neq 0
                 \]
 
-                Доказательство (нужно или нет?:))
+                Доказательство: нужно знать для зачёта.
 
         \subsubsection{Свойство линейности и следствия из него}
 
@@ -193,7 +179,7 @@
                 y^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y = f(x)
             \]
 
-            Обозначим $^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y$ как
+            Обозначим $y^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y$ как
             $l(y)$.
             \bigskip
 
@@ -203,7 +189,6 @@
                 \[
                     l(y_1(x) + y_2(x)) = l(y_1(x)) + l(y_2(x));  
                 \]
-
                 \[
                     l(\sum^m_{k = 1} \alpha_k \varphi_k(x)) = \sum^m_{k = 1}
                     \alpha_k l(\varphi_k(x))
@@ -216,10 +201,9 @@
                 Пусть $\varphi_1(x), \dots, \varphi_n(x)$~--- решения уравнения
                 $l(y) = 0$. Тогда $\varphi^{\circ}(x) = \alpha_1\varphi_1(x) +
                 \dots + \alpha_m\varphi_m(x)$ тоже является решением этого
-                уравнения.        
+                уравнения.
             
-                Доказательство (нужно или нет?:))
-
+                Доказательство: нужно знать для зачёта.
 
         \subsubsection{Существование ФСР}
             
@@ -230,17 +214,17 @@
                 Фундаментальная система решений существует для любого
                 однородного линейного уравнения.
 
+                Доказательство: нужно знать для зачёта.
+
         \subsubsection{Вид общего решения однородноого линейного уравнения}        
                 
             Рассмотрим однородное линейное уравнение
-
-            \[
-                (1) \;\;\; y^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y = 0;
+            \begin{equation}
+                y^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y = 0;
                 \;\;\; a \leq x \leq b
-            \]
-
-            или 
-
+                \label{eqn:linear_homogeneous_of_nth_order} 
+            \end{equation}
+            или
             \[
                 l(y) = 0
             \]
@@ -249,73 +233,63 @@
                 \smallskip
 
                 Пусть $\varphi_1(x), \dots, \varphi_n(x)$~--- ФСР. Тогда
-                общее решение уравнения (1) имеет вид:
-
+                общее решение уравнения (\ref{eqn:linear_homogeneous_of_nth_order}) имеет вид:
                 \[
                     y = c_1\varphi_1(x) + \dots + c_n\varphi_n(x),  
                 \]
-
                 где $c_1, \dots, c_n$~--- произвольные константы.
+
+                Доказательство: нужно знать для зачёта.
 
         \subsubsection{Вид общего решения неоднородноого линейного уравнения} 
         
             Рассмотрим неоднородное линейное уравнение
-
-            \[
-                (1) \;\;\; y^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y = f(x);
+            \begin{equation}
+                y^{(n)} + a_1(x) y^{(n - 1)} + \dots + a_m(x)y = f(x);
                 \;\;\; a \leq x \leq b
-            \]
-
+                \label{eqn:linear_inhomogeneous_of_nth_order} 
+            \end{equation}
             или 
-
             \[
                 l(y) = f(x)
             \]
-
             и соответствующее ему однородное линейное уравнение 
-
-            \[
-                (2) \;\;\; l(y) = 0  
-            \]
+            \begin{equation}
+                l(y) = 0
+                \label{eqn:linear_homogeneous_of_nth_order} 
+            \end{equation}
 
             \textbf{Теорема (вид общего решения неоднородного линейного уравнения)}
                 \smallskip
 
-                Пусть $\varphi_1(x), \dots, \varphi_n(x)$~--- ФСР (2) и
-                $y_h(x)$~--- частное решение (1). Тогда
-                общее решение уравнения (1) имеет вид:
-
+                Пусть $\varphi_1(x), \dots, \varphi_n(x)$~--- ФСР (\ref{eqn:linear_homogeneous_of_nth_order}) и
+                $y_\text{ч}(x)$~--- частное решение (\ref{eqn:linear_inhomogeneous_of_nth_order}). Тогда
+                общее решение уравнения (\ref{eqn:linear_inhomogeneous_of_nth_order}) имеет вид:
                 \[
-                    y = c_1\varphi_1(x) + \dots + c_n\varphi_n(x) + y_h(x),  
+                    y = c_1\varphi_1(x) + \dots + c_n\varphi_n(x) + y_\text{ч}(x),  
                 \]
-
                 где $c_1, \dots, c_n$~--- произвольные константы.
 
-                \textbf{В $y_h(x)$ вместо h должна стоять буква ч, но латех этого
-                сделать не позволяет.}
+                Доказательство: нужно знать для зачёта.
 
         \subsection{Алгоритм метод вариации нахождения частного решения}
         
-            \textbf{Метод вариации произвольных постоянных нахождения $y_h(x)$}
+            \textbf{Метод вариации произвольных постоянных нахождения $y_\text{ч}(x)$}
                 \smallskip
 
                 По теореме о виде общего решения линейного однородного уравнения
                 $y_0 = c_1\varphi_1(x) + \dots + c_n\varphi_n(x)$~--- общее
                 решение уравнения $l(y) = 0$.
 
-                Будем искать частное решение $y_h(x)$ в виде:
-
+                Будем искать частное решение $y_\text{ч}(x)$ в виде:
                 \[
-                    y_h(x) = c_1(x)\varphi_1(x) + \dots + c_n(x)\varphi_n(x),  
+                    y_\text{ч}(x) = c_1(x)\varphi_1(x) + \dots + c_n(x)\varphi_n(x),  
                 \]
-
                 где $c_1(x), \dots, c_n(x)$~--- пока неизвестные функции.
                 \bigskip
 
                 Рассмотрим систему уравнений
-
-                \begin{equation*}
-                    (5)
+                \begin{equation}
                     \begin{cases}
                         c_1^{'}(x)\varphi_1(x) + \dots + c_n^{'}(x)\varphi_n(x) = 0\\
                         c_1^{'}(x)\varphi_1^{'}(x) + \dots + c_n^{'}(x)\varphi_n^{'}(x) = 0\\
@@ -324,24 +298,24 @@
                         c_1^{'}(x)\varphi_1^{(n - 2)}(x) + \dots + c_n^{'}(x)\varphi_n^{(n - 2)}(x) = 0\\
                         c_1^{'}(x)\varphi_1^{(n - 1)}(x) + \dots + c_n^{'}(x)\varphi_n^{(n - 1)}(x) = f(x)\\
                     \end{cases}
-                \end{equation*}
+                    \label{eqns:variation_method}
+                \end{equation}
 
                 Пусть $a \leq x \leq b$, x~--- фиксированное $\Rightarrow$
-                (5)~--- линейная алгебраическая система относительно
-                $c^{'}_i(x), \;\;\; i = \overline{1, n}$
+                (\ref{eqns:variation_method})~--- линейная алгебраическая система относительно
+                $c^{'}_i(x), \;\;\; i = \overline{1, n}$.
 
-                Определитель системы $= \mathbf{W}(x) \Rightarrow$
-                $\mathbf{W}(x) \neq 0 \Rightarrow$ по теореме из алгебры (5)
+                $\Delta = \mathbf{W}(x) \Rightarrow$
+                $\mathbf{W}(x) \neq 0 \Rightarrow$ по теореме из алгебры (\ref{eqns:variation_method})
                 имеет единственное решение.
 
                 По формулам Крамера:
-
                 \[
                     c^{'}_1(x) = \frac{
                         \begin{vmatrix}
-                            0 \ \dots \\
-                            \dots \\
-                            f \ \dots \\
+                            0 & \dots \\
+                            \hdotsfor{2} \\
+                            f & \dots \\
                         \end{vmatrix}
                     }
                         {\mathbf{W}} = \frac{\mathbf{W}_1(x)}{\mathbf{W}(x)}
@@ -349,89 +323,88 @@
                 \[
                         \dots
                 \]
-                \[
-                    (6) \;\;\; c^{'}_n(x) = \frac{
+                \begin{equation}
+                    c^{'}_n(x) = \frac{
                         \begin{vmatrix}
-                            \dots \ 0 \\
-                            \dots \\
-                            \dots \ f \\
+                            \dots & 0 \\
+                            \hdotsfor{2} \\
+                            \dots & f \\
                         \end{vmatrix}
                     }
                         {\mathbf{W}} = \frac{\mathbf{W}_n(x)}{\mathbf{W}(x)}
-                \]
+                    \label{eqn:determinants}
+                \end{equation}
 
                 Таким образом, $c^{'}_i(x) \;\;\; i = \overline{1, n}$ находится
-                по формуле (6) $\Rightarrow$ 
-
+                по формуле (\ref{eqn:determinants}) $\Rightarrow$ 
                 \[
-                        \Rightarrow \;\;\; c_k(x) = \int \frac{\mathbf{W}_k(x)}
-                        {\mathbf{W}(x)} dx
+                    c_k(x) = \int \frac{\mathbf{W}_k(x)}
+                    {\mathbf{W}(x)} dx
                 \]
 
         \subsection{Обоснование метода вариации}
         
             Рассмотрим частный случай $n = 2$:
-
-            \[
-                (1) \;\;\; y^{''} + a_1(x)y^{'} + a_2(x)y = f(x)
-            \]
-            \[
-                (2) \;\;\; y^{''} + a_1(x)y^{'} + a_2(x)y = 0
-            \]
-            \[
-                \varphi_1(x), \varphi_2(x)
-            \]~--- ФСР (2)
+            \begin{equation}
+                y^{''} + a_1(x)y^{'} + a_2(x)y = f(x)
+                \label{eqn:linear_2nd_order_inhomogeneous}
+            \end{equation}
+            
+            \begin{equation}
+                y^{''} + a_1(x)y^{'} + a_2(x)y = 0
+                \label{eqn:linear_2nd_order_homogeneous}
+            \end{equation}
+            $\varphi_1(x), \varphi_2(x)$~--- ФСР (\ref{eqn:linear_2nd_order_homogeneous}).
 
             \[
                 y_0 = c_1 \varphi_1(x) + c_2 \varphi_2(x)
             \]
-            \[
-                y_h = c_1(x)\varphi_1(x) + c_2(x)\varphi_2(x)
-            \]
+            \begin{equation}
+                y_\text{ч} = c_1(x)\varphi_1(x) + c_2(x)\varphi_2(x)
+                \label{eqn:particular_solution}
+            \end{equation}
 
-            \begin{equation*}
-                (5)
+            \begin{equation}
                 \begin{cases}
                     c_1^{'}(x)\varphi_1(x) + c_2^{'}(x)\varphi_2(x) = 0\\
                     c_1^{'}(x)\varphi_1^{'}(x) + c_2^{'}(x)\varphi^{'}_2(x) = f(x)\\
                 \end{cases}
-            \end{equation*}
+                \label{eqns:varitation_method}
+            \end{equation}
 
             \[
                 c_1(x) = \int \frac{\mathbf{W_1}(x)}{\mathbf{W}(x)}dx \;\;\;
                 c_2(x) = \int \frac{\mathbf{W_2}(x)}{\mathbf{W}(x)}dx  
             \]
 
-            Подставляем $c_1(x)$ и $c_2(x)$ в (4) $\Rightarrow$
-
-            Покажем, что полученное $y_h$ является решением (1):
-
+            Подставляем $c_1(x)$ и $c_2(x)$ в (\ref{eqn:particular_solution}).
+            Покажем, что полученное $y_\text{ч}$ является решением (\ref{eqn:linear_2nd_order_inhomogeneous}):
             \[
-                y^{'}_h = c_1^{'}(x)\varphi_1(x) + c_1(x)\varphi_1^{'}(x) +
+                y^{'}_\text{ч} = c_1^{'}(x)\varphi_1(x) + c_1(x)\varphi_1^{'}(x) +
                 c_2^{'}(x)\varphi_2(x) + c_2(x)\varphi_2^{'}(x) = c_1(x)\varphi_1^{'}(x)
                 +  c_2(x)\varphi^{'}_2(x)  
             \]
-            \[
-                y_h^{''} = c^{'}_1(x)\varphi^{'}_1(x) + c_1\varphi^{''}_1(x)
-                + c^{'}_2(x)\varphi^{'}_2(x) + c_2(x)\varphi^{''}_2(x) =
-                f(x) + c_1(x)\varphi^{''}_1(x) + c_2(x)\varphi^{''}_2(x) = y_h^{''} 
-                \Rightarrow 
-            \]
-            \[
+            \begin{gather*}
+                y^{''}_\text{ч} = c^{'}_1(x)\varphi^{'}_1(x) + c_1\varphi^{''}_1(x)
+                + c^{'}_2(x)\varphi^{'}_2(x) + c_2(x)\varphi^{''}_2(x) = \\
+                = f(x) + c_1(x)\varphi^{''}_1(x) + c_2(x)\varphi^{''}_2(x)
+            \end{gather*}
+
+            Подставляем в уравнение (\ref{eqn:linear_2nd_order_inhomogeneous}):
+            \begin{gather*}
                 f(x) + c_1(x)\varphi^{''}_1(x) + c_2(x)\varphi^{''}_2(x) +
-                a_1(x)(c_1(x)\varphi^{'}_1(x) + c_2(x)\varphi^{'}_2(x)) +
-                a_2(x)(c_1(x)\varphi_1(x) + c_2(x)\varphi_2(x)) =
-            \]
-            \[
+                a_1(x)(c_1(x)\varphi^{'}_1(x) + \\
+                + c_2(x)\varphi^{'}_2(x)) +
+                a_2(x)(c_1(x)\varphi_1(x) + c_2(x)\varphi_2(x)) = \\
                 = f(x) + c_1(x)(\varphi^{''}_1(x) + a_1(x)\varphi_1^{'}(x) +
-                a_2(x)\varphi_1(x)) + a_2(x)(\varphi^{''}_2(x) + a_1(x)\varphi^{''}_1(x) +
-                a_2(x)\varphi_2(x)) = f(x)  
-            \]
+                a_2(x)\varphi_1(x)) + \\ 
+                + a_2(x)(\varphi^{''}_2(x) + a_1(x)\varphi^{''}_1(x)
+                + a_2(x)\varphi_2(x)) = f(x).
+            \end{gather*}
 
             То есть
-
             \[
-                l(y_h) \equiv f(x)  
+                l(y_\text{ч}) \equiv f(x).
             \]
 
         \subsection{Пример: $y^{''} + w^2y = f(x)$}
@@ -440,39 +413,35 @@
 
             \includegraphics[width=140mm]{"2.png"}
 
-        \subsection{Формула Остроградского"=Луивилля}
+        \subsection{Формула Остроградского"=Лиувилля}
             
             Пусть $y_1(x), \dots, y_n(x)$~--- решение однородного линейного
             уравнения: $y^{(n)} + a_1(x)y^{(n - 1)} + \dots +
             a_n(x)y = 0 \;\;\; a \leq x \leq b$.
 
             Рассмотрим определитель Вронского:
-
             \[
                 \mathbf{W}(x) = 
                 \begin{vmatrix}
-                    y_1(x) \ \dots \ y_n(x)\\
-                    \ \dots\ \\
-                    y_1^{(n - 1)}(x) \ \dots \ y_n^{(n - 1)}(x)\\
+                    y_1(x) & \dots & y_n(x)\\
+                    \hdotsfor{3} \\
+                    y_1^{(n - 1)}(x) & \dots & y_n^{(n - 1)}(x)\\
                 \end{vmatrix}
-                =
-                \sum (\pm) y^{(k1)}_{j_1}(x)y^{(k2)}_{j_2}(x) \dots y^{(kn)}_{j_n}(x)
             \]
 
             \textbf{Сама формула}
 
             Пусть $x_0$ произвольная точка из $[a, b]$. Тогда:
-
             \[
-                \mathbf{W}(x) = \mathbf{W}(x_0)e^{-\int^x_{x_0}a_1(t)dt}
+                \mathbf{W}(x) = \mathbf{W}(x_0)e^{-\int^x_{x_0}a_1(t)dt}.
             \]
 
         \subsection{Метод Эйлера (случай простых корней)}
     
-            \[
-                (1) \;\;\; a_0y^{(n)} + a_1y^{(n - 1)} + \dots + a_ny = 0,
-            \]
-        
+            \begin{equation}
+                a_0y^{(n)} + a_1y^{(n - 1)} + \dots + a_ny = 0,
+                \label{eqn:linear_constant_coefficients}
+            \end{equation}
             где $a_0, \dots, a_n$~--- заданные числа.
             \bigskip
 
@@ -481,30 +450,20 @@
             \smallskip
 
                 \begin{enumerate}
-                    \item{Ищем частное решение уравнения (1) в виде
+                    \item Ищем частное решение уравнения (\ref{eqn:linear_constant_coefficients}) в виде
                     \[
                         y(x) = e^{\lambda x},    
                     \]
-
                     $\lambda$~--- число.
-                    }
-                    \item{Вычисляем формулы
                     
-                    \[
-                        y^{'}(x) = \lambda e^{\lambda x}  
-                    \]
-                    \[
-                        y^{''}(x) = \lambda^2 e^{\lambda x}  
-                    \]
-                    \[
-                        \dots  
-                    \]
-                    \[
-                        y^{(n)}(x) = \lambda^n e^{\lambda x}  
-                    \]
-                    }
-                    \item{Подставляем эти формулы в (1):
-                    
+                    \item Вычисляем формулы
+                    \begin{gather*}
+                        y^{'}(x) = \lambda e^{\lambda x} \\
+                        y^{''}(x) = \lambda^2 e^{\lambda x} \\
+                        \dots \\
+                        y^{(n)}(x) = \lambda^n e^{\lambda x} \\
+                    \end{gather*}
+                    \item Подставляем эти формулы в (\ref{eqn:linear_constant_coefficients}):
                     \[
                         a_0\lambda^ne^{\lambda x} + a_1\lambda^{n - 1}e^{\lambda x} +
                         \dots + a_ne^{\lambda x} \equiv 0    
@@ -512,55 +471,51 @@
                     \[
                         e^{\lambda x}(a_0 \lambda^n + \dots + a_n) \equiv 0 
                     \]
-                    }
-                    \item{так как $e^{\lambda x} \neq 0$, то
                     
+                    \item Так как $e^{\lambda x} \neq 0$, то
                     \[
-                        y = e^{\lambda x}~---  
+                        y = e^{\lambda x}
                     \]
-
-                    является решением уравнения (1) $\Leftrightarrow \;\;\; \lambda$
-                    является корнем алгебраического уравнения:
-
-                    \[
-                        (2) \;\;\; a_0 \lambda^n + \dots + a_n = 0  
-                    \]
-                    }
-                    \item{(2) имеет n простых корней $\lambda_1, \dots, 
+                    является решением уравнения (\ref{eqn:linear_constant_coefficients})
+                    $\Leftrightarrow$ $\lambda$ является корнем алгебраического уравнения:
+                    \begin{equation}
+                        a_0 \lambda^n + \dots + a_n = 0  
+                        \label{eqn:characteristic_eqn}
+                    \end{equation}
+                    
+                    \item (\ref{eqn:characteristic_eqn}) имеет n простых корней $\lambda_1, \dots,
                     \lambda_n \Rightarrow$ функции $y_1 = e^{\lambda_1 x}, 
                     y_2 = e^{\lambda_2 x}, \dots, y_n = e^{\lambda_n x}$~---
-                    решение (1).
-                    }
-                    \item{Поажем, что ${e^{\lambda_k x}}^n_{k = 1}$~--- ФСР (1)
+                    решения (\ref{eqn:linear_constant_coefficients}).
                     
-                    Рассмотрим определитель Вронского $\mathbf{W}$
-
+                    \item Покажем, что $\left\{e^{\lambda_k x}\right\}^n_{k = 1}$~--- ФСР (\ref{eqn:linear_constant_coefficients})
+                    
+                    Рассмотрим определитель Вронского $\mathbf{W}$:
                     \[
                         \mathbf{W}(x) =
                         \begin{vmatrix}
-                            e^{\lambda_1 x} \ \dots \ e^{\lambda_n x}\\
-                            \lambda_1 e^{\lambda_1 x} \ \dots \ \lambda_n e^{\lambda_n x}\\
-                            \ \dots \ \\
-                            \lambda_1^{(n - 1)} e^{\lambda_1 x} \ \dots \ \lambda_n^{(n - 1)} e^{\lambda_n x}\\
+                            e^{\lambda_1 x} & \dots & e^{\lambda_n x}\\
+                            \lambda_1 e^{\lambda_1 x} & \dots & \lambda_n e^{\lambda_n x}\\
+                            \hdotsfor{3} \\
+                            \lambda_1^{(n - 1)} e^{\lambda_1 x} & \dots & \lambda_n^{(n - 1)} e^{\lambda_n x}\\
                         \end{vmatrix}  
                         =
                         e^{\lambda_1 x} e^{\lambda_2 x} \dots e^{\lambda_n x} 
                         \begin{vmatrix}
-                            1 \ \dots \ 1\\
-                            \lambda_1 \ \dots \ \lambda_n\\
-                            \ \dots \ \\
-                            \lambda_1^{(n - 1)}\ \dots \ \lambda_n^{(n - 1)}\\
+                            1 & \dots & 1\\
+                            \lambda_1 & \dots & \lambda_n\\
+                            \hdotsfor{3} \\
+                            \lambda_1^{(n - 1)} & \dots & \lambda_n^{(n - 1)}\\
                         \end{vmatrix} =
                     \]
                     \[
                         = e^{\lambda_1 x} e^{\lambda_2 x} \dots e^{\lambda_n x} \prod 
                         (\lambda_j - \lambda_k) \neq 0 \Rightarrow 
                     \]
-                    ${e^{\lambda_k x}}^n_{k = 1}$~--- ФСР уравнения (1) $\Rightarrow$
-                    общее решение (1) имеет вид:
-
+                    $\left\{e^{\lambda_k x}\right\}^n_{k = 1}$~--- ФСР уравнения (\ref{eqn:linear_constant_coefficients}) $\Rightarrow$
+                    общее решение (\ref{eqn:linear_constant_coefficients}) имеет вид:
                     \[
-                        y = c_1e^{\lambda_1 x} + \dots + c_ne^{\lambda_n x}
+                        y = c_1e^{\lambda_1 x} + \dots + c_ne^{\lambda_n x}.
                     \]
-                    }
+                    
                 \end{enumerate}   
