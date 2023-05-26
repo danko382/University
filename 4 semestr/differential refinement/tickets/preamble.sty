@@ -1,0 +1,27 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage[unicode, hidelinks]{hyperref}
+
+\usepackage[
+    a4paper, mag=1000,
+    left=2.5cm, right=1.5cm, top=2cm, bottom=2cm, bindingoffset=0cm,
+    headheight=0cm, footskip=1cm, headsep=0cm
+]{geometry}
+
+\usepackage{tempora}
+
+\usepackage{chngcntr} % equation counter manipulations
+
+% reset equation counter at each section, subsection, and subsubsection
+\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
+\counterwithin*{equation}{subsubsection}
+
+\graphicspath{{images/}}
