@@ -2,97 +2,81 @@
 
     \subsection{Интегрирование с помощью частного решения}
 
-        \[
-            (1) \;\;\; y^{''} + a_1(x)y^{'} + a_2(x)y = f(x) 
-        \]
+        \begin{equation}
+            y^{''} + a_1(x)y^{'} + a_2(x)y = f(x)
+            \label{eqn:inhomogeneous}
+        \end{equation}
 
         \begin{enumerate}
-            \item{Предположим, что $g(x)$~--- частное решение уравнения (1).
-            
-            Тогда переходим к новой неизвестной функции $u(x)$ по формуле:
-            
-            \[
-                y(x) = u(x)g(x)  
-            \]
-            \[
-                y^{'} = u^{'}g u g^{'}  
-            \]
-            \[
-                (*) y^{''} = u^{''}g + u^{'}g^{'} + u^{'}g^{'} + ug^{''} =
-                u^{''}g + 2u^{'}g^{'} + ug^{''} 
-            \]
-            }
-            \item{Подставляем (*) в (1):
+            \item Предположим, что $g(x)$~--- частное решение уравнения (\ref{eqn:inhomogeneous}).
+            Тогда переходим к новой неизвестной функции $u(x)$ по формулам:
+            \begin{equation}
+                \begin{gathered}
+                    y(x) = u(x)g(x) \\
+                    y^{'} = u^{'}g u g^{'} \\
+                    y^{''} = u^{''}g + u^{'}g^{'} + u^{'}g^{'} + ug^{''} =
+                    u^{''}g + 2u^{'}g^{'} + ug^{''} 
+                \end{gathered}
+                \label{eqns:formulas_1}
+            \end{equation}
 
-                \[
+            \item Подставляем (\ref{eqns:formulas_1}) в (\ref{eqn:inhomogeneous}):
+                \begin{gather*}
                     u^{''}g + 2u^{'}g^{'} + ug^{''} + a_1(u^{'}g + ug^{'}) +
-                    a_2ug = 0 
-                \]
-                \[
+                    a_2ug = 0 \\
                     u^{''}g + (2g^{'} + a_1g + a_1g^{'})u^{'} + (g^{''} + a_1g^{'} +
-                    a_2g)u = 0  
-                \]
-                \[
-                    (2) \;\;\; g(x)u^{''} + b(x)u^{'} = 0  
-                \]
-            }
-            \item{Замена  $v(x) = u^{'}(x)$. Тогда:
-            
+                    a_2g)u = 0 \\
+                \end{gather*}
+                \begin{equation}
+                    g(x)u^{''} + b(x)u^{'} = 0
+                    \label{eqn:simplified_1}
+                \end{equation}
+            \item Замена $v(x) = u^{'}(x)$. Тогда:
+                \begin{equation}
+                    g(x)v^{'} + b(x)v = 0
+                    \label{eqn:simplified_2}
+                \end{equation}
+            \item Решаем (\ref{eqn:simplified_2}):
             \[
-                (3) \;\;\; g(x)v^{'} + bv = 0 
+                v(x) = c_1\varphi_1(x)
             \]
-            }
-            \item{Решаем (3):
-            
-            \[
-                v(x) = c_1\varphi_1(x)~---  
-            \]
-            Общее решение (3).
-            }
-            \item{Возвращаем замену:
-            
+            общее решение (\ref{eqn:simplified_2}).
+
+            \item Возвращаем замену:
             \[
                 u = c_1 \int \varphi(x) dx + c_2 = c_1 \varPhi (x) + c_2  
             \]
-            }
-            \item{Возвращаем замену:
-            
-            Получим:
-            
+                
+            \item
             \[
-                y = c_1 \varPhi(x)g(x) + c_2 g(x)~---    
+                y = c_1 \varPhi(x)g(x) + c_2 g(x)    
             \]
-            Общее решение уравнения (1).
-            }
+            общее решение уравнения (\ref{eqn:inhomogeneous}).
         \end{enumerate}
 
     \subsection{Упрощение с помощью замены функции $y^{''} + \frac{1}{x}y^{'} +
     (1 - \frac{1}{4x^2})y = 0$}
-    
         \[
             y^{''} + \frac{1}{x}y^{'} + (1 - \frac{1}{4x^2})y = 0  
         \]
 
         Пусть $y(x) = u(x)z(x)$. Тогда находим $u(x)$ как решение 
-        уравнения 
-
+        уравнения
         \[
             2u^{'} + \frac{1}{x}  
         \]
-
         \[
             u^{'} = - \frac{1}{2x}u
         \]
         \[
             \int \frac{du}{u} = -\frac{1}{2} \int \frac{dx}{x}; \;\;\;
-            \ln|u| = -\frac{1}{2}\ln|x| \Rightarrow u = \frac{1}{\sqrt{x}}  
+            \ln|u| = -\frac{1}{2}\ln|x| \implies u = \frac{1}{\sqrt{x}}  
         \]
         \[
             y(x) = \frac{1}{\sqrt{x}}z(x); \;\;\; u(x) = x^{-\frac{1}{2}}
         \]
 
         Наше исходное уравнение примет вид:
-
         \[
             \frac{1}{\sqrt{x}} z^{''} + (\frac{3}{4}x^{-\frac{5}{2}} + 
             \frac{1}{x}(\frac{1}{2})x^{-\frac{3}{2}} + (1 + \frac{1}{\sqrt{x}})
@@ -116,15 +100,12 @@
         \]
 
         Делаем замену $x = \varphi(t), \;\;\; t = \psi(x)$.
-
         Выбираем $\psi$ как решение уравнения $\psi^{'}z^{''} + a_2(x)z = 0$:
-
         \[
             \psi^{''}(x) + a_1(x)\psi^{'}(x) = 0  
         \]
 
         Обозначим $v(x) = \psi^{'}(x)$. Тогда:
-
         \[
             v^{'} + \frac{1}{2x}v = 0  
         \]
@@ -139,7 +120,6 @@
         \]
 
         Возвращаем замену:
-
         \[
             \psi^{'}(x) = x^{-\frac{1}{2}}  
         \]
@@ -148,7 +128,6 @@
         \]
 
         Возвращаем замену:
-
         \[
             t = 2 \sqrt{x}  
         \]
@@ -157,17 +136,17 @@
         \]
 
         Исходное уравнение переходит в уравнение:
-
         \[
             (\psi^{'})^2(x)z^{''} - \frac{1}{x}z = 0  
         \]
         \[
             \frac{1}{x}z^{''} - \frac{1}{x}z = 0  
         \]
-        $$ z^{''} - z = 0$$~--- линейное уравнение с постоянными коэффициентами.
+
+        $$ z^{''} - z = 0$$
+        линейное уравнение с постоянными коэффициентами.
 
         Решаем методом Эйлера
-
         \[
             x^2 - 1 =0  
         \]
@@ -195,48 +174,43 @@
     \subsection{Метод степенных рядов $y^{''} - xy = 0$}
     
         Рассмотрим уравнение:
-
         \[
             y^{''} - xy = 0
         \]
 
         Метод степенных рядов:
-
-        \[
-            (1) \;\;\; y^{''} + a_1(x)y^{'} + a_2(x)y = f(x), \;\;\; a \leq x \leq b  
-        \]
+            $$y^{''} + a_1(x)y^{'} + a_2(x)y = f(x), \;\;\; a \leq x \leq b$$
 
         \textbf{Теорема}
             \smallskip
 
-            Предположим, что $a_1(x), a_2(x), f(x)$~--- раскладываются в степенной
-            ряд на $[a, b]$. Тогда любое решение уравнения (1) раскладывается
+            Предположим, что $a_1(x), a_2(x), f(x)$ раскладываются в степенной
+            ряд на $[a, b]$. Тогда любое решение уравнения раскладывается
             в степенной ряд на $[a, b]$.
             \bigskip
 
         \textbf{Пример}
             \smallskip
             
-            \[
-                (1) y^{''} - xy = 0, \;\;\; -\infty < x < +\infty
-            \]
+            \begin{numcases}{}
+                y^{''} - xy = 0, \;\;\; -\infty < x < +\infty
+                \label{eqn:inhomogeneous} \\
+                y(0) = c_1, y^{'}(0) = c_2
+                \label{eqns:conditions}
+            \end{numcases}
 
-            \[
-                (2) y(0) = c_1, y^{'}(0) = c_2  
-            \]
+            Решаем задачу Коши \ref{eqn:inhomogeneous}-\ref{eqns:conditions}
+            методом степенных рядов.
 
-            Решаем задачу Коши 1-2 методом степенных рядов:
-
-            Ищем решение в виде:
-
-            \begin{equation*}
-                (*)
+            Ищем решение в виде
+            \begin{equation}
                 \begin{cases}
                     y(x) = a_0 + a_1x +a_2x^2 + \dots + a_nx^n + \dots;\\
-                    y^{'}(x) = a_1 + 2a_2x^2 + \dots + na_nx^n + \dots = a_1 + \sum^{\infty}_{n = 1}(n + 1)a_{n + 1}x^n\\
-                    y^{'}(x) = \sum^{\infty}_{n = 1}(n + 1)na_{n + 1}x^{n - 1} = \sum^{\infty}_{k = 0}(k + 2)(k + 1) a_{k + 2}x^k\\
+                    y^{'}(x) = a_1 + 2a_2x^2 + \dots + na_nx^n + \dots = a_1 + \sum^{\infty}_{n = 1}(n + 1)a_{n + 1}x^n = \\
+                    = \sum^{\infty}_{n = 1}(n + 1)na_{n + 1}x^{n - 1} = \sum^{\infty}_{k = 0}(k + 2)(k + 1) a_{k + 2}x^k\\
                 \end{cases}
-            \end{equation*}
+                \label{eqns:solution}
+            \end{equation}
 
             \[
                 y(0)_{(*)} = a_0 = c_1  
@@ -245,8 +219,7 @@
                 y^{'}(0)_{(*)} = a_1 = c_2 
             \]
 
-            Подставим (*) в (1)
-
+            Подставим (\ref{eqns:solution}) в (\ref{eqn:inhomogeneous}).
             \[
               \sum^{\infty}_{n = 0}(n + 2)(n + 1)a_{n + 2}x^n - x\sum^{\infty}_{k = 0}a_kx^k \equiv 0;  
             \]
@@ -255,182 +228,166 @@
             \]
             \[
                 2a_2 + \sum^{\infty}_{n = 1}[(n + 2)(n + 1)a_{n + 2} - a_{n - 1}]x^n \equiv 0 =
-                0 + 0x + 0x^2 + \dots  \Leftrightarrow
+                0 + 0x + 0x^2 + \dots  \Longleftrightarrow
             \]
 
             \[
-                \Leftrightarrow 2a_2 = 0; \;\;\; (n + 2)(n + 1)a_{n + 2} - a_{n - 1} = 0;
+                \Longleftrightarrow 2a_2 = 0; \;\;\; (n + 2)(n + 1)a_{n + 2} - a_{n - 1} = 0;
                 \;\;\; n = 1, 2, \dots
             \]
 
             Таким образом,
+            \begin{equation}
+                a_{n + 2} = \frac{a_{n - 1}}{(n + 2)(n + 1)}, \;\;\; n = 1, 2, \dots
+                \label{eqn:series_element_1}
+            \end{equation}
 
-            \[
-                (3) \;\;\; a_{n + 2} = \frac{a_{n - 1}}{(n + 2)(n + 1)}, \;\;\; n = 1, 2, 3, \dots
-            \]
+            Пусть $k = n - 1$. Тогда из (\ref{eqn:series_element_1}):
+            \begin{equation}
+                a_{k + 3} = \frac{a_k}{(k + 3)(k + 2)}, \;\;\; k = 0, 1, 2, \dots  
+                \label{eqn:series_element_2}
+            \end{equation}
 
-            Пусть $k = n - 1$. Тогда (3) = (4):
-
-            \[
-                (4) a_{k + 3} = \frac{a_k}{(k + 3)(k + 2)}, \;\;\; k = 0, 1, 2, \dots  
-            \]
-
-            Из (4)
-
+            Из (\ref{eqn:series_element_2}):
             \[
                 a_2 = 0, a_5 = 0, a_8 = 0, \dots
             \]
             \[
-                a_0 = c_1, a_3 = \frac{c_1}{3 * 2}, a_6 = \frac{a_3}{6 * 5}, \dots,
-                 a_{3k} = \frac{c_1}{2 * 3 * 5 * 6 * \dots * (3k - 1)3k}; k = 0, 1,\dots  
+                a_0 = c_1, a_3 = \frac{c_1}{3 \cdot 2}, a_6 = \frac{a_3}{6 \cdot 5}, \dots,
+                 a_{3k} = \frac{c_1}{2 \cdot 3 \cdot 5 \cdot 6 \cdot \dots \cdot (3k - 1)3k} \; k = 0, 1,\dots  
             \] 
             \[
-                a_1 = c_2, a_4 = \frac{a_1}{3 * 4} = \frac{c_2}{3 * 4}, a_7 =
-                \frac{a_4}{6 * 7}, \dots, a_{3k + 1} = \frac{c_2}{3 * 4 * 6 * 7 * \dots * 
+                a_1 = c_2, a_4 = \frac{a_1}{3 \cdot 4} = \frac{c_2}{3 \cdot 4}, a_7 =
+                \frac{a_4}{6 \cdot 7}, \dots, a_{3k + 1} = \frac{c_2}{3 \cdot 4 \cdot 6 \cdot 7 \cdot \dots \cdot 
                 (3k)(3k + 1)} 
             \]
 
             Имеем:
-
             \[
                 y = \sum^{\infty}_{n = 0} a_n x^n = \sum^{\infty}_{k = 0} a_{3k}x^{3k} +
                 \sum^{\infty}_{k = 0} a_{3k + 1}x^{3k + 1} = \sum^{\infty}_{k = 0}
                 a_{3k + 2}x^{3k + 2} = 
             \]
             \[
-                = c_1 \sum^{\infty}_{k = 0} \frac{x^{3k}}{2 * 3 * 5 * 6* \dots * (3k - 1)3k} +
-                c_2 \sum^{\infty}_{k = 0} \frac{x^{3k - 1}}{3 * 4 * 6 * 7 * (3k)(3k + 1)} =
+                = c_1 \sum^{\infty}_{k = 0} \frac{x^{3k}}{2 \cdot 3 \cdot 5 \cdot 6 \cdot \dots \cdot (3k - 1)3k} +
+                c_2 \sum^{\infty}_{k = 0} \frac{x^{3k - 1}}{3 \cdot 4 \cdot 6 \cdot 7 \cdot (3k)(3k + 1)} =
             \]
-            $$= c_1y_1(x) + c_2y_2(x)$$~--- ФСР для (1)
+            $$= c_1y_1(x) + c_2y_2(x)$$ ФСР для (\ref{eqn:inhomogeneous}).
             
     \subsection{Алгоритм решения простейшей краевой задачи}
 
         Простейшая краевая задача имеет вид:
+        \begin{numcases}{}
+            y^{''} + q(x) = f(x), \;\;\; a \leq x \leq b
+            \label{eqn:equation} \\
+            y(a) = 0, y(b) = 0
+            \label{eqn:conditions}
+        \end{numcases}
 
-        \begin{equation*}
-            1"=2
-            \begin{cases}
-                y^{''} + q(x) = f(x), \;\;\; a \leq x \leq b\\
-                y(a) = 0, y(b) = 0\\
-            \end{cases}
-        \end{equation*}
-
-        \textbf{Алгоритм решения краевой задачи 1"=2}
+        \textbf{Алгоритм решения краевой задачи \ref{eqn:equation}"~\ref{eqn:conditions}}
         \smallskip
 
             \begin{enumerate}
-                \item{Решаем соответствующее однородное уравнение:
+                \item Решаем соответствующее однородное уравнение:
+                    \begin{equation}
+                        y^{''} + q(x)y = 0
+                        \label{eqn:homogeneous}
+                    \end{equation}
+                    Находим его ФСР. Пусть ${y_1(x), y_2(x)}$ ~--- ФСР.
                 
-                    \[
-                        (3) \;\;\; y^{''} + q(x)y = 0    
-                    \]
+                \item Находим $y_\text{ч}(x)$~--- частное решение уравнения (\ref{eqn:equation}) методом
+                вариации.
 
-                    Находим его ФСР. Пусть ${y_1(x), y_2(x)}$~--- ФСР.
-                    }
-                    \item{Находим $y_h(x)$~--- частное решение уравнения (1) методом
-                    вариации}
-                    \item{Получаем общее решение  (1)
-                    
-                    \[
-                        y = c_1y_1(x) + c_2y_2(x) + y_h(x)    
-                    \]
-                    }
-                    \item{Подставляем формулу из пункта 3 в краевые условия:
-                    
-                    \begin{equation*}
-                        (4)
-                        \begin{cases}
-                            c_1y_1(a) + c_2y_2(a) + y_h(a) = 0\\
-                            c_1y_1(b) + c_2y_2(b) + y_h(b) = 0\\
-                        \end{cases}
-                    \end{equation*}
+                \item Получаем общее решение (\ref{eqn:equation})
+                \[
+                    y = c_1y_1(x) + c_2y_2(x) + y_\text{ч}(x)    
+                \]
 
-                    Смотрим на (4), как на линейную однородную систему относительно
-                    $c_1$ и $c_2$.
-                    }
-                    \item{Вычисляем определитель этой системы
-                    
-                    \[
-                        \delta = 
-                        \begin{vmatrix}
-                            y_1(a) \ y_2(a)\\
-                            y_1(b) \ y_2(b)\\
-                        \end{vmatrix}
-                    \]
-                    }
-                    \item{Если $\delta \neq 0$, то (4) имеет едиственное решение,
-                    находим и обозначим его:
-                    
-                    \[
-                        c_1^{0}, \;\;\; c_2^0    
-                    \]
+                \item Подставляем формулу из предыдущего пункта в краевые условия:
+                \begin{equation}
+                    \begin{cases}
+                        c_1y_1(a) + c_2y_2(a) + y_\text{ч}(a) = 0\\
+                        c_1y_1(b) + c_2y_2(b) + y_\text{ч}(b) = 0\\
+                    \end{cases}
+                    \label{eqns:equations}
+                \end{equation}
 
-                    В этом случае функция $y(x) = c^0_1y_1(x) + c^0_2y_2(x) + y_h$~---
-                    является единственным решением краевой задачи.
-                    }
-                    \item{Пусть $\delta = 0$. Тогда возможны подслучаи:
-                    
-                    \begin{enumerate}
-                        \item{(4) имеет бесконечно много решений, следовательно,
-                        задача 1"=2 имеет также бесконечно много решений.}
-                        \item{(4) не имеет ни одного решения, следовательно,
-                        задача 1"=2 тоже не имеет решения.}
-                    \end{enumerate}
-                    }
+                (\ref{eqns:equations}) ~--- линейная однородная система относительно
+                $c_1$ и $c_2$.
+
+                \item Вычисляем определитель этой системы
+                \[
+                    \Delta = 
+                    \begin{vmatrix}
+                        y_1(a) \ y_2(a)\\
+                        y_1(b) \ y_2(b)
+                    \end{vmatrix}
+                \]
+
+                \item Если $\Delta \neq 0$, то (\ref{eqns:equations}) имеет
+                едиственное решение, обозначим его
+                \[
+                    c_1^0, \;\;\; c_2^0
+                \]
+                В этом случае функция $y(x) = c^0_1y_1(x) + c^0_2y_2(x) + y_\text{ч}$
+                является единственным решением краевой задачи.
+                
+                \item Пусть $\Delta = 0$. Тогда возможны подслучаи:
+                \begin{enumerate}
+                    \item{(\ref{eqns:equations}) имеет бесконечно много решений, следовательно,
+                    задача \ref{eqn:equation}"~\ref{eqns:conditions} имеет также бесконечно много решений.}
+                    \item{(\ref{eqns:equations}) не имеет ни одного решения, следовательно,
+                    задача \ref{eqn:equation}"~\ref{eqns:conditions} тоже не имеет решения.}
+                \end{enumerate}
+                
             \end{enumerate}
 
-    \subsection{Существование решения краевой задачи:}
+    \subsection{Существование решения краевой задачи}
     
-        Рассмотри простейшую краевую задачу:
-
-        \begin{equation*}
-            1"=2
-            \begin{cases}
-                y^{''} + q(x)y = f(x), \;\;\; a \leq x \leq b\\
-                y(a) = 0, y(b = 0)\\
-            \end{cases}
-        \end{equation*}
-
+        Рассмотрим простейшую краевую задачу:
+        \begin{numcases}{}
+            y^{''} + q(x) = f(x), \;\;\; a \leq x \leq b
+            \label{eqn:equation} \\
+            y(a) = 0, y(b) = 0
+            \label{eqn:conditions}
+        \end{numcases}
         Если соответствующая однородная задача:
-
-        \begin{equation*}
-            (3)
-            \begin{cases}
-                y^{''} + q(x)y = 0, \;\;\; a \leq x \leq b\\
-                y(a) = 0, y(b = 0)\\
-            \end{cases}
-        \end{equation*}
-
-        имеет только нулевое решение, то исходная задача 1"=2 имеет единсвенное
-        решение $\forall f(x)$.
+        \begin{numcases}{}
+            y^{''} + q(x)y = 0, \;\;\; a \leq x \leq b
+            \label{eqn:equation_2} \\
+            y(a) = 0, y(b) = 0
+            \label{eqn:conditions_2}
+        \end{numcases}
+        имеет только нулевое решение, то исходная задача
+        \ref{eqn:equation}"~\ref{eqn:conditions} имеет единственное
+        решение $\forall f\label{eqns:homogeneous_task}(x)$.
         \bigskip
 
         Доказательство:
         \bigskip
 
-        Предположим, что (3) имеет только нулевое решение.
+        Предположим, что \ref{eqn:equation_2}"~\ref{eqn:conditions_2} имеет только нулевое решение.
+        Применим предыдущий алгоритм к \ref{eqn:equation_2}"~\ref{eqn:conditions_2}.
 
-        Повторим предыдущий алгоритм к (3):
-
-        Пусть ${y_1(x), y_2(x), y_h(x)}$~--- ФСР однородного уравнения.
-
+        Пусть ${y_1(x), y_2(x), y_\text{ч}(x)}$ ~--- ФСР однородного уравнения.
         \[
-            y_h(x) \equiv 0 , y = c_1y(x) + c_2y_2(x)  
+            y_\text{ч}(x) \equiv 0 , y = c_1y(x) + c_2y_2(x)  
         \]
 
-        Подставляем в кравевые условия:
-
-        \begin{equation*}
-            (4)
+        Подставляем в краевые условия:
+        \begin{equation}
             \begin{cases}
                 c_1y_1(a) + c_2y_2(a) = 0, \;\;\; a \leq x \leq b\\
                 c_1y_1(b) + c_2 y_2(b) = 0\\
             \end{cases}
-        \end{equation*}
+            \label{eqns:equations}
+        \end{equation}
 
-        Вычисляем $\delta$ системы (4):
+        Вычисляем $\Delta$ системы (\ref{eqns:equations}):
 
-        Если $\delta = 0$, то однородная система (4) всегда имеет бесконечно много
-        решений $\Rightarrow$ существует ненулевое решение (3) $\Rightarrow$ противоречие
-        $\Rightarrow$ $\delta \neq 0$ $\Rightarrow$ решение 1"=2 можно найти и оно будет
+        Если $\Delta = 0$, то однородная система (\ref{eqns:equations}) имеет
+        бесконечно много решений $\implies$ существует ненулевое решение
+        \ref{eqn:equation_2}"~\ref{eqn:conditions_2} $\implies$ противоречие.
+        
+        Значит, $\Delta \neq 0$ $\implies$ решение \ref{eqn:equation}"~\ref{eqns:conditions} можно найти, и оно будет
         единственным.
