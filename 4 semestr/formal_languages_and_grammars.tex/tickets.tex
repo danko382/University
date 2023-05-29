@@ -1,0 +1,287 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage{amssymb}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage[unicode]{hyperref}
+\graphicspath{{images/}}
+
+\begin{document}
+    
+    \tableofcontents
+
+    \newpage
+
+    \section{Билет 1}
+
+        \textbf{Общая структура компиляторов}
+        \smallskip
+
+        \begin{center}
+            \includegraphics[width=100mm]{"1.1.png"}
+        \end{center}
+
+        \bigskip
+
+        \textbf{Лексический анализ}
+        \smallskip
+
+        Лексичсекий анализ~--- деление текста на слова, выделение токенов.
+        \smallskip
+
+        Задача ликсического анализа~--- выделить лексемы, классифицировать их и
+        передать их на стадию синтаксического анализа.
+
+        \begin{center}
+            \includegraphics[width=80mm]{"1.4.png"}
+        \end{center}
+
+        \bigskip
+
+        \textbf{Синтаксический анализ}
+        \smallskip
+
+        Синтаксический анализ~--- определение структуры предложения.
+        \smallskip
+
+        Задача: иерархическая группировка в соответсвии с грамматикой 
+        языка программирования.
+
+        \begin{center}
+            \includegraphics[width=80mm]{"1.2.png"}
+
+            \includegraphics[width=80mm]{"1.5.png"}
+        \end{center}
+
+        \bigskip
+
+        \textbf{Семантический анализ}
+        \smallskip
+
+        Семантический анализ~--- устранение неоднозначностей.
+
+        \begin{center}
+            \includegraphics[width=80mm]{"1.3.png"}
+        \end{center}
+
+        \bigskip
+
+        \textbf{Оптимизация кода}
+        \smallskip
+
+        Оптимизация кода:
+
+        \begin{enumerate}
+            \item{На естественном языке отимизация не имеет строгих правил и 
+            сводится к редактированию;}
+            \item{Для программ она предполагает следующее:
+            
+            \begin{enumerate}
+                \item{Увеличение скорости работы программы;}
+                \item{Уменьшение объёма используемой памяти;}
+                \item{И так далее.}
+            \end{enumerate}
+            }
+        \end{enumerate}
+
+        \bigskip
+
+        \textbf{Генерация кода}
+        \smallskip
+
+        Генерация кода~--- трансляция исходного кода на другой
+        язык программирования.
+        \smallskip
+
+        Обычно результатом является ассемблерный код.
+
+        \bigskip
+
+        \textbf{Дополнительную информацию смотри на слайдах 1"=39 первой половины
+        лекций.}
+
+    \section{Билет 2}    
+
+    \section{Билет 3}    
+
+        \textbf{Определение алфавита}
+            \smallskip
+
+            Алфавит~--- это конечное множество символов.
+
+            \bigskip
+
+            \textbf{Опредделение слова в $\sum$}
+            \smallskip
+
+            Словом в алфавите $\sum$ называется любая конечная последовательность
+            символов этого алфавита.
+
+            \bigskip
+
+            \textbf{Операции над цепочками символов}
+            \smallskip
+
+            \begin{enumerate}
+                \item{Конкатенация
+                
+                \begin{center}
+                    \includegraphics[width=120mm]{"3.1.png"}
+                \end{center}
+                }
+                \item{Обращение
+                
+                \begin{center}
+                    \includegraphics[width=120mm]{"3.2.png"}
+                \end{center}
+                }
+                \item{Возведение в степень
+
+                \begin{center}
+                    \includegraphics[width=120mm]{"3.3.png"}
+                \end{center}
+                }
+            \end{enumerate}
+
+            \bigskip
+
+            \textbf{Дополнительную информацию смотрите на слайдах
+            40"=42 первой презентации.}
+
+    \section{Билет 4}  
+
+        \begin{center}
+            \includegraphics[width=120mm]{"4.1.png"}
+        \end{center}
+
+        \textbf{Формальное определение языка}
+        \smallskip
+
+        \begin{center}
+            \includegraphics[width=120mm]{"4.2.png"}
+        \end{center}
+
+        \bigskip
+
+        \textbf{Операции над языками}
+
+        \begin{enumerate}
+            \item{Контатенация
+            
+            \begin{center}
+                \includegraphics[width=120mm]{"4.3.png"}
+            \end{center}
+            }
+            \item{Объединение
+            
+            \begin{center}
+                \includegraphics[width=100mm]{"4.4.png"}
+            \end{center}
+            }
+            \item{Степень
+            
+            \begin{center}
+                \includegraphics[width=80mm]{"4.5.png"}
+            \end{center}
+            }
+            \item{Итерация
+
+            \begin{center}
+                \includegraphics[width=100mm]{"4.6.png"}
+            \end{center}
+            }
+        \end{enumerate}
+
+    \section{Билет 5}  
+
+        \begin{center}
+            \includegraphics[width=100mm]{"5.1.png"}
+        \end{center}
+
+    \section{Билет 6}  
+
+        \begin{center}
+            \includegraphics[width=100mm]{"6.1.png"}
+        \end{center}
+
+    \section{Билет 7}  
+
+        \begin{center}
+            \includegraphics[width=100mm]{"7.1.png"}
+            \bigskip
+
+            \includegraphics[width=100mm]{"7.2.png"}
+        \end{center}
+
+    \section{Билет 8}  
+
+        \begin{center}
+            \includegraphics[width=120mm]{"8.1.png"}
+            \bigskip
+
+            \includegraphics[width=100mm]{"8.2.png"}
+            \bigskip
+
+            \includegraphics[width=100mm]{"8.3.png"}
+            \bigskip
+
+            \includegraphics[width=100mm]{"8.4.png"}
+        \end{center}
+
+        \bigskip
+
+        \textbf{Дополнительную информацию смотри на слайдах 54-60
+        первой презентации.}
+
+    \section{Билет 9}  
+
+        \begin{center}
+            \includegraphics[width=100mm]{"9.1.png"}
+        \end{center}
+
+        \begin{enumerate}
+            \item{Тип 0
+            
+            \begin{center}
+                \includegraphics[width=100mm]{"9.2.png"}
+            \end{center}
+            }
+            \item{Тип 1
+
+            \begin{center}
+                \includegraphics[width=100mm]{"9.3.png"}
+                \bigskip
+
+                \includegraphics[width=100mm]{"9.4.png"}
+            \end{center}
+            }
+            \item{Тип 2
+
+            \begin{center}
+                \includegraphics[width=100mm]{"9.5.png"}
+            \end{center}
+            }
+            \item{Тип 3
+
+            \begin{center}
+                \includegraphics[width=100mm]{"9.6.png"}
+            \end{center}
+            }
+        \end{enumerate}
+
+    \section{Билет}  
+
+    \section{Билет}  
+
+    \section{Билет}  
+
+    \section{Билет}  
+
+    \section{Билет}  
+
+    \section{Билет}  
+
+            
+
+\end{document}
