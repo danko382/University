@@ -16,4 +16,5 @@
 \contentsline {section}{\numberline {15}\IeC {\CYRB }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrt } 15}{13}{section.15}%
 \contentsline {section}{\numberline {16}\IeC {\CYRB }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrt } 16}{13}{section.16}%
 \contentsline {section}{\numberline {17}\IeC {\CYRB }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrt } 17}{15}{section.17}%
-\contentsline {section}{\numberline {18}\IeC {\CYRB }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrt } 18}{16}{section.18}%
+\contentsline {section}{\numberline {18}\IeC {\CYRB }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrt } 18}{17}{section.18}%
+\contentsline {section}{\numberline {19}\IeC {\CYRB }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrt } 19}{18}{section.19}%
