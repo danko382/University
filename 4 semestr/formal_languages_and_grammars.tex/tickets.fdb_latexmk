@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1685651940 "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" "tickets.pdf" "tickets" 1685651949 0
+["pdflatex"] 1685652191 "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" "tickets.pdf" "tickets" 1685652200 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -82,7 +82,7 @@
   "C:/Users/danii/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683974059 3220 0e417eaf233b160335902e97259a6c77 ""
   "C:/Users/danii/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1683974180 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "C:/Users/danii/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1683974023 23169145 674a85f7b822f7d70635bb45382b05c7 ""
-  "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" 1685651930 20414 33973170d6afe54b3f8716094ccdaaa0 ""
+  "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" 1685652181 20698 1b6e39447a7d47d7cf6d850f21479716 ""
   "images//1.1.png" 1685270219 109994 ac125093cf829d56e41afacfd3c2667d ""
   "images//1.2.png" 1685271999 5715 74bb1cf901f62e46d2e1b682a3ef26a9 ""
   "images//1.3.png" 1685270557 29201 13a81559f42dd04abf825c74f2cbc027 ""
@@ -214,6 +214,8 @@
   "images//43.6.png" 1685651858 45658 8aa8d79b47385cd8d8eeaff5effee820 ""
   "images//43.7.png" 1685651869 66235 3dadbc31956d3feddb2a49fa724e72a9 ""
   "images//43.8.png" 1685651881 37455 acb93b17d86fc0ce639b3bebf7e533e5 ""
+  "images//44.1.png" 1685652080 30654 93bbecd7014870b44995a9d0c7455051 ""
+  "images//44.2.png" 1685652140 28422 10325491f9baed4261155c8f33d33bcd ""
   "images//5.1.png" 1685371598 44143 b3b049e1b590d73b9b99e5f468563b0e ""
   "images//6.1.png" 1685371677 18965 314f18e47730c19bf6c5228bbf95ba5a ""
   "images//7.1.png" 1685371751 51746 7e9183ad8355375b2832473bb41a5c4f ""
@@ -229,10 +231,10 @@
   "images//9.5.png" 1685372854 61079 ef86404b7d5a5a1e6f2360629d3657e6 ""
   "images//9.6.png" 1685372873 48139 bc047a35ac997b0a2e47ad0ac92a0f77 ""
   "images//9.7.png" 1685414909 68897 15f8f72e9d31bf01fe2445d65972b63a ""
-  "tickets.aux" 1685651949 23735 08040c736535231ead336aa254468995 "pdflatex"
-  "tickets.out" 1685651949 14887 dd6e74e7164e22c6d0b7cddb8993e9bf "pdflatex"
-  "tickets.tex" 1685651930 20414 33973170d6afe54b3f8716094ccdaaa0 ""
-  "tickets.toc" 1685651949 21347 2101d25cad6cd5f1c0806563f5fe3ad7 "pdflatex"
+  "tickets.aux" 1685652199 24521 d6bd7df8acb5113aab864a679edca631 "pdflatex"
+  "tickets.out" 1685652199 15390 3a4b66e6a2ca55abef128176d36bbb2e "pdflatex"
+  "tickets.tex" 1685652181 20698 1b6e39447a7d47d7cf6d850f21479716 ""
+  "tickets.toc" 1685652199 22092 a50fae5828190f58f429b547abb075fa "pdflatex"
   (generated)
   "tickets.aux"
   "tickets.log"
