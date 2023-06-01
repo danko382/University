@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1685597212 "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" "tickets.pdf" "tickets" 1685597218 0
+["pdflatex"] 1685615890 "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" "tickets.pdf" "tickets" 1685615897 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -8,6 +8,10 @@
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233951854 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Program Files/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Program Files/MiKTeX/tex/generic/babel/babel.sty" 1680013435 151578 01e8b46843d81abdfcc7dfbcd0188e2f ""
@@ -74,7 +78,7 @@
   "C:/Users/danii/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683974059 3220 0e417eaf233b160335902e97259a6c77 ""
   "C:/Users/danii/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1683974180 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "C:/Users/danii/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1683974023 23169145 674a85f7b822f7d70635bb45382b05c7 ""
-  "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" 1685597205 12145 7121ada3f085fb458106420a14bfc98f ""
+  "b:/University/4 semestr/formal_languages_and_grammars.tex/tickets.tex" 1685615889 12304 20db88f9f8e6c8fffd8f7b9cc43d18c9 ""
   "images//1.1.png" 1685270219 109994 ac125093cf829d56e41afacfd3c2667d ""
   "images//1.2.png" 1685271999 5715 74bb1cf901f62e46d2e1b682a3ef26a9 ""
   "images//1.3.png" 1685270557 29201 13a81559f42dd04abf825c74f2cbc027 ""
@@ -151,10 +155,10 @@
   "images//9.5.png" 1685372854 61079 ef86404b7d5a5a1e6f2360629d3657e6 ""
   "images//9.6.png" 1685372873 48139 bc047a35ac997b0a2e47ad0ac92a0f77 ""
   "images//9.7.png" 1685414909 68897 15f8f72e9d31bf01fe2445d65972b63a ""
-  "tickets.aux" 1685597218 5155 bdd307ad8ea1c90fe0ba37b1109e496a "pdflatex"
-  "tickets.out" 1685597218 2718 16ddd21b1f07f989c8b8229f6b5d6f72 "pdflatex"
-  "tickets.tex" 1685597205 12145 7121ada3f085fb458106420a14bfc98f ""
-  "tickets.toc" 1685597218 3423 a48303851ecc817ea126c70324987cf3 "pdflatex"
+  "tickets.aux" 1685615896 5155 bdd307ad8ea1c90fe0ba37b1109e496a "pdflatex"
+  "tickets.out" 1685615896 2718 16ddd21b1f07f989c8b8229f6b5d6f72 "pdflatex"
+  "tickets.tex" 1685615889 12304 20db88f9f8e6c8fffd8f7b9cc43d18c9 ""
+  "tickets.toc" 1685615896 3423 a48303851ecc817ea126c70324987cf3 "pdflatex"
   (generated)
   "tickets.aux"
   "tickets.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.13)  1 JUN 2023 08:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.13)  1 JUN 2023 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -871,23 +871,23 @@ Package pdftex.def Info: images//21.3.png  used on input line 465.
 <images//23.1.png, id=403, 541.27219pt x 88.07906pt>
 File: images//23.1.png Graphic file (type png)
 <use images//23.1.png>
-Package pdftex.def Info: images//23.1.png  used on input line 474.
+Package pdftex.def Info: images//23.1.png  used on input line 481.
 (pdftex.def)             Requested size: 284.52756pt x 46.30132pt.
 <images//24.1.png, id=404, 558.58687pt x 297.36093pt>
 File: images//24.1.png Graphic file (type png)
 <use images//24.1.png>
-Package pdftex.def Info: images//24.1.png  used on input line 483.
+Package pdftex.def Info: images//24.1.png  used on input line 492.
 (pdftex.def)             Requested size: 284.52756pt x 151.47057pt.
 <images//25.1.png, id=405, 507.39563pt x 231.11343pt>
 File: images//25.1.png Graphic file (type png)
 <use images//25.1.png>
-Package pdftex.def Info: images//25.1.png  used on input line 489.
+Package pdftex.def Info: images//25.1.png  used on input line 498.
 (pdftex.def)             Requested size: 284.52756pt x 129.6025pt.
  [25 <./images//21.3.png> <./images//23.1.png> <./images//24.1.png>]
-<images//27.1.png, id=414, 500.62032pt x 271.0125pt>
+<images//27.1.png, id=418, 500.62032pt x 271.0125pt>
 File: images//27.1.png Graphic file (type png)
 <use images//27.1.png>
-Package pdftex.def Info: images//27.1.png  used on input line 499.
+Package pdftex.def Info: images//27.1.png  used on input line 508.
 (pdftex.def)             Requested size: 284.52756pt x 154.03624pt.
  [26 <./images//25.1.png> <./images//27.1.png>] (tickets.aux)
 Package rerunfilecheck Info: File `tickets.out' has not changed.
@@ -901,10 +901,10 @@ Here is how much of TeX's memory you used:
  517224 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,76p,317b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\danii\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\danii\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\danii\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-Output written on tickets.pdf (26 pages, 3440134 bytes).
+ <C:\Users\danii\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\danii\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\danii\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on tickets.pdf (26 pages, 3477201 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
+ 614 PDF objects out of 1000 (max. 8388607)
  71 named destinations out of 1000 (max. 500000)
  597 words of extra memory for PDF output out of 10000 (max. 10000000)
 
