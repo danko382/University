@@ -135,5 +135,74 @@ $\sigma$"=алгебра над классом $K$. Борелевская $\sig
         \Omega = (-\infty, \infty) = R \;\;\; K = \{[a, b), [a, +\infty),
         (a, +\infty), (-\infty, b), (-\infty, b], (a, b]\}.  
     \]
+    \bigskip
+
+\subsection{Теорема Каратеодори}
+
+    Пусть $Q(A)$~--- счётно аддитивная вероятностная мера на алгебре $\mathcal{A}$.
+    Тогда существует единственная счётно аддитивная вероятностная мера $P(A)$, заданная
+    на минимальной $\sigma$"=алгебре $\mathcal{F}$ и являющаяся её продолжением,
+    то есть $\forall A \in \mathcal{A} \;\;\; P(A) = Q(A).$
+    \bigskip
+
+\subsection{Определения: мера, конечно"=аддитивная, счётно"=аддитивная мера}
+
+Пусть $\Omega$~--- множество элементарных исходов эксперимента. Некоторое 
+его подмножество $A \subset \Omega$ называется случайным событием.
+
+\textbf{Определение вероятностной меры:}
+    \smallskip
+
+    Вероятностной мерой называется функция $P : \mathcal{F} \to [0, 1]$,
+    удовлетворяющая условиям:
+
+    \begin{enumerate}
+        \item{$P(\Omega) = 1$;}
+        \item{$\forall A \in \mathcal{F} \;\;\; P(A) \geq 0$;}
+        \item{$\forall \{A_i\}^{\infty}_{i = 1} \in \mathcal{F}$,
+        такой, что $\forall i \neq j \;\;\; A_i \cap A_j = \varnothing$,
+        $P\left(\bigcup\limits^{\infty}_{i = 1}A_i\right) = \sum\limits^{\infty}_{i = 1} P(A_i)$.}
+    \end{enumerate}
+
+\textbf{Определение конечно аддитивной
+вероятностной меры}
+    \smallskip
+
+    Конечно аддитивной вероятностной мерой $Q(A)$
+    называется функция множества $Q: \mathcal{A}
+    \rightarrow [0; 1]$, такая, что:
+
+    \begin{enumerate}
+        \item{$\forall A \in \mathcal{A} \;\;\;
+        Q(A) \geq 0$;}
+        \item{$Q(\Omega) = 1$;}
+        \item{$\forall A, B \in \mathcal{A} : 
+        \;\;\; A \cap B = \varnothing \;\;\;
+        Q(A \cup B) = Q(A) + Q(B) \;\;\;
+        Q\left(\bigcup\limits_{i = 1}^{\infty} A_i\right) = \sum_{i = 1}^{\infty}
+        Q(A_i)$.}
+    \end{enumerate}
+    \bigskip  
+
+\textbf{Определение счётно аддитивной 
+вероятностной меры:}
+    \smallskip
+
+    Счётно аддитивно вероятностной мерой $P(A)$
+    называется функция множества $P: \mathcal{F}
+    \rightarrow [0; 1]$, такая, что:
+
+    \begin{enumerate}
+        \item{$\forall A \in \mathcal{F} \;\;\;
+        P(A) \geq 0$;}
+        \item{$P(\Omega) = 1$;}
+        \item{$\forall \{A_i\}_{i = 1}^{\infty}
+        \in \mathcal{F} : \;\;\; \forall
+        i \neq j \;\;\; A_i \bigcap A_j = 
+        \varnothing \;\;\; P\left(\bigcup\limits_{i = 1}^{
+        \infty} A_i\right) = \sum_{i = 1}^{\infty}
+        P(A_i)$.}
+    \end{enumerate}
+    \bigskip  
 
 \end{document}
