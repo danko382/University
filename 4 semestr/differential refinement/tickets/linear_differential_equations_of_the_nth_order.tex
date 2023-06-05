@@ -148,8 +148,45 @@
                 \[
                     \mathbf{W} \equiv 0  
                 \]
+                \smallskip
 
-                Доказательство: нужно знать для зачёта.
+                Доказательство:
+                \smallskip
+
+                Пусть $\varphi_1(x), \dots, \varphi_n(x)$~--- линейно зависимы на
+                $[a, b]$ и для определённости $\varphi_1(x) = \gamma_2 \varphi_2(x) +
+                \dots + \gamma_n \varphi_n(x) = \sum^{n}_{k = 2} \gamma_k \varphi_k(x)$.
+                Тогда
+
+                \[
+                    \begin{vmatrix}
+                        \sum^{n}_{k = 2} \gamma_k \varphi_k(x) & \dots & \varphi_m(x) \\
+                        \sum^{n}_{k = 2} \gamma_k \varphi^{'}_k(x) & \dots & \varphi^{'}_m(x) \\
+                        \dots \\
+                        \sum^{n}_{k = 2} \gamma_k \varphi^{(n - 1)}_k(x) & \dots & \varphi^{(n - 1)}_m(x) \\
+                    \end{vmatrix}  
+                    =
+                    \sum^{n}_{k = 2}
+                    \begin{vmatrix}
+                        \gamma_k \varphi_k(x) & \dots & \varphi_m(x) \\
+                        \gamma_k \varphi^{'}_k(x) & \dots & \varphi^{'}_m(x) \\
+                        \dots \\
+                        \gamma_k \varphi^{(n - 1)}_k(x) & \dots & \varphi^{(n - 1)}_m(x) \\
+                    \end{vmatrix}
+                    =
+                \]
+
+                \[
+                    =
+                    \sum^{n}_{k = 2} \gamma_k
+                    \begin{vmatrix}
+                        \varphi_k(x) & \dots & \varphi_m(x) \\
+                        \varphi^{'}_k(x) & \dots & \varphi^{'}_m(x) \\
+                        \dots \\
+                        \varphi^{(n - 1)}_k(x) & \dots & \varphi^{(n - 1)}_m(x) \\
+                    \end{vmatrix}
+                    \equiv 0 \;\;\; \forall k = \overline{2, n}
+                \]
 
         \subsubsection{Условие линейной независимости решений}
         
@@ -170,8 +207,17 @@
                 \[
                     \forall x \in [a, b] \;\;\; \mathbf{W} \neq 0
                 \]
+                \smallskip
 
-                Доказательство: нужно знать для зачёта.
+                Доказательство:
+                
+                \begin{center}
+                    \includegraphics[width=120mm]{"29.png"}
+                    \smallskip
+
+                    \includegraphics[width=120mm]{"30.png"}
+                    \smallskip
+                \end{center}
 
         \subsubsection{Свойство линейности и следствия из него}
 
