@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.13)  5 JUN 2023 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.13)  6 JUN 2023 06:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1734,51 +1734,78 @@ Overfull \hbox (0.34045pt too wide) in paragraph at lines 107--111
 File: images//29.png Graphic file (type png)
 <use images//29.png>
 Package pdftex.def Info: images//29.png  used on input line 215.
-(pdftex.def)             Requested size: 341.43306pt x 392.31337pt.
+(pdftex.def)             Requested size: 398.33858pt x 457.69012pt.
 <images//30.png, id=479, 1003.75pt x 1040.88875pt>
 File: images//30.png Graphic file (type png)
 <use images//30.png>
 Package pdftex.def Info: images//30.png  used on input line 218.
-(pdftex.def)             Requested size: 341.43306pt x 354.0722pt.
+(pdftex.def)             Requested size: 398.33858pt x 413.0763pt.
  [12 <./images//29.png>] [13 <./images//30.png>]
+<images//31.png, id=489, 1003.75pt x 1207.51125pt>
+File: images//31.png Graphic file (type png)
+<use images//31.png>
+Package pdftex.def Info: images//31.png  used on input line 262.
+(pdftex.def)             Requested size: 398.33858pt x 479.20036pt.
+ [14 <./images//31.png>]
+<images//34.png, id=496, 1011.78pt x 1003.75pt>
+File: images//34.png Graphic file (type png)
+<use images//34.png>
+Package pdftex.def Info: images//34.png  used on input line 292.
+(pdftex.def)             Requested size: 398.33858pt x 395.18271pt.
+<images//35.png, id=497, 2457.18pt x 1003.75pt>
+File: images//35.png Graphic file (type png)
+<use images//35.png>
+Package pdftex.def Info: images//35.png  used on input line 295.
+(pdftex.def)             Requested size: 398.33858pt x 162.71689pt.
+ [15 <./images//34.png> <./images//35.png>]
+<images//32.png, id=505, 1709.38625pt x 1003.75pt>
+File: images//32.png Graphic file (type png)
+<use images//32.png>
+Package pdftex.def Info: images//32.png  used on input line 332.
+(pdftex.def)             Requested size: 398.33858pt x 233.8902pt.
+<images//33.png, id=506, 1952.29375pt x 1003.75pt>
+File: images//33.png Graphic file (type png)
+<use images//33.png>
+Package pdftex.def Info: images//33.png  used on input line 335.
+(pdftex.def)             Requested size: 398.33858pt x 204.78986pt.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 323.
+(Font)              scaled to size 10.0pt on input line 341.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 323.
- [14] [15]
+(Font)              scaled to size 7.0pt on input line 341.
+ [16 <./images//32.png> <./images//33.png>] [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 456.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 456.
+(hyperref)                removing `math shift' on input line 474.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 456.
+(hyperref)                removing `superscript' on input line 474.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 456.
+(hyperref)                removing `superscript' on input line 474.
 
-<images//1.png, id=511, 1003.75pt x 1284.8pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 474.
+
+<images//1.png, id=524, 1003.75pt x 1284.8pt>
 File: images//1.png Graphic file (type png)
 <use images//1.png>
-Package pdftex.def Info: images//1.png  used on input line 458.
+Package pdftex.def Info: images//1.png  used on input line 476.
 (pdftex.def)             Requested size: 398.33858pt x 509.87239pt.
-[16]
-<images//2.png, id=520, 1132.23pt x 1003.75pt>
+[18]
+<images//2.png, id=533, 1132.23pt x 1003.75pt>
 File: images//2.png Graphic file (type png)
 <use images//2.png>
-Package pdftex.def Info: images//2.png  used on input line 460.
+Package pdftex.def Info: images//2.png  used on input line 478.
 (pdftex.def)             Requested size: 398.33858pt x 353.12505pt.
- [17 <./images//1.png>] [18 <./images//2.png>]
-Overfull \hbox (19.6327pt too wide) detected at line 556
+ [19 <./images//1.png>] [20 <./images//2.png>]
+Overfull \hbox (19.6327pt too wide) detected at line 574
 \OT1/cmr/bx/n/14.4 W\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 ) = [] = \OML/cmm/m/it/14.4 e[]e[] [] e[] [] \OT1/cmr/m/n/14.4 =
  []
 
-) [19]
+) [21]
 \openout2 = `second-order_linear_equations.aux'.
 
  (second-order_linear_equations.tex
@@ -1826,7 +1853,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 58.
 
-[20
+[22
 
 
 
@@ -1871,7 +1898,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 95.
 
-[21]
+[23]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 174.
@@ -1884,93 +1911,93 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 174.
 
-[22] [23] [24]) [25]
+[24] [25] [26]) [27]
 \openout2 = `linear_systems.aux'.
 
- (linear_systems.tex [26
+ (linear_systems.tex [28
 
 
 
-] [27] [28] [29]
-<images//28.png, id=675, 1282.7925pt x 1003.75pt>
+] [29] [30] [31]
+<images//28.png, id=689, 1282.7925pt x 1003.75pt>
 File: images//28.png Graphic file (type png)
 <use images//28.png>
 Package pdftex.def Info: images//28.png  used on input line 312.
 (pdftex.def)             Requested size: 341.43306pt x 267.1565pt.
-<images//27.png, id=676, 1875.005pt x 1003.75pt>
+<images//27.png, id=690, 1875.005pt x 1003.75pt>
 File: images//27.png Graphic file (type png)
 <use images//27.png>
 Package pdftex.def Info: images//27.png  used on input line 318.
 (pdftex.def)             Requested size: 341.43306pt x 182.76549pt.
-<images//26.png, id=677, 2569.6pt x 736.7525pt>
+<images//26.png, id=691, 2569.6pt x 736.7525pt>
 File: images//26.png Graphic file (type png)
 <use images//26.png>
 Package pdftex.def Info: images//26.png  used on input line 324.
 (pdftex.def)             Requested size: 341.43306pt x 97.89467pt.
- [30 <./images//28.png> <./images//27.png>]
-<images//25.png, id=682, 1386.17876pt x 1003.75pt>
+ [32 <./images//28.png> <./images//27.png>]
+<images//25.png, id=696, 1386.17876pt x 1003.75pt>
 File: images//25.png Graphic file (type png)
 <use images//25.png>
 Package pdftex.def Info: images//25.png  used on input line 326.
 (pdftex.def)             Requested size: 341.43306pt x 247.23042pt.
-<images//23.png, id=683, 2569.6pt x 286.06876pt>
+<images//23.png, id=697, 2569.6pt x 286.06876pt>
 File: images//23.png Graphic file (type png)
 <use images//23.png>
 Package pdftex.def Info: images//23.png  used on input line 332.
 (pdftex.def)             Requested size: 341.43306pt x 38.01086pt.
-<images//24.png, id=684, 1003.75pt x 1136.245pt>
+<images//24.png, id=698, 1003.75pt x 1136.245pt>
 File: images//24.png Graphic file (type png)
 <use images//24.png>
 Package pdftex.def Info: images//24.png  used on input line 334.
 (pdftex.def)             Requested size: 341.43306pt x 386.5089pt.
- [31 <./images//26.png> <./images//25.png> <./images//23.png>]
-<images//21.png, id=690, 1003.75pt x 1374.13374pt>
+ [33 <./images//26.png> <./images//25.png> <./images//23.png>]
+<images//21.png, id=703, 1003.75pt x 1374.13374pt>
 File: images//21.png Graphic file (type png)
 <use images//21.png>
 Package pdftex.def Info: images//21.png  used on input line 340.
 (pdftex.def)             Requested size: 341.43306pt x 467.42995pt.
- [32 <./images//24.png>]
-<images//22.png, id=695, 1003.75pt x 1474.50874pt>
+ [34 <./images//24.png>]
+<images//22.png, id=708, 1003.75pt x 1474.50874pt>
 File: images//22.png Graphic file (type png)
 <use images//22.png>
 Package pdftex.def Info: images//22.png  used on input line 346.
 (pdftex.def)             Requested size: 341.43306pt x 501.57384pt.
- [33 <./images//21.png>]
-<images//19.png, id=700, 1003.75pt x 1111.15125pt>
+ [35 <./images//21.png>]
+<images//19.png, id=713, 1003.75pt x 1111.15125pt>
 File: images//19.png Graphic file (type png)
 <use images//19.png>
 Package pdftex.def Info: images//19.png  used on input line 352.
 (pdftex.def)             Requested size: 341.43306pt x 377.97293pt.
- [34 <./images//22.png>]
-<images//17.png, id=705, 2037.6125pt x 1003.75pt>
+ [36 <./images//22.png>]
+<images//17.png, id=718, 2037.6125pt x 1003.75pt>
 File: images//17.png Graphic file (type png)
 <use images//17.png>
 Package pdftex.def Info: images//17.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 168.18468pt.
-<images//18.png, id=706, 1136.245pt x 1003.75pt>
+<images//18.png, id=719, 1136.245pt x 1003.75pt>
 File: images//18.png Graphic file (type png)
 <use images//18.png>
 Package pdftex.def Info: images//18.png  used on input line 360.
 (pdftex.def)             Requested size: 341.43306pt x 301.61743pt.
- [35 <./images//19.png> <./images//17.png>]
-<images//20.png, id=711, 490.83376pt x 228.10219pt>
+ [37 <./images//19.png> <./images//17.png>]
+<images//20.png, id=725, 490.83376pt x 228.10219pt>
 File: images//20.png Graphic file (type png)
 <use images//20.png>
 Package pdftex.def Info: images//20.png  used on input line 366.
 (pdftex.def)             Requested size: 341.43306pt x 158.67847pt.
-<images//16.png, id=713, 1445.4pt x 1002.74625pt>
+<images//16.png, id=727, 1445.4pt x 1002.74625pt>
 File: images//16.png Graphic file (type png)
 <use images//16.png>
 Package pdftex.def Info: images//16.png  used on input line 372.
 (pdftex.def)             Requested size: 341.43306pt x 236.86945pt.
- [36 <./images//18.png> <./images//20.png>]
-<images//14.png, id=719, 1003.75pt x 1209.51875pt>
+ [38 <./images//18.png> <./images//20.png>]
+<images//14.png, id=733, 1003.75pt x 1209.51875pt>
 File: images//14.png Graphic file (type png)
 <use images//14.png>
 Package pdftex.def Info: images//14.png  used on input line 378.
 (pdftex.def)             Requested size: 341.43306pt x 411.43394pt.
- [37 <./images//16.png>]
-<images//15.png, id=725, 2569.6pt x 752.8125pt>
+ [39 <./images//16.png>]
+<images//15.png, id=738, 2569.6pt x 752.8125pt>
 File: images//15.png Graphic file (type png)
 <use images//15.png>
 Package pdftex.def Info: images//15.png  used on input line 380.
@@ -1988,18 +2015,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 383.
 
-<images//12.png, id=726, 1146.2825pt x 1003.75pt>
+<images//12.png, id=739, 1146.2825pt x 1003.75pt>
 File: images//12.png Graphic file (type png)
 <use images//12.png>
 Package pdftex.def Info: images//12.png  used on input line 386.
 (pdftex.def)             Requested size: 341.43306pt x 298.9831pt.
-[38 <./images//14.png> <./images//15.png>]
-<images//13.png, id=731, 1003.75pt x 1344.02126pt>
+[40 <./images//14.png> <./images//15.png>]
+<images//13.png, id=744, 1003.75pt x 1344.02126pt>
 File: images//13.png Graphic file (type png)
 <use images//13.png>
 Package pdftex.def Info: images//13.png  used on input line 388.
 (pdftex.def)             Requested size: 341.43306pt x 457.18677pt.
- [39 <./images//12.png>]
+ [41 <./images//12.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 391.
@@ -2028,12 +2055,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 391.
 
-<images//3.png, id=736, 1437.37pt x 1003.75pt>
+<images//3.png, id=749, 1437.37pt x 1003.75pt>
 File: images//3.png Graphic file (type png)
 <use images//3.png>
 Package pdftex.def Info: images//3.png  used on input line 394.
 (pdftex.def)             Requested size: 398.33858pt x 278.16869pt.
-[40 <./images//13.png>]
+[42 <./images//13.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 397.
@@ -2046,17 +2073,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 397.
 
-<images//4.png, id=741, 1943.26pt x 1003.75pt>
+<images//4.png, id=754, 1943.26pt x 1003.75pt>
 File: images//4.png Graphic file (type png)
 <use images//4.png>
 Package pdftex.def Info: images//4.png  used on input line 404.
 (pdftex.def)             Requested size: 398.33858pt x 205.73944pt.
-<images//5.png, id=742, 1947.275pt x 1003.75pt>
+<images//5.png, id=755, 1947.275pt x 1003.75pt>
 File: images//5.png Graphic file (type png)
 <use images//5.png>
 Package pdftex.def Info: images//5.png  used on input line 406.
 (pdftex.def)             Requested size: 398.33858pt x 205.32591pt.
-[41 <./images//3.png> <./images//4.png>]
+[43 <./images//3.png> <./images//4.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 409.
@@ -2081,18 +2108,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 409.
 
-<images//6.png, id=747, 1003.75pt x 1391.1975pt>
+<images//6.png, id=761, 1003.75pt x 1391.1975pt>
 File: images//6.png Graphic file (type png)
 <use images//6.png>
 Package pdftex.def Info: images//6.png  used on input line 412.
 (pdftex.def)             Requested size: 341.43306pt x 473.2344pt.
-<images//7.png, id=748, 2569.6pt x 667.49374pt>
+<images//7.png, id=762, 2569.6pt x 667.49374pt>
 File: images//7.png Graphic file (type png)
 <use images//7.png>
 Package pdftex.def Info: images//7.png  used on input line 414.
 (pdftex.def)             Requested size: 341.43306pt x 88.69203pt.
-[42 <./images//5.png> <./images//6.png>]
-<images//8.png, id=753, 1003.75pt x 1450.41875pt>
+[44 <./images//5.png> <./images//6.png>]
+<images//8.png, id=767, 1003.75pt x 1450.41875pt>
 File: images//8.png Graphic file (type png)
 <use images//8.png>
 Package pdftex.def Info: images//8.png  used on input line 420.
@@ -2110,24 +2137,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 423.
 
-<images//9.png, id=754, 1003.75pt x 1472.50125pt>
+<images//9.png, id=768, 1003.75pt x 1472.50125pt>
 File: images//9.png Graphic file (type png)
 <use images//9.png>
 Package pdftex.def Info: images//9.png  used on input line 426.
 (pdftex.def)             Requested size: 341.43306pt x 500.89096pt.
-[43 <./images//7.png> <./images//8.png>]
-<images//10.png, id=760, 1002.74625pt x 1461.46pt>
+[45 <./images//7.png> <./images//8.png>]
+<images//10.png, id=773, 1002.74625pt x 1461.46pt>
 File: images//10.png Graphic file (type png)
 <use images//10.png>
 Package pdftex.def Info: images//10.png  used on input line 428.
 (pdftex.def)             Requested size: 341.43306pt x 497.62573pt.
- [44 <./images//9.png>]
-<images//11.png, id=765, 1003.75pt x 1079.03125pt>
+ [46 <./images//9.png>]
+<images//11.png, id=778, 1003.75pt x 1079.03125pt>
 File: images//11.png Graphic file (type png)
 <use images//11.png>
 Package pdftex.def Info: images//11.png  used on input line 430.
 (pdftex.def)             Requested size: 341.43306pt x 367.04689pt.
- [45 <./images//10.png>]) [46 <./images//11.png>] (tickets.aux (first-order_equations.aux) (linear_differential_equations_of_the_nth_order.aux) (second-order_linear_equations.aux) (linear_systems.aux))
+ [47 <./images//10.png>]) [48 <./images//11.png>] (tickets.aux (first-order_equations.aux) (linear_differential_equations_of_the_nth_order.aux) (second-order_linear_equations.aux) (linear_systems.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2135,17 +2162,17 @@ Package rerunfilecheck Info: File `tickets.out' has not changed.
 (rerunfilecheck)             Checksum: A99B8A12999DE72241E8E4D3C9CE55D1;28267.
  ) 
 Here is how much of TeX's memory you used:
- 15274 strings out of 476331
- 246631 string characters out of 5797580
+ 15326 strings out of 476331
+ 247470 string characters out of 5797580
  1869660 words of memory out of 5000000
- 35217 multiletter control sequences out of 15000+600000
+ 35262 multiletter control sequences out of 15000+600000
  546212 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,10n,81p,1161b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/tempora/Tempora-Bold.pfb><C:/Program Files/MiKTeX/fonts/type1/public/tempora/Tempora-Regular.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on tickets.pdf (46 pages, 8520593 bytes).
+Output written on tickets.pdf (48 pages, 9896222 bytes).
 PDF statistics:
- 877 PDF objects out of 1000 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 752 words of extra memory for PDF output out of 10000 (max. 10000000)
 
