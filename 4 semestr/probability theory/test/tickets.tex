@@ -195,6 +195,89 @@ $\sigma$"=алгебра над классом $K$. Борелевская $\sig
 \subsection{Построение меры Лебега. Верхняя мера Лебега, нижняя мера Лебега, мера
 Лебега. Измеримое по Лебегу множество.}    
 
+Пусть $P = <a, b> \times <c, d>$. $P \subset R^2$~--- прямоугольник.
+\bigskip
+
+Мерой прямоугольника назовём $m(P)$, где
+
+$m(P) = (b - a)(d - c)$
+
+\begin{center}
+    \includegraphics[width=100mm]{"5.1.png"}
+\end{center}
+\bigskip
+
+Множество $A$ назовём эелментарным, если оно представимо в виде
+суммы прямоугольников хотя бы 1 способом:
+
+\[
+    A = \bigcup P_k,  
+\]
+
+где $\{P_k\}$~--- покрытие.
+\bigskip
+
+Мерой элементарного сножества $A$ называется 
+
+\[
+    m^{'}(A) = \sum m(P_k),  
+\]
+
+где $\{P_k\}$~--- разбиение $A$, то есть $\forall j \neq k \;\;\; P_k \cap P_j =
+\varnothing$.
+\bigskip
+
+Рассмотрим множество $E = [0; 1] \times [0; 1]$
+
+\begin{center}
+    \includegraphics[width=100mm]{"5.2.png"}
+\end{center}
+\bigskip
+
+\textbf{Определение верхней меры Лебега:}
+    \smallskip    
+
+    Пусть $A$~--- некоторое множество. Рассмотрим $\{P_k\}$, такое, что:
+
+    \[
+        A \subset P_k
+    \]
+
+    \begin{center}
+        \includegraphics[width=100mm]{"5.3.png"}
+    \end{center}
+
+    Верхней мерой Лебега называется 
+
+    \[
+        \mu^{*}(A) = \inf_{\{P_k\}} \sum m(P_k)
+    \]
+    \bigskip
+
+\textbf{Определение нижней меры Лебега:}
+    \smallskip
+    
+    Рассмотрим множество $E \backslash A. (m(E) = 1)$
+
+    \begin{center}
+        \includegraphics[width=100mm]{"5.4.png"}
+    \end{center}
+
+    Нижней мерой Лебега называется:
+
+    \[
+        \mu_{*}(A) = 1 - \mu^{*}(E \backslash A)  
+    \]
+    \bigskip
+    
+\textbf{Определение меры Лебега и измеримого по Лебегу множества:}
+    \smallskip
+    
+    Говорят, что множество $A$ измеримо по Лебегу, если $\mu^{*}(A) =
+    \mu_{*}(A) = \mu (A)$.
+
+    Величина $\mu(A)$~--- называется мерой Лебега множества $A$.
+
 \subsection{Вероятностная мера, её свойства, непрерывность вероятностной меры.}
 
 \textbf{Определение вероятностной меры:}
@@ -343,6 +426,45 @@ $(\Omega, \mathcal{F}, P)$~--- вероятностное пространств
     \]
 
 \subsection{Формулы полной вероятности и Байеса.}
+
+\textbf{Теорема (формула полной вероятности):}
+    \smallskip
+
+    Пусть $(\Omega, \mathcal{F}, P)$~--- вероятностное пространство и
+    $\{A_i\}^{\infty}_{i = 1} \in \mathcal{F}$~--- полная группа
+    попарно несовместных событий; $P(A_i) \geq 0$. Пусть $A \in \mathcal{F}$~---
+    неполное событие $P(A|A_i) \geq 0$. Тогда $P(A) = \sum^{\infty}_{i = 1} P(A_i)
+    \cdot P(A|A_i)$.
+    \bigskip
+
+    Доказательство:
+    \bigskip
+
+    $$P(A) = P(A \cap \Omega) = P(A \cap (\sqcup^{\infty}_{i = 1} A_i)) =
+    P(\sqcup^{\infty}_{i = 1}(A \cap A_i)) \Rightarrow$$
+
+    $$\Rightarrow \sum^{\infty}_{i = 1} P (A \cap A_i) = \sum^{\infty}_{i = 1}
+    P(A_i)P(A|A_i)$$.
+    \bigskip
+
+\textbf{Теорема (формула Байеса):}
+    \smallskip
+    
+    Пусть $\{A_i\}^{\infty}_{i = 1} \in \mathcal{F}$~--- полная группа
+    попарно несовместных событий и пусть для некоторого $P(A) > 0$. Тогда
+
+    \[
+        \forall i = \overline{1, \infty} \;\;\; P(A_i|A) = 
+        \frac{P(A_i)P(A|A_i)}{P(A)}  
+    \]
+    \bigskip
+
+    Доказательство:
+    \bigskip
+
+    \[
+        P(A_i|A) = \frac{P(A \cap A_i)}{P(A)} = \frac{P(A_i) \cdot P(A|A_i)}{P(A)}  
+    \]
 
 \subsection{Независимость событий. Независимость в совокупности.}
 
