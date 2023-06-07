@@ -137,7 +137,7 @@ $\sigma$"=алгебра над классом $K$. Борелевская $\sig
     \]
     \bigskip
 
-\subsection{Теорема Каратеодори}
+\subsection{Теорема Каратеодори.}
 
     Пусть $Q(A)$~--- счётно аддитивная вероятностная мера на алгебре $\mathcal{A}$.
     Тогда существует единственная счётно аддитивная вероятностная мера $P(A)$, заданная
@@ -149,20 +149,7 @@ $\sigma$"=алгебра над классом $K$. Борелевская $\sig
 
 Пусть $\Omega$~--- множество элементарных исходов эксперимента. Некоторое 
 его подмножество $A \subset \Omega$ называется случайным событием.
-
-\textbf{Определение вероятностной меры:}
-    \smallskip
-
-    Вероятностной мерой называется функция $P : \mathcal{F} \to [0, 1]$,
-    удовлетворяющая условиям:
-
-    \begin{enumerate}
-        \item{$P(\Omega) = 1$;}
-        \item{$\forall A \in \mathcal{F} \;\;\; P(A) \geq 0$;}
-        \item{$\forall \{A_i\}^{\infty}_{i = 1} \in \mathcal{F}$,
-        такой, что $\forall i \neq j \;\;\; A_i \cap A_j = \varnothing$,
-        $P\left(\bigcup\limits^{\infty}_{i = 1}A_i\right) = \sum\limits^{\infty}_{i = 1} P(A_i)$.}
-    \end{enumerate}
+\bigskip
 
 \textbf{Определение конечно аддитивной
 вероятностной меры}
@@ -204,5 +191,155 @@ $\sigma$"=алгебра над классом $K$. Борелевская $\sig
         P(A_i)$.}
     \end{enumerate}
     \bigskip  
+
+\subsection{Построение меры Лебега. Верхняя мера Лебег, нижняя мера Лебега, мера
+Лебега. Измеримое по Лебегу множество.}    
+
+\subsection{Вероятностная мера, её свойства, непрерывность вероятностной меры.}
+
+\textbf{Определение вероятностной меры:}
+    \smallskip
+
+    Вероятностной мерой называется функция $P : \mathcal{F} \to [0, 1]$,
+    удовлетворяющая условиям:
+
+    \begin{enumerate}
+        \item{$P(\Omega) = 1$;}
+        \item{$\forall A \in \mathcal{F} \;\;\; P(A) \geq 0$;}
+        \item{$\forall \{A_i\}^{\infty}_{i = 1} \in \mathcal{F}$,
+        такой, что $\forall i \neq j \;\;\; A_i \cap A_j = \varnothing$,
+        $P\left(\bigcup\limits^{\infty}_{i = 1}A_i\right) = \sum\limits^{\infty}_{i = 1} P(A_i)$.}
+    \end{enumerate}
+    \bigskip
+
+\textbf{Свойства вероятностной меры:}    
+    \smallskip
+
+    \begin{enumerate}
+        \item{
+        \begin{center}
+            \includegraphics[width=100mm]{"6.1.png"}
+        \end{center}
+        }
+        \item{
+        \begin{center}
+            \includegraphics[width=100mm]{"6.2.png"}
+        \end{center}
+        }
+        \item{
+        \begin{center}
+            \includegraphics[width=100mm]{"6.3.png"}
+        \end{center}
+        }
+        \item{
+        \begin{center}
+            \includegraphics[width=100mm]{"6.4.png"}
+
+            \includegraphics[width=120mm]{"6.5.png"}
+        \end{center}
+        }
+    \end{enumerate}
+
+\subsection{Классическое вероятностное пространство. Классическое определение
+вероятности.}
+
+Вероятностной моделью стохастического эксперимента называется тройка
+$(\Omega, \mathcal{F}, P)$, где $\Omega$~--- множество элементарных
+исходов экмперимента, $\mathcal{F}$~--- алгебра событий, 
+$P$~--- вероятностная мера.
+
+$(\Omega, \mathcal{F}, P)$~--- вероятностное пространство.
+\bigskip
+
+\textbf{Определение классического вероятностного пространства:}
+    \smallskip
+
+    Классическим вероятностым пространством, называется вероятностное
+    пространство $(\Omega, \mathcal{F}, P)$, в конечном множестве 
+    элементарных исходов которого все элементарные исходы равновозможны.
+    \bigskip
+
+    Построим вероятностную меру:
+    \bigskip
+
+    Пусть $\Omega = \{w1, \dots, w_n\}$.
+
+    Рассмотрим $\{ A_i \}^{n}_{i = 1}$, где $A_i = \{w_i\}$. Тогда
+
+    \[
+        A_i \cap A_j = \varnothing \;\;\; \bigcup^{n}_{i = 1} A_i = \Omega.  
+    \]
+
+    \[
+        1 = P(\Omega) = P(\bigcup^{n}_{i = 1} A_i) = \sum^{n}_{i = 1} P(A_i) =
+        | P(A_i) = P(w_i) = p | = \sum^{n}_{i = 1} p \Rightarrow
+    \]
+    \[
+        \Rightarrow p = \frac{1}{n} \Rightarrow \forall w_i \;\;\; P(w_i) =
+        \frac{1}{n}  
+    \]
+
+    Пусть $A = \{w_{i_1}, \dots, w_{i_k}\}$ $0 \leq k \leq n$. Тогда
+    вероятностная мера в классическом вероятностном пространстве имеет
+    вид 
+
+    \[
+        P(A) = P \left( \bigsqcup^{k}_{j = 1} w_{ij} \right) =
+        \sum^{k}_{j = 1} P(w_{ij}) = \sum^{k}_{j = 1} \frac{1}{n} = \frac{k}{n},  
+    \]
+    \bigskip
+
+    \textbf{$P(A) = \frac{k}{n}$~--- называется классической вероятностью},
+
+    где $k$~--- количество благоприятных $A$ элементарных исходов,
+    $n$~--- количество элементарных исходов эксперимента.
+
+\subsection{Дискретное вероятностное пространство.}
+
+\textbf{Определение дискретного вероятностного пространства:}
+    \smallskip
+
+    Дискретным вероятностным пространством называется вероятностное
+    пространство $(\Omega, \mathcal{F}, P)$, такое, что 
+    $\Omega$~--- конечное или счётное множество неравновозможных исходов.
+    \bigskip
+
+    Вероятностную меру зададим числами $p_i = P(w_i) > 0$, такими, что
+    $\sum^{\infty}_{i = 1} p_i = 1$. Тогда $\forall A \in \mathcal{F}$
+    веротность вычисляется как $P(A) = P(\bigcup\limits_{w_i \in A} w_i) =
+    \sum\limits_{w_i \in A} P (w_i)$.
+
+\subsection{Условная вероятность. Теорема умножения вероятностей.}    
+
+\textbf{Определение условной вероятности:}
+    \smallskip
+
+    Пусть $(\Omega, \mathcal{F}, P)$~--- вероятностное пространство и
+    $A, B \in \mathcal{F}; \;\;\; P(B) > 0$. 
+
+    Условной вероятностью события $A$ при условии, что наступило
+    событие $B$ называется число:
+
+    \[
+        P(A|B) = \frac{P(A \cap B)}{P(B)}.  
+    \]
+    \bigskip
+
+\textbf{Теорема умножения вероятностей:}
+    \smallskip
+    
+    Пусть $A$ и $B$~--- случайные события и $P(B) > 0$. Тогда 
+
+    \[
+        P(A \cap B) = P(B) \cdot P(A|B)  
+    \]
+    \bigskip
+
+    Пусть $A_1, A_2, A_3$~--- случайные события и $P(A_1) > 0$ и $P(A_1 \cap A_2) > 0$.
+    Тогда
+
+    \[
+        P(A_1 \cap A_2 \cap A_3) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_1 \cap A_2)  
+    \]
 
 \end{document}
