@@ -821,6 +821,398 @@ $(\Omega, \mathcal{F}, P)$~--- вероятностное пространств
         \includegraphics[width=140mm]{"20.3.png"}
     \end{center}
 
+\subsection{Нормальное распределение (функции распределения, функции плотности,
+свойства).}
 
+\textbf{$(\xi \sim N(a, \sigma^2))$:}
+    \smallskip
+
+    Функция распределения: $F_{\xi}(x) = \frac{1}{\sqrt{2 \pi} \sigma}
+    \int\limits^{x}_{-\infty} e^{-\frac{(t - a)^2}{2 \sigma^2}}dt$
+    \smallskip
+
+    Функция плотности: $f_{\xi}(x) = \frac{1}{\sqrt{2 \pi}\sigma} 
+    e^{-\frac{(x - a)^2}{2 \sigma^2}}$
+    \smallskip
+
+    \begin{center}
+        \includegraphics[width=140mm]{"21.1.png"}
+    \end{center}
+    \bigskip
+
+\textbf{$(\xi_0 \sim N(0, 1))$:}
+    \smallskip
+    
+    Функция распределения: $F_{\xi}(x) = \frac{1}{\sqrt{2 \pi}}
+    \int\limits^{x}_{-\infty} e^{-\frac{t^2}{2}}dt$
+    \smallskip
+
+    Функция плотности: $f_{\xi}(x) = \frac{1}{\sqrt{2 \pi}} 
+    e^{-\frac{x^2}{2}}$
+    \bigskip
+
+\textbf{Свойства нормального распределения:}
+    \smallskip
+    
+    \begin{enumerate}
+        \item{Связь $N(a, \sigma^2)$ и $N(0, 1)$:
+        \bigskip
+        
+        Если $\xi \sim N(a, \sigma^2)$, то $\frac{\xi - a}{\sigma} = \xi_0 \sim N(0, 1)$
+        \smallskip
+
+        Если $\xi_0 \sim N(0, 1)$, то $\sigma \xi_0 + a = \xi \sim N(a, \sigma^2)$;}
+        \item{Связь стандартного нормального распределения с функциями Лапласа:
+        \bigskip
+
+        С дифференциальной функцией Лапласа: 
+
+        $\varphi(x) = \frac{1}{\sqrt{2 \pi}}e^{- \frac{x^2}{2}} \Rightarrow
+        f_{\xi_0}(x) = \varphi(x)$
+        \smallskip
+        
+        С интегральной функцией Лапласа:
+        
+        $0,5 + \Phi(x) = \frac{1}{\sqrt{2 \pi}} \int\limits^{0}_{-\infty} e^{-\frac{t^2}{2}}dt +
+        \frac{1}{\sqrt{2 \pi}} \int\limits^{x}_{0} e^{-\frac{t^2}{2}}dt = 
+        F_{\xi_0}(x)$;}
+        \item{Правило трёх сигм $(3 \time \sigma)$:
+        \bigskip
+        
+        Почти всё нормальное распределение лежит в диапазоне 
+        $(a - 3 \sigma; a + 3 \sigma) \;\;\;\;\;\; \xi \sim N(a, \sigma^2)$.}
+    \end{enumerate}
+
+\subsection{Случайные векторы. Функция распределения случайного вектора,
+её свойства. Дискретные и непрерывные случайные векторы.}
+
+\textbf{Определение случайного вектора:}
+    \smallskip
+
+    Пусть $(\Omega, \mathcal{F}, P)$~--- векторное пространство. Случайным вектором
+    называется вектор со случайными координатами:
+
+    \[
+        \overline{\xi} = (\xi_1, \dots, \xi_n),  
+    \]
+
+    где $\xi_i \in (\Omega, \mathcal{F}, P)_i$.
+    \bigskip
+
+\textbf{Определение функции распределения случайного вектора. Её свойства:}
+    \smallskip
+    
+    Функцией распределения вероятностей случайного веткора называется:
+
+    \[
+        F_{\overline{\xi}}(x_1, \dots, x_n) = P\{w: \xi_1(w) < x_1, \dots,
+        \xi_n(w) < x_n\} 
+    \]
+    \[
+        F_{\xi \eta} (x, y) = P\{w: \xi(w) < x, \eta(w) < y\}  
+    \]
+    \bigskip
+
+    Свойства функции распределения:
+    \begin{enumerate}
+        \item{$\forall x, y \in R \;\;\; 0 \leq F_{\xi \eta (x, y)} \leq 1$;}
+        \item{Пусть $x_0$ фиксирован. Тогда
+        
+        $F_{\xi \eta} (x_0, y)$~--- неубывающая, непрерывная слева функция 
+        по $y$.
+        \bigskip
+        
+        Пусть $y_0$ фиксирован. Тогда 
+        
+        $F_{\xi \eta} (x, y_0)$~--- неубывающая, непрерывная слева функция 
+        по $x$.}
+        \item{
+            \[
+                \lim_{x \to +\infty} F_{\xi \eta} (x, y) = F_{\eta} (y)  
+            \]
+            \[
+                \lim_{y \to +\infty} F_{\xi \eta} (x, y) = F_{\xi} (x)
+            \]
+            \[
+                \lim_{x \to +\infty; y \to +\infty} F_{\xi \eta} (x, y) = 1 
+            \]
+            \[
+                \lim_{x \to -\infty} F_{\xi \eta} (x, y) = 
+                \lim_{y \to -\infty} F_{\xi \eta} (x, y) =
+                \lim_{x \to -\infty; y \to -\infty} F_{\xi \eta} (x, y) = 0
+            \]
+        }
+    \end{enumerate}
+
+    \begin{center}
+        \includegraphics[width=140mm]{"22.1.png"}
+    \end{center}
+
+\subsection{Независимые случайные величины. Критерий независимости случайных величин.}
+
+\textbf{Определение случайных независимых
+велечин:}
+    \smallskip
+
+    Случайные велечины $\xi$ и $\mu$ называются
+    независимыми, если:
+
+    \[ 
+        \forall x, y \in R \;\;\;\; P\{w : \xi(w)
+        < x; \mu (w) < y\} = P\{w: \xi (w) < x\} \cdot
+        P\{w : \mu (w) < y\}
+    \]
+    \bigskip
+
+\textbf{Критерий независимости дискретной случаной величины:}
+    \smallskip
+
+    Дискретные случайные величины $\xi$ и $\eta$ независимы, тогда
+    и только тогда, когда:
+
+    \[
+        \forall i \neq j \;\;\; p_{ij} = p_i p_j  
+    \]
+    \bigskip
+
+\subsection{Числовые характеристики случайной величины: Математическое ожидание
+и его свойства.}    
+
+Пусть $(\Omega, \mathcal{F}, P)$ "--- вероятностное пространство
+и пусть $\xi$ "--- случайная величина на нём.
+
+\[
+\xi = \xi(w) \;\;\; P = P(w)
+\]
+\bigskip
+
+\textbf{Определение математического ожидания:}
+    \smallskip
+
+    Математическим ожиданием случайной величины $\xi$ называется
+
+    \[
+        M\xi = \int\limits_{\Omega} \xi(w) d P(w)  
+    \]
+
+    Пусть для $\xi$ построена функция распределения $F_{\xi}(x) =
+    P\{\xi < x\}$.
+
+    Тогда
+
+    \[
+        M\xi = \int\limits^{\infty}_{-\infty}  x d F_{\xi} (x)  
+    \]
+
+    Для дискретной случайной величины математическое ожидание 
+    находится по формуле:
+
+    \[
+        M\xi = \sum^{\infty}_{i = 1} x_i p_i  
+    \]
+
+    Для абсолютно непрерывной величины:
+
+    \[
+        M\xi = \int\limits^{\infty}_{-\infty} x f_{\xi} (x) dx  
+    \]
+
+\textbf{Свойствай математического ожидания:}
+    \smallskip    
+
+    \begin{enumerate}
+        \item{$Mc = c$, $c$ "--- const;}
+        \item{$Mc\xi = cM\xi$;}
+        \item{$M(\xi \pm \eta) = M\xi \pm M\eta$;}
+        \item{Если $\xi$ и $\eta$ независимы, то 
+        
+        \[
+            M\xi\eta = M\xi M\eta;   
+        \]
+        }
+        \item{Если $\xi \geq 0 \;\;\; (P\{\xi \geq 0\} = 1)$, то
+        $M\xi \geq 0$;}
+        \item{Неравенство Коши"=Буняковского:
+        
+        \[
+            M|\xi\eta| \leq M|\xi|M|\eta|;  
+        \]
+        }
+        \item{Неравенство Чебышёва:
+        
+        Пусть $\xi$ "--- некоторая неотрицательная величина,
+        а $g(x)$, неубывающая на множестве значений $\xi$, 
+        непрерывная функиция. Тогда
+        
+        \[
+            \forall \varepsilon > 0 \;\;\; P\{\xi \geq \varepsilon\} \leq
+            \frac{Mg(\xi)}{g(\varepsilon)};
+        \]
+        }
+    \end{enumerate}
+
+\subsection{Обобщённое неравенство Чебышёва. Следствие неравенства Чебышёва.}
+    
+\textbf{Неравенство Чебышёва:}
+    \smallskip
+            
+    Пусть $\xi$ "--- некоторая неотрицательная величина,
+    а $g(x)$, неубывающая на множестве значений $\xi$, 
+    непрерывная функиция. Тогда
+    
+    \[
+        \forall \varepsilon > 0 \;\;\; P\{\xi \geq \varepsilon\} \leq
+        \frac{Mg(\xi)}{g(\varepsilon)};
+    \]
+    \bigskip
+
+    Доказательство:
+    \bigskip
+    
+    Рассмотрим $Mg(\xi)$:
+
+    \[
+        Mg(\xi) = \int^{\infty}_{-\infty} g(x)dF_{\xi}(x) = 
+        \int^{\infty}_0 g(x) d F_{\xi}(x) \geq \int^{\infty}_{\epsilon}
+        g(x)d F_{\xi}(x) \geq 
+    \]
+    \[
+        \geq
+        g(\epsilon) \int^{\infty}_{\epsilon} d F_{\xi}(x)
+        = g(\epsilon) \lim_{x \to + \infty} (F_{\xi}(x) - F_{\xi}(\epsilon)) =
+        g(\epsilon) (1 - P\{\xi > \epsilon\}) =
+    \]
+    \[
+        =
+        g(\epsilon)P\{\xi \geq \epsilon\}
+        \leq \frac{Mg(\xi)}{g(\epsilon)}
+    \]
+    \bigskip
+
+\textbf{Следствие неравенства Чебышёва:}
+    \smallskip
+    
+    Пусть $\xi$~--- некоторая случайная величина с конечным математическим
+    ожиданием. Тогда 
+
+    \[
+        \forall \epsilon > 0 \;\;\; P\{|\xi - M\xi \geq \epsilon\} \leq
+        \frac{M(\xi - M\xi)^2}{\epsilon^2}
+    \]
+
+\subsection{Вычисление математического ожидания для распределений Бернулли,
+биномиального распределения, распределения Пуассона, равномерного непрерывного,
+показательного, нормального законов распределения.}
+
+\textbf{Для распределения Бернулли:}
+    \smallskip
+
+    \[
+        M\xi = 0 \cdot q + q \cdot p = p  
+    \]
+    \bigskip
+
+\textbf{Для биномиального распределения:}
+    \smallskip
+    
+    \[
+        M\xi = M(\xi_1, \dots, \xi_n) = M\xi_1 + \dots M\xi_n = p + \dots + p = np  
+    \]
+    \bigskip
+
+\textbf{Для распределения Пуассона:}
+    \smallskip
+    
+    \[
+        M\xi = \sum^{\infty}_{k = 0} k \frac{\lambda e^{-\lambda}}{k!} =
+        \lambda e^{-\lambda} \sum^{\infty}_{k = 1} \frac{\lambda^{k - 1}}{(k - 1)!}=
+        \lambda e^{-\lambda} e^{\lambda} = \lambda 
+    \]
+    \bigskip
+
+\textbf{Для равномерного непрерывного распределения:}
+    \smallskip
+    
+    \[
+        M\xi = \int^{\infty}_{-\infty} x f(x)dx =
+        \int^a_b x \frac{1}{b - a} dx = \frac{1}{b - a} \cdot \frac{b^2 - a^2}{2} =
+        \frac{b + a}{2}  
+    \]
+    \bigskip
+
+\textbf{Для показательного распределения:}
+    \smallskip
+    
+    \[
+        M\xi = \int^{\infty}_0 x \cdot \lambda e^{-\lambda x} dx =
+        -x e^{-\lambda x} |^{\infty}_0 + \int^{\infty}_0 \lambda e^{-\lambda x} dx =
+    \]
+    \[
+        =
+        - (\lim_{x \to +\infty} x e^{-\lambda x} - e^0) + \frac{-1}{\lambda}
+        (\lim_{x \to +\infty} x e^{-\lambda x} - e^0) = \frac{1}{\lambda}  
+    \]
+    \bigskip
+
+\textbf{Для нормального распределения:}
+    \smallskip
+    
+    \[
+        M\xi_0 = \int^{\infty}_{-\infty} x \cdot e^{-\frac{x^2}{2}} dx =
+        \int^{0}_{-\infty} x \cdot e^{-\frac{x^2}{2}} dx +
+        \int^{\infty}_{0} x \cdot e^{-\frac{x^2}{2}} dx = 0
+    \]
+    \[
+        M\xi = M(\sigma \xi_0 + a) = a  
+    \]
+
+\subsection{Числовые характеристики случайных величин: Начальные,
+центральные и смешанные моменты. Дисперсия и её свойства. Ковариация и её свойства.
+Коэффициент корреляции и его свойства.}
+
+\begin{center}
+    \includegraphics[width=140mm]{"27.1.png"}
+\end{center}
+
+\textbf{Определение дисперсии случайной величины:}
+    \smallskip
+
+    Пусть $\xi$ "--- случайная величина и $|M\xi| < +\infty$.
+    \bigskip
+
+    Дисперсией случайной величины $\xi$ называется число 
+
+    \[
+    D\xi = M(\xi - M\xi)^2
+    \]
+
+\textbf{Свойства дисперсии:}
+    \smallskip
+
+    \begin{enumerate}
+        \item{$D\xi \geq 0$;}
+        \item{$Dc = 0$;}
+        \item{$Dc\xi = c^2 D\xi$;}
+        \item{Если случайные величины $\xi$ и $\eta$ независимы, то
+        
+        \[
+            D(\xi \pm \eta) = D\xi \pm D\eta;
+        \]
+        }
+        \item{$D\xi = M\xi^{2} - (M\xi)^2$;}
+        \item{Для произвольных случайных величин $\xi$ и $\eta$ с
+        $M|\xi| < + \infty$ и $M|\eta| < + \infty$ верно
+        
+        \[
+            D(\xi \pm \eta) = D\xi \pm D\eta \pm {\text{cov}(\xi, \eta)},
+        \]
+
+        где ${\text{cov}(\xi, \eta)} = M(\xi - M\xi)(\eta - M\eta)$ "--- ковариация.
+        }
+    \end{enumerate}
+
+    \begin{center}
+        \includegraphics[width=140mm]{"27.2.png"}
+    \end{center}
 
 \end{document}
