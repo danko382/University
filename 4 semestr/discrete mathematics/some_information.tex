@@ -1,0 +1,94 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage[unicode, hidelinks]{hyperref}
+
+\usepackage[
+    a4paper, mag=1000,
+    left=2.5cm, right=1.5cm, top=2cm, bottom=2cm, bindingoffset=0cm,
+    headheight=0cm, footskip=1cm, headsep=0cm
+]{geometry}
+
+\usepackage{tempora}
+
+\graphicspath{{images/}}
+
+\begin{document}
+
+\tableofcontents
+
+\newpage
+
+\section{Что это такое?}
+
+В этом файле содержится информация по дискретной математике,
+которая, по моему мнению, поможет в понимании материала по дискретной
+математике и прольёт свет на некоторые используемые в ответах на билеты
+термины. Кроме того, эта информация поможет лучше подготовиться к экзамену
+и почувствовать себя уверенней.
+
+\section{Теория по графам}
+
+\subsection{Определение порядка графа:}
+
+Число $|V|$ вершин графа $G$ называется его порядком.
+
+\subsection{Определение смежных вершин:}
+
+Две вершины называются смежными, если они соединены ребром.
+
+\subsection{Определение смежных рёбер:}
+
+Два ребра называются смежными, если они имеют общую вершину.
+
+\subsection{Определение матрицы смежности графа:}
+
+Матрица смежности~--- квадратная матрица $A = (a_{ij}), \;\;\; i, j = \overline{1, p}$,
+где 
+
+\[
+    a_{ij} =
+    \begin{cases}
+        1, (i, j) \in \rho \\
+        0, (i, j) \notin \rho\\
+    \end{cases}  
+\]
+
+Запись $(i, j) \in \rho$ означает, что между вершинами $i$ и $j$ существует 
+ребро.
+
+\begin{center}
+    \includegraphics[width=60mm]{"2.4.1.png"}
+    \includegraphics[width=50mm]{"2.4.2.png"}
+\end{center}
+
+\subsection{Определение степени вершины в неориентированном графе:}
+
+Степенью вершины $deg(v)$ в неориентированном графе называется число рёбер,
+непосредственно соединённых с ней.
+
+\begin{center}
+    \includegraphics[width=130mm]{"2.5.1.png"}
+\end{center}
+
+\subsection{Определение чётности и нечётности вершины графа:}
+
+Вершина графа называется четной, если ее степень четна,
+и нечетной в противном случае.
+
+\subsection{Определение вершинного вектора графа:}
+
+Вершинным вектором графа называется вектор $(d_1, \dots, d_n)$,
+где $d_1, \dots, d_n$~--- степени вершин графа.
+
+\begin{center}
+    \includegraphics[width=130mm]{"2.7.1.png"}
+\end{center}
+
+\end{document}
